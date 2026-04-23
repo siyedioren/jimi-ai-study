@@ -25,13 +25,15 @@ export default function ModeCard({
       <div className={styles.header} onClick={() => setExpanded((v) => !v)}>
         <div className={styles.titleRow}>
           <span className={styles.title}>{title}</span>
-          <div className={styles.tags}>
-            {tags.map((tag) => (
-              <span key={tag} className={styles.tag}>
-                {tag}
-              </span>
-            ))}
-          </div>
+          {tags.length > 0 && (
+            <div className={styles.tags}>
+              {tags.map((tag) => (
+                <span key={tag} className={styles.tag}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
         <svg
           className={styles.arrow}
