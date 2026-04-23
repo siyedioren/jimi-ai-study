@@ -1,0 +1,151 @@
+.card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: border-color 350ms ease, box-shadow 350ms ease;
+  overflow: hidden;
+
+  &:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  }
+
+  &.expanded {
+    border-color: var(--accent);
+
+    &:hover {
+      border-color: var(--accent);
+    }
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 350ms ease;
+
+  .expanded & {
+    background-color: #faf5ff;
+  }
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-family: var(--font-mono), monospace;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent);
+  background-color: var(--accent-light);
+  padding: 3px 10px;
+  border-radius: 9999px;
+  line-height: 1.4;
+}
+
+.arrow {
+  flex-shrink: 0;
+  color: var(--text-tertiary);
+  transition: transform 350ms ease;
+
+  .expanded & {
+    transform: rotate(180deg);
+  }
+}
+
+.contentWrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 350ms ease;
+
+  .expanded & {
+    grid-template-rows: 1fr;
+  }
+}
+
+.contentInner {
+  overflow: hidden;
+}
+
+.content {
+  padding: 0 24px 24px;
+}
+
+.intro {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.featureList {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.featureItem {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 16px;
+
+  &::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--text-tertiary);
+  }
+
+  & + & {
+    margin-top: 6px;
+  }
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent);
+  background-color: var(--accent-light);
+  border: 1px solid transparent;
+  transition: background-color 200ms ease, color 200ms ease,
+    border-color 200ms ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+  }
+}
