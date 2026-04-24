@@ -6,17 +6,6 @@ import styles from "./page.module.scss";
 
 const modes = [
   {
-    title: "在线编译器",
-    tags: [],
-    intro: "在浏览器中直接编写、运行和调试代码，无需配置本地环境。",
-    features: [
-      "支持多种语言实时运行",
-      "智能代码补全与语法高亮",
-      "一键保存与分享代码片段",
-    ],
-    href: "/playground",
-  },
-  {
     title: "AI 智能刷题",
     tags: [],
     intro: "与 AI 助教一对一交流，针对性攻克算法与数据结构难题。",

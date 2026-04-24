@@ -80,12 +80,10 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 24px;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  max-width: 560px;
+  margin: 0 auto;
 }
 
 .sponsor {
