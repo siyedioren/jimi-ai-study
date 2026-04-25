@@ -6,13 +6,12 @@ import styles from "./page.module.scss";
 
 const modes = [
   {
-    title: "AI 智能刷题",
+    title: "AI 智能解题",
     tags: [],
     intro: "与 AI 助教一对一交流，针对性攻克算法与数据结构难题。",
     features: [
-      "根据薄弱点智能推荐题目",
+      "个性化学习路径推荐",
       "逐步引导式解题讲解",
-      "自动生成错题集与复习计划",
     ],
     href: "/problems",
   },
