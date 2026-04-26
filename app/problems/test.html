@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>带侧边栏的网页布局</title>
+    <style>
+        /* 基础重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            /* 使用 Flexbox 布局让页面结构更灵活 */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* 顶部导航 */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* 主体容器：包含侧边栏和主内容 */
+        .container {
+            display: flex;
+            flex: 1; /* 占据剩余的所有高度 */
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* 侧边栏样式 */
+        .sidebar {
+            background-color: #fff;
+            width: 250px; /* 侧边栏宽度 */
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.05); /* 右侧阴影 */
+        }
+
+        .sidebar h3 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            color: #4a90e2;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #555;
+            font-size: 1.1rem;
+            display: block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #eef5fd;
+            color: #333;
+        }
+
+        /* 主内容区域 */
+        main {
+            flex: 1; /* 自动填充剩余空间 */
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        /* 底部 */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto; /* 推到底部 */
+        }
+
+        /* 响应式设计：在小屏幕下堆叠显示 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                box-shadow: none;
+                border-bottom: 1px solid #ddd;
+            }
+            main {
+                margin: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部 -->
+    <header>
+        <h1>我的网站标题</h1>
+    </header>
+
+    <!-- 主体容器 -->
+    <div class="container">
+
+        <!-- 左侧边栏 -->
+        <aside class="sidebar">
+            <h3>功能菜单</h3>
+            <ul>
+                <li><a href="#">🏠 首页概览</a></li>
+                <li><a href="#">📊 数据分析</a></li>
+                <li><a href="#">⚙️ 系统设置</a></li>
+                <li><a href="#">👤 个人中心</a></li>
+                <li><a href="#">📄 历史记录</a></li>
+            </ul>
+            
+            <h3 style="margin-top: 30px;">公告</h3>
+            <p style="font-size: 0.9rem; color: #666;">
+                这里是侧边栏的附加信息区域，可以放置广告或通知。
+            </p>
+        </aside>
+
+        <!-- 右侧主内容 -->
+        <main>
+            <h2>欢迎来到主内容区域</h2>
+            <p>这里是网页的主要内容展示区。在这个布局中，侧边栏固定在左侧，宽度为250px，而主内容区会自动填充剩余的空间。</p>
+            <br>
+            <p>你可以将截图中的“AI改题”功能放在这里，或者将侧边栏作为导航，主区域用来显示具体的题目和编辑器。</p>
+            <hr>
+            <h3>示例文本</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </main>
+
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <p>&copy; 2026 我的公司版权所有</p>
+    </footer>
+
+</body>
+</html>
