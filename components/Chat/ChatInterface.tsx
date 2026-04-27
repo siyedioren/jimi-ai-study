@@ -414,79 +414,6 @@ export default function ChatInterface() {
 
         {/* 消息流 */}
         <div className={styles.messages}>
-          {/* 空状态：absolute 居中输入卡片 */}
-          {(!currentSession || currentSession.messages.length === 0) && (
-            <div className={styles.emptyCenter}>
-              <div className={styles.emptyCard}>
-                <div className={styles.emptyCardBody}>
-                  <div className={styles.emptyCardSidebar}>
-                    <button
-                      className={styles.emptyCardIconBtn}
-                      onClick={handleNewChat}
-                      title="新建对话"
-                    >
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <line x1="12" y1="5" x2="12" y2="19" />
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                      </svg>
-                    </button>
-                  </div>
-                  <textarea
-                    className={styles.emptyCardTextarea}
-                    placeholder="粘贴题目描述或代码..."
-                    value={input}
-                    onChange={handleInputChange}
-                    onKeyDown={handleKeyDown}
-                    rows={4}
-                  />
-                </div>
-                <div className={styles.emptyCardFooter}>
-                  <select
-                    className={styles.emptyCardModelSelect}
-                    value={mode}
-                    onChange={(e) => setMode(e.target.value)}
-                  >
-                    {MODE_OPTIONS.map((opt) => (
-                      <option key={opt.id} value={opt.id}>
-                        {opt.label}
-                      </option>
-                    ))}
-                  </select>
-                  <button
-                    className={styles.emptyCardSend}
-                    onClick={handleSend}
-                    disabled={!input.trim() || loading}
-                    aria-label="发送"
-                  >
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <line x1="22" y1="2" x2="11" y2="13" />
-                      <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* 消息列表：800px 安全通廊 */}
           <div className={styles.messagesInner}>
             {currentSession?.messages.map((msg) => (
               <div
@@ -538,44 +465,74 @@ export default function ChatInterface() {
           </div>
         </div>
 
-        {/* 有消息时：底部固定输入条带 */}
-        {currentSession && currentSession.messages.length > 0 && (
-          <div className={styles.inputArea}>
-            <div className={styles.inputInner}>
-              <div className={styles.inputBox}>
-                <textarea
-                  ref={textareaRef}
-                  className={styles.textarea}
-                  rows={1}
-                  placeholder="粘贴题目描述或代码，基米会帮你分析..."
-                  value={input}
-                  onChange={handleInputChange}
-                  onKeyDown={handleKeyDown}
-                />
-                <button
-                  className={styles.sendBtn}
-                  onClick={handleSend}
-                  disabled={!input.trim() || loading}
-                  aria-label="发送"
+        {/* 输入框卡片：始终一个形态，不贴底 */}
+        <div className={styles.chatInputCard}>
+          <div className={styles.chatInputCardBody}>
+            <div className={styles.chatInputCardSidebar}>
+              <button
+                className={styles.chatInputCardIconBtn}
+                onClick={handleNewChat}
+                title="新建对话"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <line x1="22" y1="2" x2="11" y2="13" />
-                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                  </svg>
-                </button>
-              </div>
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </button>
             </div>
+            <textarea
+              ref={textareaRef}
+              className={styles.chatInputCardTextarea}
+              placeholder="粘贴题目描述或代码..."
+              value={input}
+              onChange={handleInputChange}
+              onKeyDown={handleKeyDown}
+              rows={2}
+            />
           </div>
-        )}
+          <div className={styles.chatInputCardFooter}>
+            <select
+              className={styles.chatInputCardModelSelect}
+              value={mode}
+              onChange={(e) => setMode(e.target.value)}
+            >
+              {MODE_OPTIONS.map((opt) => (
+                <option key={opt.id} value={opt.id}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+            <button
+              className={styles.chatInputCardSend}
+              onClick={handleSend}
+              disabled={!input.trim() || loading}
+              aria-label="发送"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </main>
     </div>
   );
