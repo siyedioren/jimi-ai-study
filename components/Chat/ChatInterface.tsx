@@ -450,8 +450,7 @@ export default function ChatInterface() {
               <div className={styles.messageRow}>
                 <div className={`${styles.avatar} ${styles.avatarAi}`}>基</div>
                 <div
-                  className={styles.bubbleAi}
-                  style={{ padding: "18px 18px" }}
+                  className={`${styles.bubbleAi} ${styles.thinkingCard}`}
                 >
                   <div className={styles.typing}>
                     <div className={styles.dot} />
@@ -500,17 +499,6 @@ export default function ChatInterface() {
             />
           </div>
           <div className={styles.chatInputCardFooter}>
-            <select
-              className={styles.chatInputCardModelSelect}
-              value={mode}
-              onChange={(e) => setMode(e.target.value)}
-            >
-              {MODE_OPTIONS.map((opt) => (
-                <option key={opt.id} value={opt.id}>
-                  {opt.label}
-                </option>
-              ))}
-            </select>
             <button
               className={styles.chatInputCardSend}
               onClick={handleSend}
