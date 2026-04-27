@@ -329,28 +329,134 @@ $radius-lg: 12px;
   }
 }
 
-// ---------- 空状态 ----------
+// ---------- 空状态：居中输入卡片 ----------
 
-.emptyState {
+.emptyCenter {
   margin: auto;
-  text-align: center;
+  width: 100%;
+  max-width: 640px;
+  padding: 0 16px;
 }
 
-.emptyStateTitle {
-  font-size: 24px;
-  font-weight: 600;
-  color: $text-primary;
+.emptyCard {
+  background: #ffffff;
+  border: 1px solid $border;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+
+  &:focus-within {
+    border-color: $primary;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
 }
 
-.emptyStateSub {
-  margin-top: 12px;
-  font-size: 14px;
-  font-weight: 400;
+.emptyCardBody {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 16px;
+}
+
+.emptyCardSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.emptyCardIconBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
   color: $text-secondary;
-  line-height: 1.6;
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease;
+
+  &:hover {
+    background: #f3f4f6;
+    color: $text-primary;
+  }
+}
+
+.emptyCardTextarea {
+  flex: 1;
+  resize: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $text-primary;
+  font-family: inherit;
+  min-height: 80px;
+
+  &::placeholder {
+    color: $text-tertiary;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.emptyCardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 12px 0 16px;
+  border-top: 1px solid $border;
+}
+
+.emptyCardModelSelect {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  padding-right: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: $text-secondary;
+  font-family: inherit;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.emptyCardSend {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: $primary;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+
+  &:hover:not(:disabled) {
+    background: $primary-hover;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
 }
 
 // ---------- 消息气泡 ----------

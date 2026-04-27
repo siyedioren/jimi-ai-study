@@ -264,13 +264,15 @@ export default function ChatInterface() {
   };
 
   // ---------- 输入框自动增高 ----------
-  useEffect(() => {
-    const el = textareaRef.current;
-    if (el) {
-      el.style.height = "auto";
-      el.style.height = el.scrollHeight + "px";
-    }
-  }, [input]);
+  const autoResize = (el: HTMLTextAreaElement) => {
+    el.style.height = "auto";
+    el.style.height = el.scrollHeight + "px";
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setInput(e.target.value);
+    autoResize(e.target);
+  };
 
   // ---------- 判断代码 ----------
   const isCodeLike = (text: string) => {
@@ -412,15 +414,79 @@ export default function ChatInterface() {
 
         {/* 消息流 */}
         <div className={styles.messages}>
+          {/* 空状态：居中输入卡片 */}
           {(!currentSession || currentSession.messages.length === 0) && (
-            <div className={styles.emptyState}>
-              <div className={styles.emptyStateTitle}>开始你的学习之旅</div>
-              <div className={styles.emptyStateSub}>
-                把题目描述或代码贴进来，基米会用自然语言帮你梳理逻辑错误
+            <div className={styles.emptyCenter}>
+              <div className={styles.emptyCard}>
+                <div className={styles.emptyCardBody}>
+                  <div className={styles.emptyCardSidebar}>
+                    <button
+                      className={styles.emptyCardIconBtn}
+                      onClick={handleNewChat}
+                      title="新建对话"
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                      </svg>
+                    </button>
+                  </div>
+                  <textarea
+                    className={styles.emptyCardTextarea}
+                    placeholder="粘贴题目描述或代码..."
+                    value={input}
+                    onChange={handleInputChange}
+                    onKeyDown={handleKeyDown}
+                    rows={4}
+                  />
+                </div>
+                <div className={styles.emptyCardFooter}>
+                  <select
+                    className={styles.emptyCardModelSelect}
+                    value={mode}
+                    onChange={(e) => setMode(e.target.value)}
+                  >
+                    {MODE_OPTIONS.map((opt) => (
+                      <option key={opt.id} value={opt.id}>
+                        {opt.label}
+                      </option>
+                    ))}
+                  </select>
+                  <button
+                    className={styles.emptyCardSend}
+                    onClick={handleSend}
+                    disabled={!input.trim() || loading}
+                    aria-label="发送"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <line x1="22" y1="2" x2="11" y2="13" />
+                      <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           )}
 
+          {/* 消息列表 */}
           {currentSession?.messages.map((msg) => (
             <div
               key={msg.id}
@@ -433,7 +499,7 @@ export default function ChatInterface() {
               ) : (
                 <div
                   className={`${styles.avatar} ${styles.avatarAi}`}
-                  style={{ background: "#f3f4f6", color: "#6b7280" }}
+                  style={{ background: "#dbeafe", color: "#2563eb" }}
                 >
                   我
                 </div>
@@ -470,40 +536,42 @@ export default function ChatInterface() {
           <div ref={messagesEndRef} />
         </div>
 
-        {/* 输入区 */}
-        <div className={styles.inputArea}>
-          <div className={styles.inputBox}>
-            <textarea
-              ref={textareaRef}
-              className={styles.textarea}
-              rows={1}
-              placeholder="粘贴题目描述或代码，基米会帮你分析..."
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={handleKeyDown}
-            />
-            <button
-              className={styles.sendBtn}
-              onClick={handleSend}
-              disabled={!input.trim() || loading}
-              aria-label="发送"
-            >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+        {/* 有消息时：底部固定输入条带 */}
+        {currentSession && currentSession.messages.length > 0 && (
+          <div className={styles.inputArea}>
+            <div className={styles.inputBox}>
+              <textarea
+                ref={textareaRef}
+                className={styles.textarea}
+                rows={1}
+                placeholder="粘贴题目描述或代码，基米会帮你分析..."
+                value={input}
+                onChange={handleInputChange}
+                onKeyDown={handleKeyDown}
+              />
+              <button
+                className={styles.sendBtn}
+                onClick={handleSend}
+                disabled={!input.trim() || loading}
+                aria-label="发送"
               >
-                <line x1="22" y1="2" x2="11" y2="13" />
-                <polygon points="22 2 15 22 11 13 2 9 22 2" />
-              </svg>
-            </button>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+            </div>
           </div>
-        </div>
+        )}
       </main>
     </div>
   );
