@@ -414,9 +414,10 @@ export default function ChatInterface() {
         <div className={styles.messages}>
           {(!currentSession || currentSession.messages.length === 0) && (
             <div className={styles.emptyState}>
-              把题目描述或代码贴进来
-              <br />
-              基米会用自然语言帮你梳理逻辑错误
+              <div className={styles.emptyStateTitle}>开始你的学习之旅</div>
+              <div className={styles.emptyStateSub}>
+                把题目描述或代码贴进来，基米会用自然语言帮你梳理逻辑错误
+              </div>
             </div>
           )}
 
