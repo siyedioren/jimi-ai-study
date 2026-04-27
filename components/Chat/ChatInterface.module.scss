@@ -35,9 +35,9 @@ $radius-lg: 12px;
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  min-width: 280px;
-  max-width: 360px;
+  width: 260px;
+  min-width: 240px;
+  max-width: 280px;
   border-right: 1px solid $border;
   background: $bg-sidebar;
   flex-shrink: 0;
@@ -67,9 +67,9 @@ $radius-lg: 12px;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin: 24px 16px 0;
+  margin: 20px 16px 0;
   padding: 0;
-  height: 40px;
+  height: 36px;
   border: none;
   border-radius: $radius-md;
   background: $primary;
@@ -89,11 +89,11 @@ $radius-lg: 12px;
 .historyScroll {
   flex: 1;
   overflow-y: auto;
-  padding: 24px 16px 0;
+  padding: 20px 16px 0;
 }
 
 .historyGroup {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .historyGroupTitle {
@@ -105,7 +105,7 @@ $radius-lg: 12px;
 
 .historyItem {
   position: relative;
-  padding: 10px 32px 10px 13px;
+  padding: 8px 32px 8px 13px;
   border-radius: $radius-sm;
   cursor: pointer;
   margin-bottom: 2px;
@@ -185,8 +185,8 @@ $radius-lg: 12px;
 // ---------- 今日知识点 ----------
 
 .knowledgeCard {
-  margin: 0 16px 24px;
-  padding: 16px;
+  margin: 0 16px 20px;
+  padding: 12px;
   background: #ffffff;
   border: 1px solid $border;
   border-radius: $radius-lg;
@@ -219,7 +219,7 @@ $radius-lg: 12px;
   display: flex;
   align-items: center;
   gap: 10px;
-  height: 56px;
+  height: 52px;
   padding: 0 16px;
   border-top: 1px solid $border;
   flex-shrink: 0;
@@ -316,9 +316,19 @@ $radius-lg: 12px;
 // ---------- 消息流 ----------
 
 .messages {
+  position: relative;
   flex: 1;
   overflow-y: auto;
-  padding: 24px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.messagesInner {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 16px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -332,10 +342,14 @@ $radius-lg: 12px;
 // ---------- 空状态：居中输入卡片 ----------
 
 .emptyCenter {
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   max-width: 640px;
   padding: 0 16px;
+  z-index: 2;
 }
 
 .emptyCard {
@@ -465,7 +479,6 @@ $radius-lg: 12px;
   display: flex;
   gap: 12px;
   align-items: flex-start;
-  max-width: 800px;
 }
 
 .messageRowUser {
@@ -539,12 +552,15 @@ $radius-lg: 12px;
   }
 }
 
+.inputInner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
 .inputBox {
   display: flex;
   gap: 12px;
   align-items: flex-end;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .textarea {

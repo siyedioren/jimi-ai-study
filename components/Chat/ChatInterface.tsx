@@ -414,7 +414,7 @@ export default function ChatInterface() {
 
         {/* 消息流 */}
         <div className={styles.messages}>
-          {/* 空状态：居中输入卡片 */}
+          {/* 空状态：absolute 居中输入卡片 */}
           {(!currentSession || currentSession.messages.length === 0) && (
             <div className={styles.emptyCenter}>
               <div className={styles.emptyCard}>
@@ -486,89 +486,93 @@ export default function ChatInterface() {
             </div>
           )}
 
-          {/* 消息列表 */}
-          {currentSession?.messages.map((msg) => (
-            <div
-              key={msg.id}
-              className={`${styles.messageRow} ${
-                msg.role === "user" ? styles.messageRowUser : ""
-              }`}
-            >
-              {msg.role === "assistant" ? (
-                <div className={`${styles.avatar} ${styles.avatarAi}`}>基</div>
-              ) : (
-                <div
-                  className={`${styles.avatar} ${styles.avatarAi}`}
-                  style={{ background: "#dbeafe", color: "#2563eb" }}
-                >
-                  我
-                </div>
-              )}
+          {/* 消息列表：800px 安全通廊 */}
+          <div className={styles.messagesInner}>
+            {currentSession?.messages.map((msg) => (
               <div
-                className={`${styles.bubble} ${
-                  msg.role === "user" ? styles.bubbleUser : styles.bubbleAi
+                key={msg.id}
+                className={`${styles.messageRow} ${
+                  msg.role === "user" ? styles.messageRowUser : ""
                 }`}
               >
-                {msg.role === "user" && isCodeLike(msg.content) ? (
-                  <div className={styles.codeBlock}>{msg.content}</div>
+                {msg.role === "assistant" ? (
+                  <div className={`${styles.avatar} ${styles.avatarAi}`}>基</div>
                 ) : (
-                  msg.content
+                  <div
+                    className={`${styles.avatar} ${styles.avatarAi}`}
+                    style={{ background: "#dbeafe", color: "#2563eb" }}
+                  >
+                    我
+                  </div>
                 )}
-              </div>
-            </div>
-          ))}
-
-          {loading && (
-            <div className={styles.messageRow}>
-              <div className={`${styles.avatar} ${styles.avatarAi}`}>基</div>
-              <div
-                className={styles.bubbleAi}
-                style={{ padding: "18px 18px" }}
-              >
-                <div className={styles.typing}>
-                  <div className={styles.dot} />
-                  <div className={styles.dot} />
-                  <div className={styles.dot} />
+                <div
+                  className={`${styles.bubble} ${
+                    msg.role === "user" ? styles.bubbleUser : styles.bubbleAi
+                  }`}
+                >
+                  {msg.role === "user" && isCodeLike(msg.content) ? (
+                    <div className={styles.codeBlock}>{msg.content}</div>
+                  ) : (
+                    msg.content
+                  )}
                 </div>
               </div>
-            </div>
-          )}
-          <div ref={messagesEndRef} />
+            ))}
+
+            {loading && (
+              <div className={styles.messageRow}>
+                <div className={`${styles.avatar} ${styles.avatarAi}`}>基</div>
+                <div
+                  className={styles.bubbleAi}
+                  style={{ padding: "18px 18px" }}
+                >
+                  <div className={styles.typing}>
+                    <div className={styles.dot} />
+                    <div className={styles.dot} />
+                    <div className={styles.dot} />
+                  </div>
+                </div>
+              </div>
+            )}
+            <div ref={messagesEndRef} />
+          </div>
         </div>
 
         {/* 有消息时：底部固定输入条带 */}
         {currentSession && currentSession.messages.length > 0 && (
           <div className={styles.inputArea}>
-            <div className={styles.inputBox}>
-              <textarea
-                ref={textareaRef}
-                className={styles.textarea}
-                rows={1}
-                placeholder="粘贴题目描述或代码，基米会帮你分析..."
-                value={input}
-                onChange={handleInputChange}
-                onKeyDown={handleKeyDown}
-              />
-              <button
-                className={styles.sendBtn}
-                onClick={handleSend}
-                disabled={!input.trim() || loading}
-                aria-label="发送"
-              >
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+            <div className={styles.inputInner}>
+              <div className={styles.inputBox}>
+                <textarea
+                  ref={textareaRef}
+                  className={styles.textarea}
+                  rows={1}
+                  placeholder="粘贴题目描述或代码，基米会帮你分析..."
+                  value={input}
+                  onChange={handleInputChange}
+                  onKeyDown={handleKeyDown}
+                />
+                <button
+                  className={styles.sendBtn}
+                  onClick={handleSend}
+                  disabled={!input.trim() || loading}
+                  aria-label="发送"
                 >
-                  <line x1="22" y1="2" x2="11" y2="13" />
-                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                </svg>
-              </button>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         )}
