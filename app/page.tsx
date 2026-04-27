@@ -3,6 +3,21 @@
 import SponsorPanel from "@/components/SponsorPanel/SponsorPanel";
 import styles from "./page.module.scss";
 
+const PENDING_KEY = "jimi_pending_problem";
+
+const DAILY_PROBLEM = {
+  title: "两数之和",
+  content:
+    "给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回它们的数组下标。",
+};
+
+function startProblem() {
+  if (typeof window !== "undefined") {
+    localStorage.setItem(PENDING_KEY, JSON.stringify(DAILY_PROBLEM));
+    window.location.href = "/problems";
+  }
+}
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -22,7 +37,7 @@ export default function Home() {
             <div className={styles.dailyDesc}>
               给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回它们的数组下标。
             </div>
-            <a href="/problems" className={styles.dailyBtn}>
+            <button className={styles.dailyBtn} onClick={startProblem}>
               <span>开始解题</span>
               <svg
                 className={styles.dailyBtnArrow}
@@ -38,7 +53,7 @@ export default function Home() {
                 <line x1="5" y1="12" x2="19" y2="12" />
                 <polyline points="12 5 19 12 12 19" />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
       </aside>

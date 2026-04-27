@@ -111,7 +111,8 @@ export default function ChatInterface() {
   // ---------- 初始化：从 localStorage 加载 ----------
   useEffect(() => {
     const list = loadSessions();
-    if (list.length === 0) {
+    const pending = localStorage.getItem("jimi_pending_problem");
+    if (list.length === 0 && !pending) {
       const first: Session = {
         id: generateId(),
         title: "新对话",
@@ -123,10 +124,96 @@ export default function ChatInterface() {
       saveSessions([first]);
     } else {
       setSessions(list);
-      setCurrentId(list[0].id);
+      if (list.length) setCurrentId(list[0].id);
     }
     setLoaded(true);
   }, []);
+
+  // ---------- 自动发送待处理题目 ----------
+  useEffect(() => {
+    if (!loaded) return;
+    const raw = localStorage.getItem("jimi_pending_problem");
+    if (!raw) return;
+
+    let problem: { title?: string; content?: string };
+    try {
+      problem = JSON.parse(raw);
+    } catch {
+      localStorage.removeItem("jimi_pending_problem");
+      return;
+    }
+
+    localStorage.removeItem("jimi_pending_problem");
+    const content = (problem.content || "").trim();
+    if (!content) return;
+
+    const newId = generateId();
+    const userContent = content + "\n\n请给出解题思路";
+    const userMsg: Message = {
+      id: generateId(),
+      role: "user",
+      content: userContent,
+    };
+
+    const newSession: Session = {
+      id: newId,
+      title: problem.title || autoTitleFromContent(userContent),
+      messages: [userMsg],
+      updatedAt: now(),
+    };
+
+    setSessions((prev) => [newSession, ...prev]);
+    setCurrentId(newId);
+    setLoading(true);
+
+    fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        mode,
+        messages: [{ role: "user", content: userContent }],
+      }),
+    })
+      .then(async (res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        const aiMsg: Message = {
+          id: generateId(),
+          role: "assistant",
+          content: data.reply,
+        };
+        setSessions((prev) =>
+          prev.map((s) =>
+            s.id === newId
+              ? { ...s, messages: [...s.messages, aiMsg], updatedAt: now() }
+              : s
+          )
+        );
+      })
+      .catch(() => {
+        setSessions((prev) =>
+          prev.map((s) =>
+            s.id === newId
+              ? {
+                  ...s,
+                  messages: [
+                    ...s.messages,
+                    {
+                      id: generateId(),
+                      role: "assistant",
+                      content: "基米现在有点忙，请稍后再试。",
+                    },
+                  ],
+                  updatedAt: now(),
+                }
+              : s
+          )
+        );
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, [loaded, mode]);
 
   const currentSession = sessions.find((s) => s.id === currentId);
 
@@ -395,21 +482,8 @@ export default function ChatInterface() {
 
       {/* ==================== 右侧栏 ==================== */}
       <main className={styles.main}>
-        {/* 顶部模式选择 */}
         <div className={styles.mainHeader}>
           <div className={styles.mainHeaderTitle}>AI 改题</div>
-          <select
-            className={styles.modeSelect}
-            value={mode}
-            onChange={(e) => setMode(e.target.value)}
-            title="切换解题模式"
-          >
-            {MODE_OPTIONS.map((opt) => (
-              <option key={opt.id} value={opt.id}>
-                {opt.label}
-              </option>
-            ))}
-          </select>
         </div>
 
         {/* 消息流 */}
