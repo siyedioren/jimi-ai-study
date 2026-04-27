@@ -499,6 +499,18 @@ export default function ChatInterface() {
             />
           </div>
           <div className={styles.chatInputCardFooter}>
+            <select
+              className={styles.chatInputCardModelSelect}
+              value={mode}
+              onChange={(e) => setMode(e.target.value)}
+              title="切换解题模式"
+            >
+              {MODE_OPTIONS.map((opt) => (
+                <option key={opt.id} value={opt.id}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
             <button
               className={styles.chatInputCardSend}
               onClick={handleSend}

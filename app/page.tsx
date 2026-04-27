@@ -23,7 +23,21 @@ export default function Home() {
               给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回它们的数组下标。
             </div>
             <a href="/problems" className={styles.dailyBtn}>
-              开始解题
+              <span>开始解题</span>
+              <svg
+                className={styles.dailyBtnArrow}
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </a>
           </div>
         </div>
