@@ -40,7 +40,10 @@ export default function ChatInput({
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [modeOptions, setModeOptions] = useState<ModeOption[]>([]);
   const [personaModes, setPersonaModes] = useState<Record<string, PersonaMode>>({});
-  const [selectedModel, setSelectedModel] = useState<string>("");
+  const [selectedModel, setSelectedModel] = useState<string>(() => {
+    if (typeof window === "undefined") return "";
+    return localStorage.getItem(`jimi_model_${mode}`) || "";
+  });
   const [attachments, setAttachments] = useState<Attachment[]>([]);
   const DRAFT_KEY = "jimi_draft_input";
 
@@ -95,12 +98,12 @@ export default function ChatInput({
     const cfg = personaModes[mode];
     if (!cfg) return;
 
-    const saved = localStorage.getItem(`jimi_model_${mode}`);
     const options = cfg.modelOptions || [cfg.model];
+    const saved = localStorage.getItem(`jimi_model_${mode}`);
     if (saved && options.includes(saved)) {
       setSelectedModel(saved);
     } else {
-      setSelectedModel(cfg.model);
+      setSelectedModel(options[0] || cfg.model);
     }
   }, [mode, personaModes]);
 

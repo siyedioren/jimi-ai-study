@@ -60,12 +60,18 @@ $radius-lg: 12px;
   height: 36px;
   align-items: center;
   justify-content: center;
-  border: none;
-  background: transparent;
+  border: 1px solid $border;
+  background: $bg-input;
   color: $text-secondary;
   border-radius: $radius-sm;
   cursor: pointer;
   margin-right: 8px;
+  transition: all 150ms ease;
+
+  &:hover {
+    background: $bg-ai-bubble;
+    border-color: $border-hover;
+  }
 
   @media (max-width: 768px) {
     display: flex;
