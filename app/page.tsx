@@ -215,6 +215,9 @@ export default function Home() {
               <div className={styles.problemItemEmpty}>没有符合条件的题目</div>
             )}
           </div>
+          <a href="/problemset" className={styles.problemMoreLink}>
+            查看完整题库 →
+          </a>
         </div>
       </aside>
 

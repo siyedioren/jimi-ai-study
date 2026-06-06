@@ -6,7 +6,7 @@
     "mode": "cpp_basic",
     "content": "请写一个程序：输入一个正整数值，请查这个值是否可以被17整除，如果可以输出1，否则输出0。",
     "sampleInput": "34",
-    "sampleOutput": "1",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -18,9 +18,9 @@
     "title": "选择02：利润提成",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "编写一个程序，根据年利润提成，计算企业发放的年度奖金。\n利润低于或等于10万元的部分，奖金按10%提取；\n利润高于10万元，低于或等于20万元的部分，奖金按7.5%提取；\n20万到40万之间的部分，可提成5%；\n40万到60万之间部分，可提成3%；\n60万到100万之间的部分，可提成1.5%；\n超过100万元的部分按1%提成。\n从键盘输入年利润，求应发放奖金总数。\n例如：输入下列数据，应该得到对应的输出。\n输入9 输出0.9\n输入15 输出1.375\n输入30 输出2.25\n输入50 输出3.05\n输入80 输出3.65\n输入120 输出4.15",
+    "content": "",
     "sampleInput": "80",
-    "sampleOutput": "3.65",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -32,9 +32,9 @@
     "title": "选择03：征税",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "假设税务部门征收个人所得税，规定如下：\n1）月收入在1000元以内（含1000），免征；\n2）月收入在1000~3000元以内（含3000），纳税额为收入的3%；\n3）月收入在3000~5000元以内（含5000），纳税为收入4%；\n4）当月收入超过5000元时，纳税为收入6%。\n请根据以上关系，输入收入m，输出应缴纳的税收tax。\n输入900 输出0\n输入2000 输出60\n输入3890 输出155.6\n输入\n4010.5 输出160.42\n输入6000 输出360",
+    "content": "",
     "sampleInput": "4000",
-    "sampleOutput": "160",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -48,7 +48,7 @@
     "mode": "cpp_basic",
     "content": "编写一个程序，输入一个年份，判断该年份是否为闰年，是闰年输出yes否则输出no。闰年的条件是：年份能被400整除或者年份能被4整除但不能被100整除。",
     "sampleInput": "2000",
-    "sampleOutput": "yes",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -62,7 +62,7 @@
     "mode": "cpp_basic",
     "content": "编写一个程序，输入一个正整数表示学生的学习成绩，若学习成绩小于0或大于100，输出illegal，否则若成绩在90~100分之间，输出'A'，在60-89分之间的，输出'B'，60分以下的输出'C'。",
     "sampleInput": "90",
-    "sampleOutput": "A",
+    "sampleOutput": "",
     "timeLimit": "10.000",
     "memoryLimit": "128",
     "tags": [
@@ -76,7 +76,7 @@
     "mode": "cpp_basic",
     "content": "某公司的工资根据工作时间发放如下：",
     "sampleInput": "10",
-    "sampleOutput": "190",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -88,9 +88,9 @@
     "title": "选择07：天数",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "根据历法，凡是1、3、5、7、8、10、12月，每月31天；凡是4、6、9、11月，每月30天；2月闰年29天，平年28天。闰年的判断方法是：",
+    "content": "根据历法，凡是1、3、5、7、8、10、12月，每月31天；凡是4、6、9、11月，每月30天；2月闰年29天，平年28天。闰年的判断方法是：\n\n## 输入\n\n年份 月份\n\n## 输出\n\n该月天数",
     "sampleInput": "2010 2",
-    "sampleOutput": "28",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -104,7 +104,7 @@
     "mode": "cpp_basic",
     "content": "输入三个整数，表示三角形的三个边长。当任意两边之和大于第三边时，能够构成三角形，输出：Yes；否则，输出：No。",
     "sampleInput": "3 6 7",
-    "sampleOutput": "Yes",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -118,7 +118,7 @@
     "mode": "cpp_basic",
     "content": "请写一个程序，我们输入三个int类型的数，找出最大的数并输出。",
     "sampleInput": "2 3 4",
-    "sampleOutput": "4",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -132,7 +132,7 @@
     "mode": "cpp_basic",
     "content": "输入int型整数x，若x大于0，则y值为1；若x等于0，则y值为0；若x小于0，则y值为-1。最后输出y。",
     "sampleInput": "4",
-    "sampleOutput": "1",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -146,7 +146,7 @@
     "mode": "cpp_basic",
     "content": "有4种水果，单价分别是3.1元/公斤，2.50元/公斤，4.10元/公斤，10.20元/公斤,编号分别为1,2,3,4。要求从键盘中输入水果的编号，输出该水果的单价。如果输入不正确的编号，显示单价为0。",
     "sampleInput": "4",
-    "sampleOutput": "10.2",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -160,7 +160,7 @@
     "mode": "cpp_basic",
     "content": "编写一个程序，输入三个正整数，表示某年某月某日，判断这一天是这一年的第几天？",
     "sampleInput": "2013 7 12",
-    "sampleOutput": "193",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -172,9 +172,9 @@
     "title": "选择13：是否及格",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入一个学生的数学成绩（正整数），如果它低于60，输出“Fail”，否则，输出“Pass”。",
+    "content": "输入一个学生的数学成绩（正整数），如果它低于60，输出&ldquo;Fail&rdquo;，否则，输出&ldquo;Pass&rdquo;。",
     "sampleInput": "65",
-    "sampleOutput": "Pass",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -188,7 +188,7 @@
     "mode": "cpp_basic",
     "content": "输入四个整数，输出其中的最小值。",
     "sampleInput": "1 2 3 4",
-    "sampleOutput": "1",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -200,9 +200,9 @@
     "title": "选择15：回文数",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入一个5位数，判断它是不是回文数。\n输入12321 输出YES\n输入12345输出NO",
+    "content": "",
     "sampleInput": "12345",
-    "sampleOutput": "NO",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -214,9 +214,9 @@
     "title": "选择16：字符转换",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "编写程序，要求输入一个字符，若为大写字母，将其转换成相应小写字母输出，否则，其它字符原样输出。\n输入A 输出a\n输入d 输出d\n输入8 输出8",
+    "content": "",
     "sampleInput": "A",
-    "sampleOutput": "a",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -228,9 +228,9 @@
     "title": "选择17：体重",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "编写一个程序，输入某人的身高（cm）以及体重（kg），按照以下标准对他（她）的体型做测试：（1）标准体重=身高-110；（2）超过标准体重5kg（不含5kg）的为“过胖”；（3）低于标准体重5kg（不含5kg）的为“过瘦”（3）既不超过标准体重多于5kg，也不低于标准体重多于5kg的为“标准”\n输入175 75 输出 fat\n输入175 60 输出 standard\n输入175 55 输出 thin",
+    "content": "",
     "sampleInput": "175 75",
-    "sampleOutput": "fat",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -242,9 +242,9 @@
     "title": "选择18：加法",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "从键盘上输入2个加数，再输入答案，如果正确，显示“right”，否则显示“error”\n输入3 5 8输出right\n输入3 5 9输出error",
+    "content": "",
     "sampleInput": "3 5 9",
-    "sampleOutput": "error",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -256,9 +256,9 @@
     "title": "选择19：网费",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "编写一个程序来计算一个月的上网费用，计算方法如下：若上网时间<＝10小时，网费为30元；若10小时<上网时间<＝50小时，网费每小时3元；若上网时间>50小时，网费每小时2.5元。要求输入该月上网小时数，显示该月总的上网费用。\n输入8输出30\n输入30输出90\n输入60输出150",
+    "content": "",
     "sampleInput": "60",
-    "sampleOutput": "150",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -270,9 +270,9 @@
     "title": "选择20：运费",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "铁路托运行李规定：行李重不超过\n50\n公斤的，托运费按每公斤\n0.15\n元计费；如超\n50\n公斤，超过部分每公斤加收\n0.10\n元。\n输入行李重量，输出该行李的托运费。\n输入\n25\n输出\n3.75\n输入\n50\n输出\n7.5\n输入\n80\n输出\n15",
+    "content": "",
     "sampleInput": "80",
-    "sampleOutput": "15",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -284,9 +284,9 @@
     "title": "选择21：方程求解",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入一元二次方程的系数a，b，c，计算方程的实数解。\n有一个根时输出一个根；有两个根时按照从小到大的顺序输出两个根，两个根之间用空格分隔；\n无根时输出“无解”。\n输入：4 4 1  输出：-0.5\n输入：1 2 -3 输出：-3 1\n输入：1 2 3  输出：none",
+    "content": "输入一元二次方程的系数a，b，c，计算方程的实数解。\n\n有一个根时输出一个根；有两个根时按照从小到大的顺序输出两个根，两个根之间用空格分隔；\n\n无根时输出&ldquo;无解&rdquo;。\n\n输入：4 4 1  输出：-0.5\n\n输入：1 2 -3 输出：-3 1\n\n输入：1 2 3  输出：none",
     "sampleInput": "1 2 3",
-    "sampleOutput": "none",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -300,7 +300,7 @@
     "mode": "cpp_basic",
     "content": "输入一批正整数(假设个数<100)，输入0时结束循环，找出其中最大的正数。",
     "sampleInput": "39 28 5 63 18 27 0",
-    "sampleOutput": "63",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -312,9 +312,9 @@
     "title": "循环02：素数",
     "difficulty": "medium",
     "mode": "cpp_basic",
-    "content": "输入一个正整数num，判断num是否为素数。若为素数则输出1，否则输出0。（提示：素数是指只可以被1和其本身整除的正数（1除外））\n\n\n\t \n\n\n\t输入10输出0\n\n\n\t输入7输出1",
+    "content": "输入一个正整数num，判断num是否为素数。若为素数则输出1，否则输出0。（提示：素数是指只可以被1和其本身整除的正数（1除外））\n\n\n\n\t \n\n\n\n\t输入10输出0\n\n\n\n\t输入7输出1",
     "sampleInput": "7",
-    "sampleOutput": "1",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -326,9 +326,9 @@
     "title": "循环03：数列求和",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入一个正整数n，计算前n项之和：1+1/4+1/7+1/10...+1/(3*n-2)。\n\n\n\t输入5输出1.56978\n\n\n\t输入4输出1.49286",
+    "content": "输入一个正整数n，计算前n项之和：1+1/4+1/7+1/10...+1/(3*n-2)。\n\n\n\n\t输入5输出1.56978\n\n\n\n\t输入4输出1.49286",
     "sampleInput": "5",
-    "sampleOutput": "1.56978",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -340,9 +340,9 @@
     "title": "循环04：西瓜卖几天",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "n个西瓜，第一天卖一半多两个，以后每天卖剩下的一半多两个，问几天以后能卖完？\n说明：当西瓜个数为奇数时，卖一半为一半的整数，如当西瓜个数为5时，卖一半为卖2个。\n输入：西瓜个数，输出：天数\n输入10输出2\n输入50输出4",
+    "content": "n个西瓜，第一天卖一半多两个，以后每天卖剩下的一半多两个，问几天以后能卖完？\n\n说明：当西瓜个数为奇数时，卖一半为一半的整数，如当西瓜个数为5时，卖一半为卖2个。\n\n输入：西瓜个数，输出：天数\n\n输入10输出2\n\n输入50输出4",
     "sampleInput": "50",
-    "sampleOutput": "4",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -354,9 +354,9 @@
     "title": "循环05：成绩判定",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入一个正整数repeat (假设0<repeat<10)，做repeat次下列运算：\n\n\n\t     输入一个学生的数学成绩，如果它低于60，输出“Fail”，否则，输出“Pass”。\n\n\n\t输入5 35 68 49 94 88\n\n\n\t输出（注意：输出数据分行显示）\n\n\n\tFail\n\n\n\tPass\n\n\n\tFail\n\n\n\tPass\n\n\n\tPass",
+    "content": "输入一个正整数repeat (假设0<repeat<10)，做repeat次下列运算：\n\n\n\n\t     输入一个学生的数学成绩，如果它低于60，输出“Fail”，否则，输出“Pass”。\n\n\n\n\t输入5 35 68 49 94 88\n\n\n\n\t输出（注意：输出数据分行显示）\n\n\n\n\tFail\n\n\n\n\tPass\n\n\n\n\tFail\n\n\n\n\tPass\n\n\n\n\tPass",
     "sampleInput": "5 35 68 49 94 88",
-    "sampleOutput": "Fail\nPass\nFail\nPass\nPass",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -364,27 +364,13 @@
     ]
   },
   {
-    "id": "1026",
-    "title": "类和对象 圆（组合）",
-    "difficulty": "medium",
-    "mode": "cpp_basic",
-    "content": "/*定义并实现平面空间的点类Point，数据成员有x，y；成员函数有构造函数（实现数据成员的初始化），Display函数（输出点信息）。再定义一个圆类Circle。圆类Circle的数据成员为r（存储圆的半径）和p（存储圆心点），成员函数有构造函数Circle、计算圆的面积函数Area、计算圆的周长函数Perimeter和输出函数Display，其中构造函数实现圆的圆心点p和r的初始化，Display函数实现圆心坐标（利用基类Point的Display实现）、圆的半径、圆的面积（利用Area函数实现）和圆的周长（利用Perimeter函数实现）的输出。请编写圆类的定义及成员函数实现，并在主函数中定义圆类对象，验证各个函数的正确性。\n\n\n\t说明：圆周率PI的取值为3.14\n\n\n\t已知Point类、Circle类 的定义及main代码如下：（不允许改动）*/\n\n\n\tclass Point\n{ \npublic:\n       Point(double xx,double yy); //constructor\n       void Display();        //display point   \nprivate:\n       double x,y;    //平面的点坐标x，y\n};\n//请在下面实现Point类的成员函数\n\n\nclass Circle\n{\nprivate:\nPoint p;  //圆心点\ndouble r; //圆半径\npublic:\nCircle(double x1,double y1,double r1);\nvoid Display();\ndouble Area();\ndouble Perimeter();\n};\n//请在下面实现Circle类的成员函数\n\nint main()\n{\n       double x,y,r;\n       cin>>x>>y>>r; //圆心的点坐标及圆的半径\n       Circle C(x,y,r);\n       C.Display(); //输出圆心点坐标，圆的半径，圆的面积，圆的周长\n       return 0;\n}",
-    "sampleInput": "1.5 2.6 1.8",
-    "sampleOutput": "Center:Point(1.5,2.6)\nRadius:1.8\nArea:10.1736\nPerimeter:11.304",
-    "timeLimit": "1.000",
-    "memoryLimit": "128",
-    "tags": [
-      "面向对象"
-    ]
-  },
-  {
     "id": "1027",
     "title": "循环06：分数数列求和",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入1 个正整数 n(n<=100)，计算并输出1＋1/2＋1/3＋……＋1/n 。\n输入5输出2.28333\n输入4输出2.08333",
+    "content": "输入1 个正整数 n(n<=100)，计算并输出1＋1/2＋1/3＋&hellip;&hellip;＋1/n 。\n\n输入5输出2.28333\n\n输入4输出2.08333",
     "sampleInput": "4",
-    "sampleOutput": "2.08333",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -396,9 +382,9 @@
     "title": "循环07：水仙花数",
     "difficulty": "medium",
     "mode": "cpp_basic",
-    "content": "打印出所有的 \"水仙花数 \"，所谓 \"水仙花数 \"是指一个三位数，其各位数字立方和等于该 \r\n\r\n\r\n\t数本身。例如：153是一个 \"水仙花数 \"，因为153=1的三次方＋5的三次方＋3的三次方。 \r\n\r\n\r\n\t  \r\n\r\n\r\n\t输入:无  \r\n\r\n\r\n\t输出:153 370 371 407 （注意：每个值输出后有一个空格）",
+    "content": "打印出所有的 \"水仙花数 \"，所谓 \"水仙花数 \"是指一个三位数，其各位数字立方和等于该 \n\n\n\n\n\n\t数本身。例如：153是一个 \"水仙花数 \"，因为153=1的三次方＋5的三次方＋3的三次方。 \n\n\n\n\n\n\t  \n\n\n\n\n\n\t输入:无  \n\n\n\n\n\n\t输出:153 370 371 407 （注意：每个值输出后有一个空格）",
     "sampleInput": "无",
-    "sampleOutput": "153 370 371 407",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -410,9 +396,9 @@
     "title": "循环08：一个整数的数位之和",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入一个正整数，输出其各个数位上的数字之和。\n输入 1234输出10\n输入 12534输出15",
+    "content": "输入一个正整数，输出其各个数位上的数字之和。\n\n输入 1234输出10\n\n输入 12534输出15",
     "sampleInput": "1234",
-    "sampleOutput": "10",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -424,9 +410,9 @@
     "title": "循环09：奇数和",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "读入一批正整数(以零为结束标志)，求其中的奇数和。\n输入32 33 50 34 65 67 0 输出165\n输入13 15 17 30 35 0 输出80",
+    "content": "读入一批正整数(以零为结束标志)，求其中的奇数和。\n\n输入32 33 50 34 65 67 0 输出165\n\n输入13 15 17 30 35 0 输出80",
     "sampleInput": "32 33 50 34 65 67 0",
-    "sampleOutput": "165",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -438,9 +424,9 @@
     "title": "循环10：正整数求和",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "从键盘输入若干正数，对其求和并输出，遇到负数则终止输入。 \n输入32 33 50 34 65 67 -1 输出281\n输入13 15 17 30 35 -2 输出110",
+    "content": "从键盘输入若干正数，对其求和并输出，遇到负数则终止输入。 \n\n输入32 33 50 34 65 67 -1 输出281\n\n输入13 15 17 30 35 -2 输出110",
     "sampleInput": "32 33 50 34 65 67 -1",
-    "sampleOutput": "281",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -452,9 +438,9 @@
     "title": "循环11：特殊的四位数",
     "difficulty": "medium",
     "mode": "cpp_basic",
-    "content": "已知四位数3025有一个特殊性质: 它的前两位数字30和后两位数字25的和是 55, 而55的平方刚好等于该数(55*55=3025). 试编一程序找出所有的具有这种性质的四位数。\n输入无 输出2025 3025 9801 （注意：每个输出后有一个空格）",
+    "content": "",
     "sampleInput": "",
-    "sampleOutput": "2025 3025 9801",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -466,9 +452,9 @@
     "title": "循环12：征税",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "税务部门征收所的税，规定如下： \n1）收入在1000元以内（含1000），免征； \n2）收入在1000~3000元以内（含3000），纳税额为收入的3%； \n3）收入超过3000~5000元以内（含5000），纳税为收入的4%；\n4）当收入超过5000元时，纳税为收入的6%。\n请根据以上关系，输入收入m，输出应缴纳的税收tax。",
+    "content": "税务部门征收所的税，规定如下： \n\n1）收入在1000元以内（含1000），免征； \n\n2）收入在1000~3000元以内（含3000），纳税额为收入的3%； \n\n3）收入超过3000~5000元以内（含5000），纳税为收入的4%；\n\n4）当收入超过5000元时，纳税为收入的6%。\n\n请根据以上关系，输入收入m，输出应缴纳的税收tax。\n\n## 输入\n\n第一个整数n表示后续有n个收入\n\n## 输出\n\n每个收入对应的纳税额",
     "sampleInput": "4 900 2000 4000 6000",
-    "sampleOutput": "0 60 160 360",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -480,9 +466,9 @@
     "title": "循环13：一个数的因数个数",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "给定一个正整数num，求它的因数个数。如6的因数为1、2、3、6，则因数个数为4。\n输入12 输出6",
+    "content": "给定一个正整数num，求它的因数个数。如6的因数为1、2、3、6，则因数个数为4。\n\n输入12 输出6",
     "sampleInput": "12",
-    "sampleOutput": "6",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -494,9 +480,9 @@
     "title": "循环14：最大公约数",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "键盘输入两个正整数m，n，求出他们的最大公约数。\n输入20 15 输出5",
+    "content": "",
     "sampleInput": "20 15",
-    "sampleOutput": "5",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -508,9 +494,9 @@
     "title": "循环15：斐波那契数列",
     "difficulty": "medium",
     "mode": "cpp_basic",
-    "content": "判断斐波那契数列（Fibonacci sequence）第n项的值能否被3整除，设斐波那契数列为：F(0)=0, F(1)=1, F(n)=F(n-1)+F(n-2)(n>=2),编写一个程序，输入n(假设n>=2)，如果F(n)的值能被3整除则输出“yes”，否则输出“no”。\n输入7，f(7)为13，则输出no\n输入8，f(8)为21，则输出yes\n提示：斐波那契数列的值依次为0，1，1，2，3，5，8，。。。",
+    "content": "判断斐波那契数列（Fibonacci sequence）第n项的值能否被3整除，设斐波那契数列为：F(0)=0, F(1)=1, F(n)=F(n-1)+F(n-2)(n>=2),编写一个程序，输入n(假设n>=2)，如果F(n)的值能被3整除则输出&ldquo;yes&rdquo;，否则输出&ldquo;no&rdquo;。\n\n输入7，f(7)为13，则输出no\n\n输入8，f(8)为21，则输出yes\n\n提示：斐波那契数列的值依次为0，1，1，2，3，5，8，。。。",
     "sampleInput": "6",
-    "sampleOutput": "no",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -522,9 +508,9 @@
     "title": "循环16：计算奇平方偶立方",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "求N（<=100）个数中奇数的平方和与偶数的立方和。",
+    "content": "求N（<=100）个数中奇数的平方和与偶数的立方和。\n\n## 输入\n\n输入格式为第一个数为N，后面接着N个整数。\n\n## 输出\n\n输出的平方和与立方和以空格隔开",
     "sampleInput": "3 5 8 9",
-    "sampleOutput": "106 512",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -536,9 +522,9 @@
     "title": "循环17：数位值为偶数的和",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "对于输入的一个数字，请计算它的各个位上的数字为偶数的和。例如：1234，结果为6=2+4。\n输入4321输出6\n输入51289输出10",
+    "content": "对于输入的一个数字，请计算它的各个位上的数字为偶数的和。例如：1234，结果为6=2+4。\n\n输入4321输出6\n\n输入51289输出10",
     "sampleInput": "51289",
-    "sampleOutput": "10",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -550,9 +536,9 @@
     "title": "循环18：数根",
     "difficulty": "medium",
     "mode": "cpp_basic",
-    "content": "对于一个正整数n，我们将它的各个位相加得到一个新的数字，如果这个数字是一位数，我们称之为n的数根，否则重复处理直到它成为一个一位数，这个一位数也算是n的数根。例如：考虑24，2+4=6，6就是24的数根。考虑39，3+9=12，1+2=3，3就是39的数根。请编写程序，计算n的数根。\n输入189输出9",
+    "content": "对于一个正整数n，我们将它的各个位相加得到一个新的数字，如果这个数字是一位数，我们称之为n的数根，否则重复处理直到它成为一个一位数，这个一位数也算是n的数根。例如：考虑24，2+4=6，6就是24的数根。考虑39，3+9=12，1+2=3，3就是39的数根。请编写程序，计算n的数根。\n\n输入189输出9",
     "sampleInput": "189",
-    "sampleOutput": "9",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -564,9 +550,9 @@
     "title": "循环19：平均成绩",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "假设有一个班级，n名同学选修了C++语言程序设计，要求统计该门课的平均成绩。输入格式：第一个数为学生人数n，后面接着n个成绩，输出平均成绩。\r\n输入：5 80 90 88 96 70 输出84.8",
+    "content": "假设有一个班级，n名同学选修了C++语言程序设计，要求统计该门课的平均成绩。输入格式：第一个数为学生人数n，后面接着n个成绩，输出平均成绩。\n\n\n输入：5 80 90 88 96 70 输出84.8",
     "sampleInput": "5 80 90 88 96 70",
-    "sampleOutput": "84.8",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -578,9 +564,9 @@
     "title": "循环20：幂函数",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入一个正整数repeat (假设0<repeat<10)，做repeat次下列运算：读入1 个正实数x和1个正整数 n(n<=50)，计算并输出x的n次幂。\n输入3 2 5 3 4 5 3输出32 81 125",
+    "content": "输入一个正整数repeat (假设0<repeat<10)，做repeat次下列运算：读入1 个正实数x和1个正整数 n(n<=50)，计算并输出x的n次幂。\n\n输入3 2 5 3 4 5 3输出32 81 125",
     "sampleInput": "3 1.1 2 3 4 5 3",
-    "sampleOutput": "1.21 81 125",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -594,7 +580,7 @@
     "mode": "cpp_basic",
     "content": "输入一组整数，以0结束，统计数据个数（不含0）及最大值。",
     "sampleInput": "1 2 3 456 4 3 5 0",
-    "sampleOutput": "7 456",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -608,7 +594,7 @@
     "mode": "cpp_basic",
     "content": "输入一个正整数n，输出[2,n]之间所有的素数及素数个数。",
     "sampleInput": "10",
-    "sampleOutput": "2 3 5 7 \n4",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -620,9 +606,9 @@
     "title": "循环23：完数",
     "difficulty": "medium",
     "mode": "cpp_basic",
-    "content": "输入一个正整数n，输出[1,n]之间的所有完数。\n完数的定义：除自身外的因子之和等于它本身。\n例如：6=1+2+3，因此6是完数。",
+    "content": "输入一个正整数n，输出[1,n]之间的所有完数。\n\n完数的定义：除自身外的因子之和等于它本身。\n\n例如：6=1+2+3，因此6是完数。",
     "sampleInput": "1000",
-    "sampleOutput": "6 28 496",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -636,7 +622,7 @@
     "mode": "cpp_basic",
     "content": "输入若干个整数，以0结束，计算这些非0数据的平均值。",
     "sampleInput": "2 4 5 3 0",
-    "sampleOutput": "3.5",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -650,7 +636,7 @@
     "mode": "cpp_basic",
     "content": "输入一组正整数，以0结束，找出其中素数的最大值。例如输入：3 6 7 10 0，最大素数为7，输出结果为7，若输入数据中无素数，则输出no",
     "sampleInput": "3 6 7 10 0",
-    "sampleOutput": "7",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -664,7 +650,7 @@
     "mode": "cpp_basic",
     "content": "输入一组整数，其中第一个整数为个数n，后续为n个整数，输出其中素数的个数。要求将判断一个整数是否为素数用函数实现。",
     "sampleInput": "3 5 7 9",
-    "sampleOutput": "2",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -676,9 +662,9 @@
     "title": "函数02：因数个数之和",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入一组整数，计算这些整数的因数个数之和。其中第一个整数为个数n，后续为n个整数。要求计算一个整数的因数个数用函数实现。\n如输入3 6 8 5，其中6的因数个数为4,8的因数个数为4,5的因数个数为2，所以计算结果为10。",
+    "content": "输入一组整数，计算这些整数的因数个数之和。其中第一个整数为个数n，后续为n个整数。要求计算一个整数的因数个数用函数实现。\n\n如输入3 6 8 5，其中6的因数个数为4,8的因数个数为4,5的因数个数为2，所以计算结果为10。",
     "sampleInput": "3 6 8 5",
-    "sampleOutput": "10",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -690,9 +676,9 @@
     "title": "函数03：Fibonacci数列",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入2 个正整数mini和maxi(假设0<=mini,maxi<=1000)，找出斐波那契数列（Fibonacci sequence）的值介于mini 和maxi之间(不含边界)所有的数。要求定义并调用函数fib(n)，它的功能是返回该数列的第n项（n>=0）。\r\n说明：Fibonacci 序列为0 1 1 2 3 5 8 13 21 ......",
+    "content": "输入2 个正整数mini和maxi(假设0<=mini&#44;maxi<=1000)，找出斐波那契数列（Fibonacci sequence）的值介于mini 和maxi之间(不含边界)所有的数。要求定义并调用函数fib(n)，它的功能是返回该数列的第n项（n>=0）。\n\n\n说明：Fibonacci 序列为0 1 1 2 3 5 8 13 21 ......",
     "sampleInput": "5 21",
-    "sampleOutput": "8 13",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -706,7 +692,7 @@
     "mode": "cpp_basic",
     "content": "从键盘输入n对整数，求这些对整数间所有奇数之和的最大值。要求计算一对整数min、max（含min和max）之间所有奇数的和用函数实现，若min>max，函数返回值为0。输入格式：第一个整数为n，后续为n对整数。例如：输入数据为 3 10 20 17 31 40 45，表示输入3对整数，因为10~20间的奇数依次为11,13,15,17,19，奇数之和为75,17~31间的奇数依次为17,19,21,23,25,27,29,31，奇数之和为192，而40~45间的奇数依次为41,43,45，奇数之和为129，因此最大值为192，输出结果为192。",
     "sampleInput": "3 10 20 17 31 40 45",
-    "sampleOutput": "192",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -718,9 +704,9 @@
     "title": "函数05：阶乘",
     "difficulty": "medium",
     "mode": "cpp_basic",
-    "content": "编写一个递归函数fac，该函数计算n的阶乘，如3的阶乘为6，0的阶乘为1。main函数中输入n个整数，计算这些整数的阶乘平均值。例如输入：2 1 2，则计算1和2的阶乘的平均值，输出1.5。注意：不用递归解决问题，即使提交通过，也不符合题目要求，考试时不得分。",
+    "content": "编写一个递归函数fac，该函数计算n的阶乘，如3的阶乘为6，0的阶乘为1。main函数中输入n个整数，计算这些整数的阶乘平均值。例如输入：2 1 2，则计算1和2的阶乘的平均值，输出1.5。注意：不用递归解决问题，即使提交通过，也不符合题目要求，考试时不得分。\n\n## 输入\n\n第一个整数位个数n，后续为n个整数。",
     "sampleInput": "3 3 4 5",
-    "sampleOutput": "50",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -734,7 +720,7 @@
     "mode": "cpp_basic",
     "content": "编程求解问题。若一头小母牛，从出生起第四个年头开始每年生一头母牛，按此规律，第n年时有多少头母牛。（用递归函数方法求解）",
     "sampleInput": "7",
-    "sampleOutput": "6",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -746,9 +732,9 @@
     "title": "函数07：最大公约数",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入n对整数，计算这n对整数最大公约数之和。其中计算一对整数的最大公约数用函数实现。\n\n输入格式：第一个为对数n，后续为n对整数。",
+    "content": "输入n对整数，计算这n对整数最大公约数之和。其中计算一对整数的最大公约数用函数实现。\n\n\n\n输入格式：第一个为对数n，后续为n对整数。",
     "sampleInput": "3 14 18 20 30 25 35",
-    "sampleOutput": "17",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -762,7 +748,7 @@
     "mode": "cpp_basic",
     "content": "设计一个递归函数，求x的n次幂，其中n为非负整数。在main函数中输入x和一个整数n，输出x的n次幂。",
     "sampleInput": "3.5 4",
-    "sampleOutput": "150.062",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -774,9 +760,9 @@
     "title": "函数09：指数幂求和",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "定义运算n^k表示n的k次幂，从键盘输入整数n和k，计算1^k+2^k+……+n^k，其中求n^k用函数实现。",
+    "content": "定义运算n^k表示n的k次幂，从键盘输入整数n和k，计算1^k+2^k+&hellip;&hellip;+n^k，其中求n^k用函数实现。",
     "sampleInput": "3 5",
-    "sampleOutput": "276",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -788,9 +774,9 @@
     "title": "函数10：素数求和",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入两个正整数min、max，计算[min,max]之间所有的素数之和。\n将判断一个整数是否为素数用函数实现。",
+    "content": "输入两个正整数min、max，计算[min,max]之间所有的素数之和。\n\n将判断一个整数是否为素数用函数实现。",
     "sampleInput": "2 10",
-    "sampleOutput": "17",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -802,9 +788,9 @@
     "title": "函数11：最小公倍数之和",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入n对整数，计算这n对整数最小公倍数之和。其中计算一对整数的最小公倍数用函数实现。\n输入格式：第一个为对数n，后续为n对整数。",
+    "content": "输入n对整数，计算这n对整数最小公倍数之和。其中计算一对整数的最小公倍数用函数实现。\n\n输入格式：第一个为对数n，后续为n对整数。",
     "sampleInput": "2 3 5 4 8",
-    "sampleOutput": "23",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -816,9 +802,9 @@
     "title": "函数12：逆序求和",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "从键盘输入一组整数（以0结束），计算这组整数逆序后之和。\n其中将一个整数逆序用函数实现，整数123逆序为321、整数-345逆序为-543。",
+    "content": "从键盘输入一组整数（以0结束），计算这组整数逆序后之和。\n\n其中将一个整数逆序用函数实现，整数123逆序为321、整数-345逆序为-543。",
     "sampleInput": "234 894 -94 736 0",
-    "sampleOutput": "1518",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
@@ -830,13 +816,1441 @@
     "title": "函数13：数位计算",
     "difficulty": "easy",
     "mode": "cpp_basic",
-    "content": "输入一组正整数（以0结束），输出其中数位之和为奇数的整数。\n其中求一个数的数位之和用函数实现。",
+    "content": "输入一组正整数（以0结束），输出其中数位之和为奇数的整数。\n\n其中求一个数的数位之和用函数实现。",
     "sampleInput": "12 22 45 88 0",
-    "sampleOutput": "12 45",
+    "sampleOutput": "",
     "timeLimit": "1.000",
     "memoryLimit": "128",
     "tags": [
       "函数"
+    ]
+  },
+  {
+    "id": "1060",
+    "title": "函数14：数值计算",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入2个正整数a和n，求a+aa+aaa+aa&hellip;a(n个a)之和。\n\n例如，输入2和3，则计算2+22+222，输出246。\n\n将求i个a组成的数用函数实现，即函数int f（int a，int i）的返回值为i个a的值，例如f（3，2）值为33。",
+    "sampleInput": "2 3",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1061",
+    "title": "函数15：累加和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写一个函数f(n)=1+2+...+n。main函数从键盘输入m、n，利用该函数计算并输出f(m)+f(n)。",
+    "sampleInput": "10 5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1062",
+    "title": "函数16：利用函数计算平均值",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写一个函数f（x），若x>0函数返回值为1，若x<0函数返回值为-1，若x=0函数返回值为0，利用该函数实现计算输入的n个整数中正整数的平均值。\n\n输入格式中第一个为整数个数n，后续为n个整数。",
+    "sampleInput": "5  2 5 -5 3 -3",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1063",
+    "title": "函数17：数根问题递归求解",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入n个正整数（输入格式中第一个为整数个数n，后续为n个整数），输出各个数的数根。要求计算一个数的数根部分利用递归函数实现。数根的定义：对于一个正整数n，我们将它的各个位相加得到一个新的数字，如果这个数字是一位数，我们称之为n的数根，否则重复处理直到它成为一个一位数，这个一位数也算是n的数根。例如：考虑24，2+4=6，6就是24的数根。考虑39，3+9=12，1+2=3，3就是39的数根。",
+    "sampleInput": "5 23 424 98 632 12345",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1064",
+    "title": "函数18：奇数判断",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入若干个正整数（输入时以0结束），输出其中所有的奇数及奇数个数。要求判断一个数num的奇偶写成函数bool isodd（num），奇数返回true，否则返回false。",
+    "sampleInput": "23 4 235 3 52 30 19 11 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1065",
+    "title": "函数19：利用一个自定义函数解决完数和素数问题",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写一个函数求一个数的所有因子之和。主函数中输入两个整数m、n，利用该函数依次实现下列问题：1)找出n以内所有完数； 2）找出m~n间所有素数 提示：完数定义为除自身外的所有因子之和等于它本身的数；素数定义为除了能被1和自身整数外，不能被其它数整数。注意：完数和素数分2行显示。",
+    "sampleInput": "50 100",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1066",
+    "title": "函数20：fibonacci数列倒数求和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "计计算1+1+1/2+1/3+1/5+1/8+&hellip;，当最后一项小于e（用户输入）时结束。提示各项的分母为fibonacci数列：0，1,1,2,3,5,8,。。。，其中第0项为0，要求：求fibonacci数列第n项写成递归函数。",
+    "sampleInput": "0.01",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1067",
+    "title": "数组指针01：逆序输出",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入n个整数（n<100），存放在一个一维数组中，逆序输出能被3整除的元素，并逆序输出数组下标为3的倍数的元素。\n\n输入格式：第一个整数为个数n，后续为n个整数\n\n输出格式：第一行能被3整除的元素，第二行为下标为3的倍数的元素，各个数值之间用空格分隔。",
+    "sampleInput": "10 2 7 9 10 5 4 3 6 8 20",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1068",
+    "title": "数组指针02：逆序存储",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入n（n<100）个整数，存放在一个一维数组a中，将它们逆序存放在另一个整型数组b中，并按b数组中下标从小到大的顺序输出下标为3的倍数的数组元素。\n\n输入格式：第一个数为数组中元素个数n，之后为n个元素。\n\n输出格式：下标为3的倍数的元素，各个数值之间用空格分隔。",
+    "sampleInput": "10 2 7 9 10 5 4 3 6 8 20",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1069",
+    "title": "数组指针03：平均值",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入任意个整数（以0结束，假设不超过100个），存放在一个一维数组中，计算这组数的平均值（实型）。",
+    "sampleInput": "15 2 7 9 10 5 4 3 6 8 20 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1070",
+    "title": "数组指针04：最大值",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入任意个整数（以0结束，个数不超过100），存放在一个一维数组中，输出这组数的最大值。",
+    "sampleInput": "10 2 7 9 11 5 4 3 6 8 20 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1071",
+    "title": "数组指针05：最小值的位置",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入任意个整数（以0结束，个数不超过100），存放在一个一维数组中，数据从数组的0下标开始存储，输出这组数的最小值所在数组下标。",
+    "sampleInput": "10 2 7 9 11 5 4 3 6 8 20 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1072",
+    "title": "数组指针06：排序",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入任意个整数（以0结束，假设个数最大不超过100），将这些数存放在一个一维数组中，将它们从小到大排序后输出。",
+    "sampleInput": "15 2 7 9 11 5 4 3 6 8 20 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1073",
+    "title": "数组指针07：中位数",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入n(n<100)个整数（以0结束），存放在一个一维数组中，输出其中位数。\n\n说明：中位数（Medians）统计学名词，是指将数据按从小到大顺序排列起来，形成一个数列，居于数列中间位置的那个数据。若数列元素个数为奇数，则中位数为最中间的元素；\n\n若数列元素个数为偶数，则中位数为最中间两个元素的平均数。例如：输入2 7 9 11 5 4 3 6 8 20 0则排序后结果为2 3 4 5 6 7 8 9 11 20，则中间两个数的平均值为6.5",
+    "sampleInput": "2 7 9 11 5 4 3 6 8 20 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1074",
+    "title": "数组指针08：奇偶排序",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入n(n<100)个整数（以0结束），存放在一个一维数组中，将它们按奇数在前、偶数在后，同为奇数或偶数的按从小到大的顺序排序，并输出排序后的结果。\n\n其中：排序过程用函数实现。",
+    "sampleInput": "10 2 7 9 11 5 4 3 6 8 20 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1075",
+    "title": "数组指针09：斐波那契数列",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一个正整数n（n<100），将斐波那契数列的前n项保存到一维数组中，并输出斐波那契数列中对3取余为2的数。\n\n斐波那契数列为：0 1 1 2 3 5 8 13 21 34 55&hellip;&hellip;，起始项为第0项。",
+    "sampleInput": "10",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1077",
+    "title": "数组指针11：指定位置插入",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入任意个整数（以0结束，假设个数不超过100个），从0下标开始依次存放在一维数组中，再输入插入位置pos（0<=pos<=n）及被插入的元素x，将x插入到数组的pos下标处。输出插入后数组中的所有元素。",
+    "sampleInput": "8 2 17 9 11 5 4 3 6 21 20 0\n\n8 100",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1078",
+    "title": "数组指针12：有序插入",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入n个整数（n<100），存放在一维数组中，将它们从大到小排序，再从键盘输入一个整数x，将该数插入到该数组中，使得插入后元素序列依然有序，输出插入后数组中的所有元素。\n\n 其中将整数x插入到数组中使其依然有序用函数完成。\n\n输入格式：第一个为个数n，后续为n个整数，再输入一个整数x。",
+    "sampleInput": "10 2 7 9 11 5 4 3 6 8 20 \n12",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1079",
+    "title": "数组指针13：删除指定元素",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入任意个整数（以0结束），假设整数个数为n(n<100)，则这些数据存放在一维数组的0~n-1下标中，再输入被删除元素所在下标pos（0<=pos<n），将pos下标的元素从数组中删除，若pos位置不合法，则不删除元素。输出删除后数组中的所有元素。",
+    "sampleInput": "10 2 7 9 11 5 4 3 6 8 20 0\n8",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1080",
+    "title": "数组指针14：删除所有的指定元素",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入任意个整数（以0结束，并假设个数n不超过100），存放在一维数组的0~n-1下标中，再输入要删除的元素x，将数组中所有的x全部删除。输出删除后数组中的所有元素。",
+    "sampleInput": "10 2 7 9 5 11 5 4 3 6 5 8 20 0\n\n5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1081",
+    "title": "数组指针15：矩阵各行、列求和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入m行n列（假设m，n不超过50。程序运行时输入）的矩阵存储在一个二维整型数组中，分别求出各行元素之和, 各列元素和。提示：各行元素和、各列元素和需要分别使用一个一维数组row、col实现存储, 再输出row、col中的值。",
+    "sampleInput": "3 4\n1 2 3 4\n5 6 7 8\n9 10 11 12",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1082",
+    "title": "数组指针16：两条对角线元素之和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一个n*n（假设n值不超过50）的矩阵存储于二维数组，求出两条对角线元素值之和。如果对角线有重叠数据（n为奇数时），不重复相加。",
+    "sampleInput": "5\n11 12 13 14 40\n15 16 17 18 41\n19 10 11 12 42\n31 32 33 34 43\n51 52 53 54 55",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1083",
+    "title": "数组指针17：矩阵求鞍点",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一个5*5的矩阵，输出所有的鞍点。\n\n所谓鞍点是指一行中的最大值也是该列中的最小值。",
+    "sampleInput": "11 12 13 14 40\n55 56 57 58 41\n19 10 11 12 42\n31 32 33 34 43\n51 52 53 54 55",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1085",
+    "title": "数组指针19：字符串转换",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "在主函数中输入一个字符串（长度不超过99），存储在一个字符数组中，将该字符串中的大写字母变成相应的小写字母，小写字母变成相应的大写字母，其他字符不变，输出转换后的字符串。其中将字符串转换部分写成函数，且字符访问能够利用下标和指针两种方式实现。",
+    "sampleInput": "ILoveLiaoNing23",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1086",
+    "title": "数组指针20：字符串长度",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入n个(n<100)字符串，输出所有字符串长度的平均值。其中求一个字符串的长度用自定义函数实现，且字符访问能够利用下标和指针两种方式实现。\n\n输入格式，第一个整数n为字符串个数，后续为n个字符串。",
+    "sampleInput": "3  world hello C++",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1087",
+    "title": "数组指针21：字符串连接",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写串连接函数mystrcat(char *,char *)，即将第二个字符串接到第一个字符串的后面，函数返回连接后的字符串地址，要求字符访问能够利用下标和指针两种方式实现。从键盘输入两个字符串（字符串长度小于20），调用mystrcat函数实现字符串的连接，输出连接后和字符串。",
+    "sampleInput": "University Science",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1089",
+    "title": "数组指针23：字符串处理",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写一个函数，实现在字符串的每两个字符之间都插入一个字符，如原串为abcd，插入字符为h则新串为ahbhchd。在主函数中输入原串及插入字符，调用该函数实现字符串转换，并输出转换后的新串。",
+    "sampleInput": "hello w",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1090",
+    "title": "数组指针24：二进制转换",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入n 个(n<100)二进制整数，计算这n个二进制整数之和。要求：将二进制整数转换为十进制整数用函数实现，其中二进制数用字符串存储。提示：（1）二进制整数用字符串存储；（2）11001的计算过程为：(((1*2+1)*2+0)*2+0)*2+1=25。\n\n输入格式：第一个整数为个数n，后续为n个二进制正整数。",
+    "sampleInput": "3 1010 11001 10101",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1091",
+    "title": "数组指针25：数字移动",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写move()函数，实现将若干个整数顺序向后移动3位，最后3位变成最前面3位。从键盘输入n个整数(3<=n<=10)，调用move函数实现移动，输出移动后的结果。\n\n输入格式：第一个整数为个数n，后续为n个整数。",
+    "sampleInput": "5 1 2 3 4 5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1092",
+    "title": "数组指针26：矩阵周边元素",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一个m*n的矩阵（整型），输出矩阵周边元素之和。输入格式：先输入m，n的值（假设m，n值不大于50），再输入m*n个数据。",
+    "sampleInput": "5 5\n1 2 3 4 5\n6 7 8 9 10\n11 12 13 14 15\n16 17 18 19 20\n21 22 23 24 25",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1093",
+    "title": "数组指针27：查找元素",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入n(n<100)个整数（以0结束），存放在一维数组中，再输入一个整数x，\n\n在数组中查找指定元素x。若数组中存在x，则输出x在数组第一次出现的下标，\n\n若数组中不存在x，则输出-1。要求在数组中查找x的过程用一个函数实现。",
+    "sampleInput": "1 2 3 4 5 6 7 8 9 10 0 8",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1094",
+    "title": "数组指针28：平均值",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入n(n<100)个整数（以0结束），存放在一维数组中，计算n个数的平均值。\n\n要求：计算平均值利用自定义函数实现，主函数中实现n个数据的输入，函数调用及平均值输出。",
+    "sampleInput": "1 3 5 9 8 7 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "数组指针"
+    ]
+  },
+  {
+    "id": "1095",
+    "title": "类与对象01：Point类数据显示",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "定义一个Point类，数据成员包括私有数据成员为double类型的点坐标x，y；成员函数包括构造函数Point（用于实现对数据成员x，y的初始化），成员函数displayPoint（用于输出点坐标x、y，输出格式为点坐标用逗号分隔并半角圆括号括起来）。",
+    "sampleInput": "12.5 22.7",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1096",
+    "title": "类与对象02：Point类2",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "定义一个Point类，数据成员包括私有数据成员为double类型的点坐标x，y；成员函数包括构造函数Point（用于实现对数据成员x，y的初始化）、成员函数setPoint（用于改变数据成员x、y的值）、成员函数displayPoint（用于输出点坐标x、y，输出格式为点坐标用逗号分隔并半角圆括号括起来）。\n\nmain函数如下(不得修改main函数)：\n\nint main()\n\n{\n\n       double x1,y1,x2,y2;\n\n       cin>>x1>>y1;\n\n       cin>>x2>>y2;\n\n       Point p1(x1,y1);\n\n       p1.displayPoint();\n\n       p1.setPoint(x2,y2);\n\n       p1.displayPoint();\n\n       return 0;\n\n}",
+    "sampleInput": "10 25.5 5.5 20",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1097",
+    "title": "类与对象03：Point类3",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "定义一个Point类，数据成员包括私有数据成员为double类型的点坐标x，y；成员函数包括构造函数Point（用于实现对数据成员x，y的初始化）、成员函数setPoint（用于改变数据成员x、y的值）、成员函数leftMove（点坐标向左移动delta_x）、成员函数上移upMove（点坐标上移delta_y）、成员函数displayPoint（用于输出点坐标x、y，输出格式为点坐标用逗号分隔并半角圆括号括起来）。\n\nmain函数如下(不得修改main函数)：\n\nint main()\n\n{\n\n       double x1,y1,x2,y2,dx,dy;\n\n       cin>>x1>>y1;\n\n       cin>>dx;\n\n       cin>>dy;\n\n       cin>>x2>>y2;\n\n       Point p1;\n\n       p1.displayPoint();\n\n       p1.setPoint(x1,y1);\n\n       p1.displayPoint();\n\n       p1.LeftMove(dx);\n\n       p1.displayPoint();\n\n       p1.UpMove(dy);\n\n       p1.displayPoint();\n\n       Point p2(x2,y2);\n\n       p2.displayPoint();\n\n       return 0;\n\n}",
+    "sampleInput": "10 25.5 5 10 5.5 20",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1098",
+    "title": "类与对象04：Rectangle类1",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "定义一个长方形类Rectangle，私有数据成员为double型width、height（表示长方形的宽和高），成员函数包括构造函数Rectangle（用于实现对数据成员width、height的初始化）、成员函数getArea（计算并返回长方形的面积）。\n\nmain函数如下（不得修改main函数）：\n\nint main()\n\n{\n\n       double width,height;\n\n       cin>>width>>height;\n\n       Rectangle r1;\n\n       cout<<r1.getArea()<<endl;\n\n       Rectangle r2(width,height);\n\n       cout<<r2.getArea()<<endl;\n\n       return 0;\n\n}",
+    "sampleInput": "10.2 25.5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1099",
+    "title": "类与对象05：Rectangle类2",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "定义一个长方形类Rectangle，私有数据成员为double型width、height（表示长方形的宽和高），成员函数包括构造函数Rectangle（用于实现对数据成员width、height的初始化，默认宽和高都为10）、成员函数（getArea计算并返回长方形的面积）、成员函数expandN（用于实现对数据成员width、heigh的值膨胀整数n倍 ）。\n\nmain函数如下（不得修改main函数）：\n\nint main()\n\n{\n\n       double width,height;\n\n       int n;\n\n       cin>>width>>height;\n\n       cin>>n;\n\n       Rectangle r1;\n\n       cout<<r1.getArea()<<endl;\n\n       Rectangle r2(width,height);\n\n       cout<<r2.getArea()<<endl;\n\n       r2.expandN(n);\n\n       cout<<r2.getArea()<<endl;\n\n       return 0;\n\n}",
+    "sampleInput": "10.2 25.5 3",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1100",
+    "title": "类与对象06：Rectangle类3",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "定义一个长方形类Rectangle，私有数据成员为double型width、height表示长方形的宽和高），成员函数包括构造函数Rectangle（用于实现对数据成员width、height的初始化，默认宽和高都为10）、成员函数getArea（计算并返回长方形的面积）。\n\nmain函数中输入两组宽和高，用于实例化两个类对象R1，R2，判断两个长方形R1、R2面积的大小。\n\n \n\n程序执行时:\n\n\n\n \n\n输入1.5 1.1 3.3 2输出1.65<6.6\n\n\n输入 3 5 3 5输出15=15\n\n\n\n\n\n\n\n\n输入3.5 2.0 1.8 1.1 则输出为7>1.98",
+    "sampleInput": "3.5 2.0 1.8 1.1",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1101",
+    "title": "类与对象07：Triangle类1",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "定义一个三角形类Triangle，包括三个double型数据成员a、b和c表示三角形的三条边，成员函数包括构造函数、isTriangle、getArea。构造函数用于实现对数据成员的初始化；成员函数isTriangle判断三条边是否构成三角形，成员函数getArea返回三角形的面积。 \n\n\n\n\n\n \tmain函数中输入两组三角形的边长，用这两组边长实例化两个三角形类对象t1，t2，若t1、t2均能构成三角形，则输出两个三角形面积之和，否则输出failure。 \n\n\n\n\n\n \t输入：3 4 5 6 8 10 输出：30",
+    "sampleInput": "3 4 5 6 7 8",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1102",
+    "title": "类与对象08：Triangle类2",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "定义一个三角形类Triangle，包括三个double型数据成员a、b和c表示三角形的三条边，成员函数包括构造函数、isTriangle、getPerimeter。构造函数用于实现对数据成员的初始化；成员函数isTriangle判断三条边是否构成三角形，成员函数getPerimeter返回三角形的周长。 \n\n \tmain函数中输入两组三角形的边长，用这两组边长实例化两个三角形类对象t1，t2，若t1、t2均能构成三角形，则输出两个三角形周长之差，否则输出failure。 \n\n \t输入：3 4 5 6 8 10 输出： -12 \n\n \t输入：3 4 5 6 7 8  输出：-9 \n\n \t输入：1 2 0 3 4 5  输出：failure",
+    "sampleInput": "3 4 5 6 7 7.5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1103",
+    "title": "类与对象09：Cylinder类",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "定义一个圆柱类Cylinder，成员数据为底圆半径r和圆柱高h，成员函数为构造函数，getArea计算圆柱体的表面积，getVolume计算圆柱体的体积。（注意&pi;值取3.14）\n\nmain函数输入圆柱的半径和高，定义一个类对象，计算并输出圆柱的表面积和体积。",
+    "sampleInput": "1.5 1.5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1104",
+    "title": "类与对象10：Person类",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "设计一个Person类，其属性包括姓名name和身份证号id，其中name为指针类型，id为整型，编写构造函数Person，实现数据成员初始化；编写拷贝构造函数；编写displayPerson函数显示数据成员信息；编写析构函数。\n\nmain函数中利用Person类构造函数建立类对象p1，再利用拷贝构造函数建立对象p2，打印每个person类对象的信息。\n\n## 输出\n\n要求：两个对象的数据分行显示",
+    "sampleInput": "liming 12",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1105",
+    "title": "类与对象11：Complex类1",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "定义一个复数类Complex，该类对象存放一个复数的实部和虚部。设计带有默认形参值的构造函数，实部虚部的默认值均为0；设计一个能够输出复数的displayComplex成员函数（当虚部为0时仅输出实部；当实部为0时仅输出虚部。当虚部为1或-1时，虚部只输出+i或-i。输出样式如：18.5、10+3i、10-3.5i、-5.8+9.5i、-4.5-9.6i、0、4-i、-6+i等）。\n\nmain函数如下(不得修改main函数)：\n\n\n\n\nint main()\n\n\n\n\n\n{\n\n\n\n\n\n       double r1,i1;\n\n\n\n\n\n       cin>>r1>>i1;\n\n\n\n\n\n       Complex c1(r1,i1);\n\n\n\n\n\n       c1.displayComplex();\n\n\n\n\n\n       return 0;\n\n\n}",
+    "sampleInput": "2.5 -3.8",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1106",
+    "title": "类与对象12：Array类数据显示",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "数组类Array用于存储一组双精度浮点数，其定义如下，给出各个成员函数实现。\n \n\nconst int MaxSize=100;  //数组中元素的最大个数\n\n \n\n\n\n\nclass Array\n\n\n\n\n{\n\npublic:\n\n       Array ();      //初始化length=0\n\n       int getLength();   //返回数组中元素实际个数\n\n       void insertX(int i, double x);  //在下标i处插入x\n\n       void displayArray();       //输出数组中实际元素         \n\nprivate:\n\n       double data[MaxSize];  //存储元素\n\n       int length;              //数组中实际元素个数\n\n};\n\nmain函数中输入任意个(不超过100个)双精度浮点数（以0结束），将这些数按输入次序存储到一个Array类对象的数据成员data中（利用成员函数insertX实现），并调用displayArray输出这些数。",
+    "sampleInput": "35 3 64 7 6443 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1107",
+    "title": "类与对象13：Array类统计删除元素个数",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "数组类Array用于存储一组双精度浮点数，在现有类定义基础适当增加必要的成员函数，完成下列任务：\n\nmain函数中输入任意个(个数不超过100)双精度浮点数（以0结束），将这些数存储到同一个Array类对象中，并调用displayArray输出这些数。再输入删除的元素x，从对象中删除所有的值为x的元素，再将剩余元素按照从小到大的顺序排序，并输出排序后结果。\n\n\n\n\n\n已知数组类的定义（其它成员函数请根据需要添加）如下：\n\n\n\n\n\nconst int MaxSize=100;  //数组中元素的最大个数\n\n \n\n\n\n\n\n\n\n\n\nclass Array\n\n\n\n\n\n\n\n\n\n{\n\npublic:\n\n       Array ();      //初始化length=0\n\n       int getLength();   //返回数组中实际元素个数\n\n       void insertX(int i, double x);  //在下标i处插入x\n\n\n\n\n\n       void displayArray();       //输出数组中有效元素  \n\n\n\n\n\n\n\n       void mySort();//排序\n\n\n\n       int deleteAllX(double x);//删除重复的X值\n\n\n\n        \n\nprivate:\n\n       double data[MaxSize];  //存储元素\n\n       int length;              //数组中有效元素个数\n\n};\n\n主函数如下（不允许改动主函数中代码）：\n\nint main()\n\n{\n\n       int i=0;\n\ndouble num;\n\n       Array a; //顺序表的初始化\n\n       while(1)\n\n       {\n\n              cin>>num;\n\n              if(!num) break;\n\n              try{\n\n                     a.insertX(i++,num);  //insert\n\n              }\n\n              catch(const char *ms)\n\n              {\n\n                     cout<<ms<<endl;\n\n              }\n\n       }\n\n       a.displayArray ();\n\n       double x;\n\n       cin>>x;\n\n       int n=a.deleteAllX(x);   //delete all x\n\n       cout<<'Count of deleted elements:'<<n<<endl;\n\n      \n\n       a.mySort();   //sort\n\n       a.displayArray();\n\n    return 0;\n\n}",
+    "sampleInput": "23 2 2 344 3 32 2 5 0 2",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1110",
+    "title": "类与对象16：Point类4",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "定义一个点类Point，数据成员为平面点坐标x，y，成员函数有：构造函数，函数display显示点信息，函数getX，getY分别获取私有成员x，y的值。编写一个普通函数，计算两点间距离，函数原型double calDistance(Point &p1,Point &p2)。主函数中输入两个点信息，定义两个类对象，利用display显示各自的点信息，再利用calDistance计算两点距离。",
+    "sampleInput": "0 0 10 20",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1111",
+    "title": "类与对象17：Point类5",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "定义一个点类Point，数据成员为平面点坐标x，y，成员函数有：构造函数，函数displayPoint显示点信息，成员函数calDistance实现计算两个点间距离。函数原型double calDistance(const Point &p)。主函数中输入两个点信息，定义两个类对象，利用displayPoint显示各自的点信息，再利用calDistance计算两点距离。",
+    "sampleInput": "0 0 10 20",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1112",
+    "title": "类与对象18：Point类6",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "定义一个点类Point，数据成员为平面点坐标x，y，成员函数有：构造函数，函数displayPoint显示点信息，利用友元函数calDistance实现计算两个点间距离。函数原型double calDistance(const Point &p1,const Point &p2)。主函数中输入两个点信息，定义两个类对象，利用displayPoint显示各自的点信息，再利用calDistance计算两点距离。",
+    "sampleInput": "0 0 10 20",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1113",
+    "title": "类与对象19：Complex类2",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "定义一个复数类Complex，该类对象存放一个复数的实部和虚部。设计带有默认形参值的构造函数，实部虚部的默认值均为0；函数comAdd实现复数加法运算（分别以成员函数方式、友元函数、普通函数方式实现）；设计一个能够输出复数的displayCom成员函数（当虚部为0时仅输出实部；输出样式如：18.5、10+3i、10-3.5i、-5.8+9.5i、-4.5-9.6i等）。\n\n\n \n\n\n类的定义如下：",
+    "sampleInput": "3 -5.5 6 3",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1114",
+    "title": "类与对象20：Date类",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "设计一个日期Date类，它能存储日期的年、月和日，Date类对象可在构造时初始化成员、也可在对象创建后改变数据成员；可以设定日期显示格式，当显示格式为&ldquo;YY-MM-DD&rdquo;时按照&ldquo;年-月-日&rdquo;格式显示，如2014-11-20，当显示格式为&ldquo;MM-DD-YY&rdquo;时按照&ldquo;月-日-年&rdquo;格式显示，如11-20-2014，日期显示格式以静态成员形式存储；该类可实现在对象当前日期基础上增加n天（n>0表示增加n天，n<0表示减小n天，注意：增加时可能引起月份和年份的变化）。\n\nMain函数如下：（不得修改main函数）\n\nint main()\n\n{\n\n       int y1,m1,d1;  \n\n       int y2,m2,d2;   \n\n       int dx;\n\n       char SDF[10];\n\n       cin>>y1>>m1>>d1;\n\n       cin>>y2>>m2>>d2;\n\n       cin>>dx;\n\n       cin>>SDF;   //输入日期显示格式\n\n \n\n       Date dt1;\n\n       dt1.Display();\n\n       dt1.SetDate(y1,m1,d1);\n\n       dt1.Display();\n\n       Date dt2(y2,m2,d2);\n\n       dt2.Display();\n\n       Date::SetDateFormat(SDF);  //设置日期显示格式\n\n \n\n       dt1.Display();\n\n       dt2.Display();\n\n \n\n       dt2.AddDay(dx);\n\n       dt2.Display();\n\n \n\n       return 0;\n\n}",
+    "sampleInput": "2012 10 12\n2011 2 1\n36\nMM-DD-YY",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "类与对象"
+    ]
+  },
+  {
+    "id": "1118",
+    "title": "继承与派生01：圆类",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "请以点类Point为基类派生出一个圆类Circle。圆类Circle的数据成员为r（私有属性，存储圆的半径，圆心的点坐标通过继承点类Point加以实现），成员函数有构造函数Circle、计算圆的面积函数Area、计算圆的周长函数Perimeter和输出函数Display，其中构造函数实现基类和圆类的数据成员的初始化，Display函数实现圆心坐标（利用基类Point的Display实现）、圆的半径、圆的面积（利用Area函数实现）和圆的周长（利用Perimeter函数实现）的输出。请编写圆类的定义及成员函数实现，并在主函数中定义圆类对象，验证各个函数的正确性。",
+    "sampleInput": "1.5 2.6 1.8",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1119",
+    "title": "继承与派生02：学生类",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "1、    Person类派生大学生CollegeStu类(1)。设计一个Person类，其属性包括姓名name和身份证号id，其中name为指针类型，id为整型，编写成员函数：构造函数Person、Display函数（显示数据成员信息）和析构函数；由Person类派生出大学生类CollegeStu，其属性有专业major（指针类型），C++程序设计课程成绩score（double型），编写构造函数（实现数据初始化）、输出函数Display（包括name，id，major，score）。main的代码如下：（不允许改动）",
+    "sampleInput": "Zhangsan 2 Computer 89.5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1120",
+    "title": "继承与派生03：学生类（指针数据）",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "Person类派生大学生CollegeStu类(2)。设计一个Person类，其属性包括姓名name和身份证号id，其中name为指针类型，id为整型，编写成员函数：构造函数Person、Display函数（显示数据成员信息）和析构函数；由Person类派生出大学生类CollegeStu，其属性有专业major（指针类型），C++程序设计课程成绩score（double型），编写构造函数（实现数据初始化）、输出函数Display（只输出major，score）。main的代码如下：（不允许改动）\n\nint main()\n\n{\n\n       char name[81],major[81];\n\n       int id;\n\n       double score;\n\n       cin>>name>>id>>major>>score;  //输入学生的姓名、id号、专业、成绩\n\n       CollegeStu cs(name,id,major,score);\n\n       cs.Person::Display();  //输出姓名，id\n\n       cs.Display();    //输出专业、成绩\n\n       return 0;\n\n}",
+    "sampleInput": "Lixu 5 Software 87.5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1121",
+    "title": "继承与派生04：构造和析构的调用顺序",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "已知Base为基类，派生出Derived类，两个类的定义及main的代码如下（不允许改动），请完成Base类和Derived类的构造函数和析构函数，能够根据输入获取相应的输出。\n\nclass Base\n\n{\n\nprivate:\n\n       int b;\n\npublic:\n\n       Base(int);\n\n       ~Base();\n\n};\n\nclass Derived:public Base\n\n{\n\nprivate:\n\n       int d;\n\npublic:\n\n       Derived(int,int);\n\n       ~Derived();\n\n};\n\nint main()\n\n{\n\n       int a,b;\n\n       cin>>a>>b;\n\n       Derived dr(a,b);     \n\n       return 0;\n\n}",
+    "sampleInput": "1 3",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1122",
+    "title": "继承与派生05：有序数组类",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "由Array类派生出有序数组SortArray类，SortArray类中实现有序数组的插入。\n已知Array类的定义如下（不允许增加成员函数）：",
+    "sampleInput": "2.5 6.7 8.3 2.8 6.53 6.82 7.33 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1123",
+    "title": "继承与派生06：有序数组类（指针数据）",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "已知Array类的定义如下（不允许增加成员函数）：",
+    "sampleInput": "20 2.5 6.7 8.3 2.8 6.53 6.82 7.33 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1124",
+    "title": "继承与派生07：客货两用车",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "已知由Automobille类派生出Car类和Wagon类，而后两者共同派生出StationWagon类，各类的定义及main中的代码（不允许改动）如下，请实现各个类的成员函数，完成相应的输出：\n\nclass Automobile              //汽车类\n\n{\n\nprivate:\n\n   int power;   //马力\n\npublic:\n\n       Automobile(int p);\n\n       void Display();\n\n};\n\nclass Car:virtual  public Automobile   //小客车类\n\n{\n\nprivate:\n\n      int seat;     //座位\n\npublic:\n\n       Car(int p,int s);\n\n       void Display();\n\n};\n\nclass Wagon:virtual  public Automobile //小货车类\n\n{\n\nprivate:\n\n   int load;     //装载量\n\npublic:\n\n    Wagon(int p,int l);\n\n void Display();\n\n};\n\nclass StationWagon :public Car, public Wagon  //客货两用车类\n\n{\n\npublic:\n\n       StationWagon(int p, int s,int l);\n\n       void Display();\n\n};\n\nint main()\n\n{\n\n       int power,load,seat;\n\n       cin>>power>>seat>>load;\n\n       StationWagon sw(power,seat,load);\n\n       sw.Display();   \n\n       return 0;\n\n}",
+    "sampleInput": "108 3 10",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1125",
+    "title": "多态01：虚函数问题",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "请以点类Point为基类派生出一个圆类Circle。Point类的数据成员为x、y（私有属性，存储点的横纵坐标），成员函数有构造函数Point（实现对数据成员x、y的初始化）、输出函数Display（输出点坐标）；圆类Circle的数据成员为r（私有属性，存储圆的半径，圆心的点坐标通过继承点类Point加以实现），成员函数有构造函数Circle、计算圆的面积函数Area、计算圆的周长函数Perimeter和输出函数Display，其中构造函数实现基类和圆类的数据成员的初始化，Display函数实现圆心坐标、圆的半径、圆的面积（利用Area函数实现）和圆的周长（利用Perimeter函数实现）的输出。实现Point类和Circle类的定义及成员函数。主函数的代码（不允许改动）如下：",
+    "sampleInput": "0 0 1",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1126",
+    "title": "多态02：抽象类内接外切正方形",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "定义一个抽象类Shape，利用抽象类Shape派生圆类Circle，圆类Circle再派生出圆的内接正方形类In_Square和圆的外切正方形类Ex_Square。main中利用指向抽象类的指针实现求圆、圆的内接正方形和圆的外切正方形的面积和周长的计算。请实现各个类的成员函数，已知各类的定义及main中的代码如下（不允许修改）：",
+    "sampleInput": "1.5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1127",
+    "title": "多态03：抽象类矩形",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "定义一个抽象类Shape，应用抽象类Shape派生圆类Circle和长方形类Rectangle。请完成各个类的定义及成员函数实现。已知Shape类的定义及main中的代码如下（不允许修改）： \n\n\n\n\n\n\tclass Shape \n\n\n\n\n\n\t{ \n\n\n\n\n\n\tpublic: \n\n\n\n\n\n\t       virtual double Area()=0; \n\n\n\n\n\n\t       virtual double Perimeter() = 0; \n\n\n\n\n\n\t}; \n\n\n\n\n\n\tint main()\n\n\n{\n\n\n    double r&#44; a&#44; b;\n\n\n    const char* s[2] = { \"Circle:\\n\"&#44;\"Rectangle:\\n\" }; // 使用 const char*\n\n\n    cin >> r >> a >> b;\n\n\n    Shape* ptr[] = { new Circle(r)&#44;new Rectangle(a&#44;b) };\n\n\n    for (int i = 0; i < 2; i++)\n\n\n    {\n\n\n        cout << s[i];\n\n\n        cout << \"Area:\" << ptr[i]->Area() << endl;\n\n\n        cout << \"Perimeter:\" << ptr[i]->Perimeter() << endl;\n\n\n    }\n\n\n    return 0;\n\n\n}",
+    "sampleInput": "1 2 3",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1128",
+    "title": "多态04：抽象类内接外切三角形",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "定义一个几何图形抽象类Shape，再派生出一个圆类Circle，数据成员为r，圆类再派生出内接等边三角形类In_Triangle和外切等边三角形类Ex_Triangle。部分代码已知如下，勿改动，请在此基础上完善代码，并编写main函数，利用指向Shape类的指针实现各个派生类的面积、周长的函数调用，得到相应的输出结果。圆周率PI值取3.14。\n\nclass Circle:public Shape\n\n{ \n\n \n\npublic: \n\n \n\n Circle(double rr); \n\n \n\n double Area(); \n\n \n\n double Perimeter(); \n\n \n\nprotected: \n\n double r; \n\n};\n\n \n\nclass In_Triangle:public Circle\n\n{ \n\n \n\npublic: \n\n \n\n In_Triangle(double rr); \n\n \n\n double Area(); \n\n \n\n double Perimeter(); \n\n \n\n};\n\n \n\nclass Ex_Triangle:public Circle\n\n{ \n\n \n\npublic: \n\n \n\n Ex_Triangle(double r); \n\n \n\n double Area(); \n\n \n\n double Perimeter(); \n\n \n\n};\n\n## 输入\n\n1\n\n## 输出\n\nCircle's area:3.14\n\nCircle's perimeter:6.28\n\nIn_Triangle's area:1.29904\n\nIn_Triangle's perimeter:5.19615\n\nEx_Triangle's area:5.19615\n\nEx_Triangle's perimeter:10.3923",
+    "sampleInput": "1",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1129",
+    "title": "多态05：运算符重载复数加",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "实现复数的<< ，>>， +， -的运算符重载",
+    "sampleInput": "3 2 6 -3",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1130",
+    "title": "多态06：运算符重载输出流",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "实现Array类的>>、 <<的运算符重载。已知Array类的定义（不允许增加其它成员函数）及main中的代码如下（不允许修改）：\n\nclass Array{\n\npublic:\n\n       Array(); //初始化length=0\n\n       void Insert(int i, double x);  //在下标i处插入x\n\n    friend ostream &operator<<(ostream &out,Array &arr);  //<<运算符重载\n\n       friend istream &operator>>(istream &in,Array &arr);    //>>运算符重载\n\nprivate:\n\n       double data[MaxSize]; //存储元素，MaxSize为常量，需先定义\n\n       int length;              //顺序表实际长度\n\n};\n\nint main(){\n\n    Array a;\n\n       cin>>a;\n\n       cout<<a;\n\n       return 0;\n\n}\n\n请完成Array类中的成员函数，使之能够通过运算符重载实现数组中数据的输入和输出。数据的输入格式为：第一个数是数组中的数据个数，之后为数组中的数据值。",
+    "sampleInput": "5 2.3 5.6 7.98 6.5 6.32",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1133",
+    "title": "继承与派生08：学生类（数据为string类型）",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "Person类派生大学生CollegeStu类(1)。设计一个Person类，其属性包括姓名name和身份证号id，其中name为string类型，id也为string型，编写成员函数：构造函数Person、Display函数（显示数据成员信息）和析构函数；由Person类派生出大学生类CollegeStu，其属性有专业major（string类型），C++程序设计课程成绩score（double型），编写构造函数（实现数据初始化）、输出函数Display（包括name，id，major，score）。main的代码如下：（不允许改动）",
+    "sampleInput": "Zhangsan 210302198909120938 Software 99.5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1134",
+    "title": "顺序01：长度单位转换",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "编写一个C++程序， 要求用户输入一个以弗隆为单位的距离，然后将它转换为码（1弗隆等于220码)",
+    "sampleInput": "268",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "顺序结构"
+    ]
+  },
+  {
+    "id": "1135",
+    "title": "顺序02：天文单位转换",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "编写一个程序，要求将光年值转换为对应的天文单位的值（请使用double类型） \n\n转换公式为：\n\n  1光年= 63240 天文单位\n\n该程序按下面的格式要求用户输入光年值，并显示结果：\n\n  Enter the number of light years 4.2\n\n  4.2 light years = 265608 astronomical units .",
+    "sampleInput": "4.2",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "顺序结构"
+    ]
+  },
+  {
+    "id": "1136",
+    "title": "顺序03：时间显示",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "编写一个程序，要求用户输入小时数和分钟数，然后按照给定格式将时间显示出来。\n\nEnter the number of hours 9\n\nEnter the number of minutes 28\n\nTime 9:28",
+    "sampleInput": "9\n\n28",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "顺序结构"
+    ]
+  },
+  {
+    "id": "1137",
+    "title": "顺序04：BMI计算",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "编写一个小程序，要求以几英尺几英寸的方式输入身高，并以磅为单位输入体重（使用3个变來存储这些信息），该程序报告其 BMI (Body Mass Index&#44;体重 )。\n\n为了计算BMI&#44;该程序以英寸的方式输出用户的身高(1英尺=12英寸），并将以英寸为单位的身髙转换为以米为单位的高(1英寸=0.0254米）。\n\n然后，将以磅为单位的体重转换为以千克为单位的体重（1千克 =2.2磅 ）。\n\n最后，计算相应的BMI —— 体重（千克）除以身高（米）的平方。用const符号常量表示各种转换因子。\n\n该程序按下面的格式要求输入数据，并显示结果：\n\nPlease enter your height:\n\nFirst&#44;enter your height of feet part（输入你身高的英尺部分）:5\n\nSecond&#44;enter your height of inch part（输入你身高的英寸部分）:10\n\nNow&#44;please enter your weight in pound:155.2\n\nYour pensonal body information as follows:\n\n身高:70(英尺inch)\n\n身高:1.778(米meter)\n\n体重:70.5455(千克kilogram)\n\nyour Body Mass Index(体重指数) is 22.3154",
+    "sampleInput": "5\n\n10\n\n155.2",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "顺序结构"
+    ]
+  },
+  {
+    "id": "1138",
+    "title": "顺序05：纬度转换",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "编写一个程序，要求用户以度、分、秒的方式输入一个纬度 ，然后以度为单位显示该纬度， 1度为60分，1分等于60秒，请以const符号常量的方式表示这些值。对于每个输入值应使用一个独立的变量存储它，下面是该程序运行时的情况：\n\nEnter a latitude in degrees&#44; minutes&#44; and seconds:\n\nFirst&#44; enter the degrees 37\n\nNext&#44; enter the minutes of arc 51\n\nFinally &#44; enter the seconds of arc 19\n\n37 degrees&#44; 51 minutes&#44; 19 seconds = 37.8553 degrees",
+    "sampleInput": "37\n\n51\n\n19",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "顺序结构"
+    ]
+  },
+  {
+    "id": "1139",
+    "title": "顺序06：汽车耗油量转换",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "编写一个程序，要求用户按欧洲风格输入汽车的耗油虽（每100公里消耗的汽油（升）），然后将其转换为美国风格的耗油量—每加仑多少英里， 注意：除了使用不同的单位计量外，美国方法 （距离/ 燃料），欧洲方法（燃料 /距离）相反。 100公里等于62.14英里，1加仑等于3.875升。因此，19mpg约合 12.41/100km&#44; 127mpg 约合 8.71/100km\n\n程序运行格式如下：\n\nEnter the automobile gasoline consumption figure in European style(liters per 100 kilometers):12.41\n\nConverts to U.S. style(miles per gallon):12.41 L/100Km = 19.4031 mpg",
+    "sampleInput": "12.41",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "顺序结构"
+    ]
+  },
+  {
+    "id": "1140",
+    "title": "小写字母输出",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "",
+    "sampleInput": "",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1141",
+    "title": "一周英文简写",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "打印一周英文简写，输入1到7的任意正整数，输出对应的英文简写，如果输入其他数据，显示“none”。(周一~周日依次为： Mon，Tue，Wed，Thur，Fri，Sat，Sun）\n\n## 输入\n\n1\n\n## 输出\n\nMon",
+    "sampleInput": "1",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1142",
+    "title": "正整数平均值",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "输入若干整数以0结束，求其中正整数的平均数，注意没有正整数的情况下输出“none”\n\n## 输入\n\n2\n\n-4 23 78 -90 0\n\n## 输出\n\n34.3333",
+    "sampleInput": "2 -4 23 78 -90 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1143",
+    "title": "统计素数个数",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "输入N个正整数，统计其中素数的个数\n\n## 输入\n\n5 1 5 4 2 7\n\n## 输出\n\n3",
+    "sampleInput": "8 1 2 3 4 5 6 7 8",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1144",
+    "title": "计算方差",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "输入n个数，计算这n个数的方差S2\n\n## 输入\n\n5 1 2 3 4 5\n\n## 输出\n\n2",
+    "sampleInput": "5 1 2 3 4 5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1145",
+    "title": "逆序输出一个数",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "",
+    "sampleInput": "",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1146",
+    "title": "统计素数个数",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "输入若干正整数以0结束，输出这些数中素数的个数，要求判断一个数是否为素数用函数实现。\n\n## 输入\n\n4 2 6 12 13 79 67 0\n\n## 输出\n\n4",
+    "sampleInput": "2 1 5 6 78 34 12 97 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1147",
+    "title": "求最小公倍数",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "输入n组数据(每组数据第一个数据小于第二个数据），输出每组数据的最小公倍数(每个数据中间一个空格），要求求最小公倍数用函数实现。\n\n## 输入\n\n3 12 24 35 75 13 15\n\n## 输出\n\n24 525 195",
+    "sampleInput": "2 13 34 2 9",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1149",
+    "title": "求幂运算",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "编写一个递归函数求x的n次方。\n\n## 输入\n\n3.5 4\n\n## 输出\n\n150.062",
+    "sampleInput": "1.23 5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1174",
+    "title": "继承与派生：皮卡车",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "",
+    "sampleInput": "",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1175",
+    "title": "继承和派生：圆的面积和线段的长度",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "",
+    "sampleInput": "",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "继承多态"
+    ]
+  },
+  {
+    "id": "1189",
+    "title": "分数数列交叉求和",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "输入1 个正整数 n(n<=100)，计算并输出1-1/2＋1/3-1/4……＋1/n 。\n\n\n输入5输出0.783333\n\n\n输入10输出0.645635",
+    "sampleInput": "5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1190",
+    "title": "直角三角形",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "输入三个整数，表示三角形的三个边长。\n\n\n如果能够构成三角形，判断是否为直角三角形，如果是输出：Yes；否则，输出：No。\n\n\n注意如果不能构成三角形输出”none“\n\n\n输入：3 4 5 输出：Yes 输入：3 3 3 输出：No",
+    "sampleInput": "3 4 5",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1192",
+    "title": "函数计算",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "有一个函数如下，编写程序输入x&#44;计算输出y",
+    "sampleInput": "10",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1193",
+    "title": "坐标判断",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "输入某个点A的平面坐标(x&#44;y)&#44;判断并输出A点是在圆内、圆外还是在\n\n\n圆上，其中圆心坐标为(2&#44;2)&#44;圆半径为1.\n\n## 输入\n\n2 1\n\n## 输出\n\n圆上",
+    "sampleInput": "1 1",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1194",
+    "title": "简单循环",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "求m到n之间能被3整除但不能被5整除的所有数的和(m小于n)",
+    "sampleInput": "1 100",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1195",
+    "title": "整数立方的表示",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "任何一个正整数n的立方可以表示成n个连续奇数的和\n\n\n23=3+5\n\n\n33=7+9+11\n\n\n53=21+23+25+27+29",
+    "sampleInput": "2",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1196",
+    "title": "因子和",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "编写函数求一个整数的所有因子之和（不包括1与自身），在主函数中调用该函数。",
+    "sampleInput": "24",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1197",
+    "title": "fibonacci数列",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "求斐波那契数列前n项的和。\n\n\n编写函数求斐波那契(fibonacci)数列。\n\n\n输入：一个整数n",
+    "sampleInput": "10",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1198",
+    "title": "阶乘计算",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "编程计算公式 \n\n\n\n\n\n\t\n\n\n\n\n\n\t求阶乘要求用函数实现 \n\n\n\n\n\n\t输入：两个正整数m n(m>n)",
+    "sampleInput": "3 1",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1199",
+    "title": "数位平方",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "判断一个整数的各位数字平方和能否被5整除，如果整除输出“YES”，否则\n\n\n输出“NO”。要求编写函数实现各位数字平方和。",
+    "sampleInput": "1234",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1200",
+    "title": "因式分解",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "编写函数求一个正整数的分解质因数\n\n\n输入：90\n\n\n输出：2 3 3 5（输出数据中间一个空格）",
+    "sampleInput": "90",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1201",
+    "title": "N次幂",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "编程求下面公式的值\n\n\n\n\n\n\t\n\n\n\n要求编写函数实现n的n次幂",
+    "sampleInput": "8",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1202",
+    "title": "函数-素数问题",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "输入正整数，以0结束，输出其中的所有素数。要求判断一个数是否为素数写成函数形式，main中实现数据输入及函数调用。\n\n## 输出\n\n输出数据格式为每个素数后有一个空格",
+    "sampleInput": "23 26 12 31 56 5 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1203",
+    "title": "函数-因子个数",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "输入n，再输入n个正整数，求这些整数的因子个数的最大值。其中计算一个正整数的因子个数写成自定义函数，main中实现数据输入及函数调用。\n\n\n\n\n\n\t例如，输入5 4 15 24 3 6，则各个数的因子个数依次为3&#44;4&#44;7&#44;2&#44;4，因此最大值为7.",
+    "sampleInput": "5 4 15 24 3 6",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1204",
+    "title": "回文数",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "输入一组正整数以零结束，输出其中的回文数。\n\n\n要求编写函数判断回文数。",
+    "sampleInput": "212 345 6776 897 98787 0",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1205",
+    "title": "奇数位",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "编写函数实现从低位开始依次取出长整形数s奇数位上的数，构成一个新数。",
+    "sampleInput": "123456",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1206",
+    "title": "字符指针",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "输入一个字符串，统计其中数字字符个数、除字母字符和数字字符以外其他字符个数\n\n\n要求：统计部分要求用函数实现，并用指针作为函数参数\n\n## 输入\n\n67#2tyu';\n\n## 输出\n\n3 3",
+    "sampleInput": "jfi45DRr%^&0er34",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1207",
+    "title": "进制转换",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "运用数组实现将十进制数转变为二进制数，尽可能用函数实现\n\n## 输入\n\n10\n\n## 输出\n\n1 0 1 0",
+    "sampleInput": "15",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1208",
+    "title": "杨辉三角",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "杨辉三角用二维数组存储，输入一个整形数n&#44;输出n行杨辉三角对应的数值，每行中每个数输出中间用一个空格",
+    "sampleInput": "4",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1209",
+    "title": "最大公约数",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "求两个数m和n的最大公约数，要求用递归函数实现，并且m>n",
+    "sampleInput": "24 12",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
+    ]
+  },
+  {
+    "id": "1210",
+    "title": "学生平均成绩",
+    "difficulty": "hard",
+    "mode": "cpp_basic",
+    "content": "某班级有m名同学，本学期每名同学有n门课程，分别求每门课的平均成绩。",
+    "sampleInput": "3 5\n\n78 90 67 89 79\n\n76 90 67 56 99\n\n68 90 87 89 54",
+    "sampleOutput": "",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "综合"
     ]
   }
 ]

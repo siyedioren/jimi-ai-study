@@ -206,6 +206,23 @@
   padding: 16px;
 }
 
+.problemMoreLink {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 150ms ease;
+
+  &:hover {
+    background: var(--accent-light);
+  }
+}
+
 // ═══════════════════════════════════════════════════════════════
 //                           右 侧 栏
 // ═══════════════════════════════════════════════════════════════
