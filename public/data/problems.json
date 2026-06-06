@@ -1,0 +1,842 @@
+[
+  {
+    "id": "1000",
+    "title": "选择01：整除",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "请写一个程序：输入一个正整数值，请查这个值是否可以被17整除，如果可以输出1，否则输出0。",
+    "sampleInput": "34",
+    "sampleOutput": "1",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1001",
+    "title": "选择02：利润提成",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写一个程序，根据年利润提成，计算企业发放的年度奖金。\n利润低于或等于10万元的部分，奖金按10%提取；\n利润高于10万元，低于或等于20万元的部分，奖金按7.5%提取；\n20万到40万之间的部分，可提成5%；\n40万到60万之间部分，可提成3%；\n60万到100万之间的部分，可提成1.5%；\n超过100万元的部分按1%提成。\n从键盘输入年利润，求应发放奖金总数。\n例如：输入下列数据，应该得到对应的输出。\n输入9 输出0.9\n输入15 输出1.375\n输入30 输出2.25\n输入50 输出3.05\n输入80 输出3.65\n输入120 输出4.15",
+    "sampleInput": "80",
+    "sampleOutput": "3.65",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1002",
+    "title": "选择03：征税",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "假设税务部门征收个人所得税，规定如下：\n1）月收入在1000元以内（含1000），免征；\n2）月收入在1000~3000元以内（含3000），纳税额为收入的3%；\n3）月收入在3000~5000元以内（含5000），纳税为收入4%；\n4）当月收入超过5000元时，纳税为收入6%。\n请根据以上关系，输入收入m，输出应缴纳的税收tax。\n输入900 输出0\n输入2000 输出60\n输入3890 输出155.6\n输入\n4010.5 输出160.42\n输入6000 输出360",
+    "sampleInput": "4000",
+    "sampleOutput": "160",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1003",
+    "title": "选择04：闰年",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写一个程序，输入一个年份，判断该年份是否为闰年，是闰年输出yes否则输出no。闰年的条件是：年份能被400整除或者年份能被4整除但不能被100整除。",
+    "sampleInput": "2000",
+    "sampleOutput": "yes",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1004",
+    "title": "选择05：等级分",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写一个程序，输入一个正整数表示学生的学习成绩，若学习成绩小于0或大于100，输出illegal，否则若成绩在90~100分之间，输出'A'，在60-89分之间的，输出'B'，60分以下的输出'C'。",
+    "sampleInput": "90",
+    "sampleOutput": "A",
+    "timeLimit": "10.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1005",
+    "title": "选择06：工资",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "某公司的工资根据工作时间发放如下：",
+    "sampleInput": "10",
+    "sampleOutput": "190",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1006",
+    "title": "选择07：天数",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "根据历法，凡是1、3、5、7、8、10、12月，每月31天；凡是4、6、9、11月，每月30天；2月闰年29天，平年28天。闰年的判断方法是：",
+    "sampleInput": "2010 2",
+    "sampleOutput": "28",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1007",
+    "title": "选择08：判断三角形",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入三个整数，表示三角形的三个边长。当任意两边之和大于第三边时，能够构成三角形，输出：Yes；否则，输出：No。",
+    "sampleInput": "3 6 7",
+    "sampleOutput": "Yes",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1008",
+    "title": "选择09：最大数",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "请写一个程序，我们输入三个int类型的数，找出最大的数并输出。",
+    "sampleInput": "2 3 4",
+    "sampleOutput": "4",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1009",
+    "title": "选择10：函数",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入int型整数x，若x大于0，则y值为1；若x等于0，则y值为0；若x小于0，则y值为-1。最后输出y。",
+    "sampleInput": "4",
+    "sampleOutput": "1",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1010",
+    "title": "选择11：对号入座",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "有4种水果，单价分别是3.1元/公斤，2.50元/公斤，4.10元/公斤，10.20元/公斤,编号分别为1,2,3,4。要求从键盘中输入水果的编号，输出该水果的单价。如果输入不正确的编号，显示单价为0。",
+    "sampleInput": "4",
+    "sampleOutput": "10.2",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1011",
+    "title": "选择12：第几天",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写一个程序，输入三个正整数，表示某年某月某日，判断这一天是这一年的第几天？",
+    "sampleInput": "2013 7 12",
+    "sampleOutput": "193",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1012",
+    "title": "选择13：是否及格",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一个学生的数学成绩（正整数），如果它低于60，输出“Fail”，否则，输出“Pass”。",
+    "sampleInput": "65",
+    "sampleOutput": "Pass",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1013",
+    "title": "选择14：最小值",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入四个整数，输出其中的最小值。",
+    "sampleInput": "1 2 3 4",
+    "sampleOutput": "1",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1014",
+    "title": "选择15：回文数",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一个5位数，判断它是不是回文数。\n输入12321 输出YES\n输入12345输出NO",
+    "sampleInput": "12345",
+    "sampleOutput": "NO",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1015",
+    "title": "选择16：字符转换",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写程序，要求输入一个字符，若为大写字母，将其转换成相应小写字母输出，否则，其它字符原样输出。\n输入A 输出a\n输入d 输出d\n输入8 输出8",
+    "sampleInput": "A",
+    "sampleOutput": "a",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1016",
+    "title": "选择17：体重",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写一个程序，输入某人的身高（cm）以及体重（kg），按照以下标准对他（她）的体型做测试：（1）标准体重=身高-110；（2）超过标准体重5kg（不含5kg）的为“过胖”；（3）低于标准体重5kg（不含5kg）的为“过瘦”（3）既不超过标准体重多于5kg，也不低于标准体重多于5kg的为“标准”\n输入175 75 输出 fat\n输入175 60 输出 standard\n输入175 55 输出 thin",
+    "sampleInput": "175 75",
+    "sampleOutput": "fat",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1017",
+    "title": "选择18：加法",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘上输入2个加数，再输入答案，如果正确，显示“right”，否则显示“error”\n输入3 5 8输出right\n输入3 5 9输出error",
+    "sampleInput": "3 5 9",
+    "sampleOutput": "error",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1018",
+    "title": "选择19：网费",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "编写一个程序来计算一个月的上网费用，计算方法如下：若上网时间<＝10小时，网费为30元；若10小时<上网时间<＝50小时，网费每小时3元；若上网时间>50小时，网费每小时2.5元。要求输入该月上网小时数，显示该月总的上网费用。\n输入8输出30\n输入30输出90\n输入60输出150",
+    "sampleInput": "60",
+    "sampleOutput": "150",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1019",
+    "title": "选择20：运费",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "铁路托运行李规定：行李重不超过\n50\n公斤的，托运费按每公斤\n0.15\n元计费；如超\n50\n公斤，超过部分每公斤加收\n0.10\n元。\n输入行李重量，输出该行李的托运费。\n输入\n25\n输出\n3.75\n输入\n50\n输出\n7.5\n输入\n80\n输出\n15",
+    "sampleInput": "80",
+    "sampleOutput": "15",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1020",
+    "title": "选择21：方程求解",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一元二次方程的系数a，b，c，计算方程的实数解。\n有一个根时输出一个根；有两个根时按照从小到大的顺序输出两个根，两个根之间用空格分隔；\n无根时输出“无解”。\n输入：4 4 1  输出：-0.5\n输入：1 2 -3 输出：-3 1\n输入：1 2 3  输出：none",
+    "sampleInput": "1 2 3",
+    "sampleOutput": "none",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "选择结构"
+    ]
+  },
+  {
+    "id": "1021",
+    "title": "循环01：最大数",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一批正整数(假设个数<100)，输入0时结束循环，找出其中最大的正数。",
+    "sampleInput": "39 28 5 63 18 27 0",
+    "sampleOutput": "63",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1022",
+    "title": "循环02：素数",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "输入一个正整数num，判断num是否为素数。若为素数则输出1，否则输出0。（提示：素数是指只可以被1和其本身整除的正数（1除外））\n\n\n\t \n\n\n\t输入10输出0\n\n\n\t输入7输出1",
+    "sampleInput": "7",
+    "sampleOutput": "1",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1023",
+    "title": "循环03：数列求和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一个正整数n，计算前n项之和：1+1/4+1/7+1/10...+1/(3*n-2)。\n\n\n\t输入5输出1.56978\n\n\n\t输入4输出1.49286",
+    "sampleInput": "5",
+    "sampleOutput": "1.56978",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1024",
+    "title": "循环04：西瓜卖几天",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "n个西瓜，第一天卖一半多两个，以后每天卖剩下的一半多两个，问几天以后能卖完？\n说明：当西瓜个数为奇数时，卖一半为一半的整数，如当西瓜个数为5时，卖一半为卖2个。\n输入：西瓜个数，输出：天数\n输入10输出2\n输入50输出4",
+    "sampleInput": "50",
+    "sampleOutput": "4",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1025",
+    "title": "循环05：成绩判定",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一个正整数repeat (假设0<repeat<10)，做repeat次下列运算：\n\n\n\t     输入一个学生的数学成绩，如果它低于60，输出“Fail”，否则，输出“Pass”。\n\n\n\t输入5 35 68 49 94 88\n\n\n\t输出（注意：输出数据分行显示）\n\n\n\tFail\n\n\n\tPass\n\n\n\tFail\n\n\n\tPass\n\n\n\tPass",
+    "sampleInput": "5 35 68 49 94 88",
+    "sampleOutput": "Fail\nPass\nFail\nPass\nPass",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1026",
+    "title": "类和对象 圆（组合）",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "/*定义并实现平面空间的点类Point，数据成员有x，y；成员函数有构造函数（实现数据成员的初始化），Display函数（输出点信息）。再定义一个圆类Circle。圆类Circle的数据成员为r（存储圆的半径）和p（存储圆心点），成员函数有构造函数Circle、计算圆的面积函数Area、计算圆的周长函数Perimeter和输出函数Display，其中构造函数实现圆的圆心点p和r的初始化，Display函数实现圆心坐标（利用基类Point的Display实现）、圆的半径、圆的面积（利用Area函数实现）和圆的周长（利用Perimeter函数实现）的输出。请编写圆类的定义及成员函数实现，并在主函数中定义圆类对象，验证各个函数的正确性。\n\n\n\t说明：圆周率PI的取值为3.14\n\n\n\t已知Point类、Circle类 的定义及main代码如下：（不允许改动）*/\n\n\n\tclass Point\n{ \npublic:\n       Point(double xx,double yy); //constructor\n       void Display();        //display point   \nprivate:\n       double x,y;    //平面的点坐标x，y\n};\n//请在下面实现Point类的成员函数\n\n\nclass Circle\n{\nprivate:\nPoint p;  //圆心点\ndouble r; //圆半径\npublic:\nCircle(double x1,double y1,double r1);\nvoid Display();\ndouble Area();\ndouble Perimeter();\n};\n//请在下面实现Circle类的成员函数\n\nint main()\n{\n       double x,y,r;\n       cin>>x>>y>>r; //圆心的点坐标及圆的半径\n       Circle C(x,y,r);\n       C.Display(); //输出圆心点坐标，圆的半径，圆的面积，圆的周长\n       return 0;\n}",
+    "sampleInput": "1.5 2.6 1.8",
+    "sampleOutput": "Center:Point(1.5,2.6)\nRadius:1.8\nArea:10.1736\nPerimeter:11.304",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "面向对象"
+    ]
+  },
+  {
+    "id": "1027",
+    "title": "循环06：分数数列求和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入1 个正整数 n(n<=100)，计算并输出1＋1/2＋1/3＋……＋1/n 。\n输入5输出2.28333\n输入4输出2.08333",
+    "sampleInput": "4",
+    "sampleOutput": "2.08333",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1028",
+    "title": "循环07：水仙花数",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "打印出所有的 \"水仙花数 \"，所谓 \"水仙花数 \"是指一个三位数，其各位数字立方和等于该 \r\n\r\n\r\n\t数本身。例如：153是一个 \"水仙花数 \"，因为153=1的三次方＋5的三次方＋3的三次方。 \r\n\r\n\r\n\t  \r\n\r\n\r\n\t输入:无  \r\n\r\n\r\n\t输出:153 370 371 407 （注意：每个值输出后有一个空格）",
+    "sampleInput": "无",
+    "sampleOutput": "153 370 371 407",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1029",
+    "title": "循环08：一个整数的数位之和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一个正整数，输出其各个数位上的数字之和。\n输入 1234输出10\n输入 12534输出15",
+    "sampleInput": "1234",
+    "sampleOutput": "10",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1030",
+    "title": "循环09：奇数和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "读入一批正整数(以零为结束标志)，求其中的奇数和。\n输入32 33 50 34 65 67 0 输出165\n输入13 15 17 30 35 0 输出80",
+    "sampleInput": "32 33 50 34 65 67 0",
+    "sampleOutput": "165",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1031",
+    "title": "循环10：正整数求和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入若干正数，对其求和并输出，遇到负数则终止输入。 \n输入32 33 50 34 65 67 -1 输出281\n输入13 15 17 30 35 -2 输出110",
+    "sampleInput": "32 33 50 34 65 67 -1",
+    "sampleOutput": "281",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1032",
+    "title": "循环11：特殊的四位数",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "已知四位数3025有一个特殊性质: 它的前两位数字30和后两位数字25的和是 55, 而55的平方刚好等于该数(55*55=3025). 试编一程序找出所有的具有这种性质的四位数。\n输入无 输出2025 3025 9801 （注意：每个输出后有一个空格）",
+    "sampleInput": "",
+    "sampleOutput": "2025 3025 9801",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1033",
+    "title": "循环12：征税",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "税务部门征收所的税，规定如下： \n1）收入在1000元以内（含1000），免征； \n2）收入在1000~3000元以内（含3000），纳税额为收入的3%； \n3）收入超过3000~5000元以内（含5000），纳税为收入的4%；\n4）当收入超过5000元时，纳税为收入的6%。\n请根据以上关系，输入收入m，输出应缴纳的税收tax。",
+    "sampleInput": "4 900 2000 4000 6000",
+    "sampleOutput": "0 60 160 360",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1034",
+    "title": "循环13：一个数的因数个数",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "给定一个正整数num，求它的因数个数。如6的因数为1、2、3、6，则因数个数为4。\n输入12 输出6",
+    "sampleInput": "12",
+    "sampleOutput": "6",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1035",
+    "title": "循环14：最大公约数",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "键盘输入两个正整数m，n，求出他们的最大公约数。\n输入20 15 输出5",
+    "sampleInput": "20 15",
+    "sampleOutput": "5",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1036",
+    "title": "循环15：斐波那契数列",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "判断斐波那契数列（Fibonacci sequence）第n项的值能否被3整除，设斐波那契数列为：F(0)=0, F(1)=1, F(n)=F(n-1)+F(n-2)(n>=2),编写一个程序，输入n(假设n>=2)，如果F(n)的值能被3整除则输出“yes”，否则输出“no”。\n输入7，f(7)为13，则输出no\n输入8，f(8)为21，则输出yes\n提示：斐波那契数列的值依次为0，1，1，2，3，5，8，。。。",
+    "sampleInput": "6",
+    "sampleOutput": "no",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1037",
+    "title": "循环16：计算奇平方偶立方",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "求N（<=100）个数中奇数的平方和与偶数的立方和。",
+    "sampleInput": "3 5 8 9",
+    "sampleOutput": "106 512",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1038",
+    "title": "循环17：数位值为偶数的和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "对于输入的一个数字，请计算它的各个位上的数字为偶数的和。例如：1234，结果为6=2+4。\n输入4321输出6\n输入51289输出10",
+    "sampleInput": "51289",
+    "sampleOutput": "10",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1039",
+    "title": "循环18：数根",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "对于一个正整数n，我们将它的各个位相加得到一个新的数字，如果这个数字是一位数，我们称之为n的数根，否则重复处理直到它成为一个一位数，这个一位数也算是n的数根。例如：考虑24，2+4=6，6就是24的数根。考虑39，3+9=12，1+2=3，3就是39的数根。请编写程序，计算n的数根。\n输入189输出9",
+    "sampleInput": "189",
+    "sampleOutput": "9",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1040",
+    "title": "循环19：平均成绩",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "假设有一个班级，n名同学选修了C++语言程序设计，要求统计该门课的平均成绩。输入格式：第一个数为学生人数n，后面接着n个成绩，输出平均成绩。\r\n输入：5 80 90 88 96 70 输出84.8",
+    "sampleInput": "5 80 90 88 96 70",
+    "sampleOutput": "84.8",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1041",
+    "title": "循环20：幂函数",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一个正整数repeat (假设0<repeat<10)，做repeat次下列运算：读入1 个正实数x和1个正整数 n(n<=50)，计算并输出x的n次幂。\n输入3 2 5 3 4 5 3输出32 81 125",
+    "sampleInput": "3 1.1 2 3 4 5 3",
+    "sampleOutput": "1.21 81 125",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1042",
+    "title": "循环21：统计数据个数和求最大值",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一组整数，以0结束，统计数据个数（不含0）及最大值。",
+    "sampleInput": "1 2 3 456 4 3 5 0",
+    "sampleOutput": "7 456",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1043",
+    "title": "循环22：素数及其个数",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "输入一个正整数n，输出[2,n]之间所有的素数及素数个数。",
+    "sampleInput": "10",
+    "sampleOutput": "2 3 5 7 \n4",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1044",
+    "title": "循环23：完数",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "输入一个正整数n，输出[1,n]之间的所有完数。\n完数的定义：除自身外的因子之和等于它本身。\n例如：6=1+2+3，因此6是完数。",
+    "sampleInput": "1000",
+    "sampleOutput": "6 28 496",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1045",
+    "title": "循环24：求平均值",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入若干个整数，以0结束，计算这些非0数据的平均值。",
+    "sampleInput": "2 4 5 3 0",
+    "sampleOutput": "3.5",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1046",
+    "title": "循环25：最大的素数",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "输入一组正整数，以0结束，找出其中素数的最大值。例如输入：3 6 7 10 0，最大素数为7，输出结果为7，若输入数据中无素数，则输出no",
+    "sampleInput": "3 6 7 10 0",
+    "sampleOutput": "7",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "循环结构"
+    ]
+  },
+  {
+    "id": "1047",
+    "title": "函数01：素数",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一组整数，其中第一个整数为个数n，后续为n个整数，输出其中素数的个数。要求将判断一个整数是否为素数用函数实现。",
+    "sampleInput": "3 5 7 9",
+    "sampleOutput": "2",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1048",
+    "title": "函数02：因数个数之和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一组整数，计算这些整数的因数个数之和。其中第一个整数为个数n，后续为n个整数。要求计算一个整数的因数个数用函数实现。\n如输入3 6 8 5，其中6的因数个数为4,8的因数个数为4,5的因数个数为2，所以计算结果为10。",
+    "sampleInput": "3 6 8 5",
+    "sampleOutput": "10",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1049",
+    "title": "函数03：Fibonacci数列",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入2 个正整数mini和maxi(假设0<=mini,maxi<=1000)，找出斐波那契数列（Fibonacci sequence）的值介于mini 和maxi之间(不含边界)所有的数。要求定义并调用函数fib(n)，它的功能是返回该数列的第n项（n>=0）。\r\n说明：Fibonacci 序列为0 1 1 2 3 5 8 13 21 ......",
+    "sampleInput": "5 21",
+    "sampleOutput": "8 13",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1050",
+    "title": "函数04：最大值",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入n对整数，求这些对整数间所有奇数之和的最大值。要求计算一对整数min、max（含min和max）之间所有奇数的和用函数实现，若min>max，函数返回值为0。输入格式：第一个整数为n，后续为n对整数。例如：输入数据为 3 10 20 17 31 40 45，表示输入3对整数，因为10~20间的奇数依次为11,13,15,17,19，奇数之和为75,17~31间的奇数依次为17,19,21,23,25,27,29,31，奇数之和为192，而40~45间的奇数依次为41,43,45，奇数之和为129，因此最大值为192，输出结果为192。",
+    "sampleInput": "3 10 20 17 31 40 45",
+    "sampleOutput": "192",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1051",
+    "title": "函数05：阶乘",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "编写一个递归函数fac，该函数计算n的阶乘，如3的阶乘为6，0的阶乘为1。main函数中输入n个整数，计算这些整数的阶乘平均值。例如输入：2 1 2，则计算1和2的阶乘的平均值，输出1.5。注意：不用递归解决问题，即使提交通过，也不符合题目要求，考试时不得分。",
+    "sampleInput": "3 3 4 5",
+    "sampleOutput": "50",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1052",
+    "title": "函数06：小牛问题",
+    "difficulty": "medium",
+    "mode": "cpp_basic",
+    "content": "编程求解问题。若一头小母牛，从出生起第四个年头开始每年生一头母牛，按此规律，第n年时有多少头母牛。（用递归函数方法求解）",
+    "sampleInput": "7",
+    "sampleOutput": "6",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1053",
+    "title": "函数07：最大公约数",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入n对整数，计算这n对整数最大公约数之和。其中计算一对整数的最大公约数用函数实现。\n\n输入格式：第一个为对数n，后续为n对整数。",
+    "sampleInput": "3 14 18 20 30 25 35",
+    "sampleOutput": "17",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1054",
+    "title": "函数08：幂函数",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "设计一个递归函数，求x的n次幂，其中n为非负整数。在main函数中输入x和一个整数n，输出x的n次幂。",
+    "sampleInput": "3.5 4",
+    "sampleOutput": "150.062",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1055",
+    "title": "函数09：指数幂求和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "定义运算n^k表示n的k次幂，从键盘输入整数n和k，计算1^k+2^k+……+n^k，其中求n^k用函数实现。",
+    "sampleInput": "3 5",
+    "sampleOutput": "276",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1056",
+    "title": "函数10：素数求和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入两个正整数min、max，计算[min,max]之间所有的素数之和。\n将判断一个整数是否为素数用函数实现。",
+    "sampleInput": "2 10",
+    "sampleOutput": "17",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1057",
+    "title": "函数11：最小公倍数之和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入n对整数，计算这n对整数最小公倍数之和。其中计算一对整数的最小公倍数用函数实现。\n输入格式：第一个为对数n，后续为n对整数。",
+    "sampleInput": "2 3 5 4 8",
+    "sampleOutput": "23",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1058",
+    "title": "函数12：逆序求和",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "从键盘输入一组整数（以0结束），计算这组整数逆序后之和。\n其中将一个整数逆序用函数实现，整数123逆序为321、整数-345逆序为-543。",
+    "sampleInput": "234 894 -94 736 0",
+    "sampleOutput": "1518",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  },
+  {
+    "id": "1059",
+    "title": "函数13：数位计算",
+    "difficulty": "easy",
+    "mode": "cpp_basic",
+    "content": "输入一组正整数（以0结束），输出其中数位之和为奇数的整数。\n其中求一个数的数位之和用函数实现。",
+    "sampleInput": "12 22 45 88 0",
+    "sampleOutput": "12 45",
+    "timeLimit": "1.000",
+    "memoryLimit": "128",
+    "tags": [
+      "函数"
+    ]
+  }
+]
