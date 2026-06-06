@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import styles from "./ModeCard.module.scss";
 
 interface ModeCardProps {
@@ -8,7 +8,7 @@ interface ModeCardProps {
   tags: string[];
   intro: string;
   features: string[];
-  href: string;
+  onEnter?: () => void;
 }
 
 export default function ModeCard({
@@ -16,13 +16,11 @@ export default function ModeCard({
   tags,
   intro,
   features,
-  href,
+  onEnter,
 }: ModeCardProps) {
-  const [expanded, setExpanded] = useState(false);
-
   return (
-    <div className={`${styles.card} ${expanded ? styles.expanded : ""}`}>
-      <div className={styles.header} onClick={() => setExpanded((v) => !v)}>
+    <div className={styles.card}>
+      <div className={styles.header}>
         <div className={styles.titleRow}>
           <span className={styles.title}>{title}</span>
           {tags.length > 0 && (
@@ -35,37 +33,20 @@ export default function ModeCard({
             </div>
           )}
         </div>
-        <svg
-          className={styles.arrow}
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <polyline points="6 9 12 15 18 9" />
-        </svg>
       </div>
 
-      <div className={styles.contentWrapper}>
-        <div className={styles.contentInner}>
-          <div className={styles.content}>
-            <p className={styles.intro}>{intro}</p>
-            <ul className={styles.featureList}>
-              {features.map((item, idx) => (
-                <li key={idx} className={styles.featureItem}>
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <a href={href} className={styles.action}>
-              进入学习
-            </a>
-          </div>
-        </div>
+      <div className={styles.content}>
+        <p className={styles.intro}>{intro}</p>
+        <ul className={styles.featureList}>
+          {features.map((item, idx) => (
+            <li key={idx} className={styles.featureItem}>
+              {item}
+            </li>
+          ))}
+        </ul>
+        <button className={styles.action} onClick={onEnter}>
+          进入学习
+        </button>
       </div>
     </div>
   );

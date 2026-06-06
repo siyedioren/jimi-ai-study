@@ -132,8 +132,8 @@ export function useSessions() {
   );
 
   const addMessage = useCallback(
-    (sessionId: string, message: { role: "user" | "assistant"; content: string }) => {
-      const msg = { id: generateId(), ...message };
+    (sessionId: string, message: { role: "user" | "assistant"; content: string; attachments?: import("../Chat/types").Attachment[] }) => {
+      const msg: import("../Chat/types").Message = { id: generateId(), ...message };
       setSessions((prev) =>
         prev.map((s) =>
           s.id === sessionId

@@ -8,6 +8,7 @@
     "cpp_basic": {
       "label": "C++ 基础",
       "model": "moonshot-v1-8k",
+      "modelOptions": ["moonshot-v1-8k", "moonshot-v1-32k"],
       "apiParams": {
         "temperature": 0.05,
         "max_tokens": 150,
@@ -19,6 +20,40 @@
         "hardLimit": 50,
         "useMetaphor": true,
         "encourageFirst": true
+      }
+    },
+    "cpp_acm": {
+      "label": "C++ ACM",
+      "model": "moonshot-v1-8k",
+      "modelOptions": ["moonshot-v1-8k", "moonshot-v1-32k", "moonshot-v1-128k"],
+      "apiParams": {
+        "temperature": 0.1,
+        "max_tokens": 2048,
+        "presence_penalty": 0
+      },
+      "systemPrompt": "你是基米，一位ACM竞赛编程教练。规则：1.可以给出完整代码，但必须同时分析时间复杂度和空间复杂度。2.回复开头必须带'哈！'。3.优先讲算法思路（贪心/DP/二分/图论等），再贴代码。4.代码必须包含关键注释，解释为什么这样写。5.如果用户代码超时，指出瓶颈在哪（如O(n²)应该优化到O(n log n)）。6.如果用户代码MLE，指出内存浪费在哪。7.鼓励用户先想算法再写代码，不要直接给答案。8.对于非竞赛编程话题，明确拒绝讨论。",
+      "constraints": {
+        "softLimit": 150,
+        "hardLimit": 800,
+        "useMetaphor": false,
+        "encourageFirst": true
+      }
+    },
+    "general": {
+      "label": "通用问答",
+      "model": "moonshot-v1-8k",
+      "modelOptions": ["moonshot-v1-8k", "moonshot-v1-32k", "moonshot-v1-128k"],
+      "apiParams": {
+        "temperature": 0.7,
+        "max_tokens": 1024,
+        "presence_penalty": 0
+      },
+      "systemPrompt": "你是基米，一位编程助教。可以回答各类编程问题，给出代码示例和解释。回复要简洁明了。",
+      "constraints": {
+        "softLimit": 80,
+        "hardLimit": 200,
+        "useMetaphor": false,
+        "encourageFirst": false
       }
     }
   }

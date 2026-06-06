@@ -20,7 +20,7 @@ function callKimi(prompt, workDir = process.cwd(), options = {}) {
   // Windows 路径 → WSL 路径（如 D:\project → /mnt/d/project）
   const wslPath = workDir
     .replace(/^([A-Za-z]):/, '/mnt/$1')
-    .replace(/\/g, '/')
+    .replace(/\\/g, '/')
     .toLowerCase();
 
   const args = [

@@ -6,7 +6,7 @@
   display: flex;
   height: 100vh;
   overflow: hidden;
-  background: #ffffff;
+  background: var(--bg);
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -20,8 +20,8 @@
   min-width: 280px;
   max-width: 360px;
   flex-shrink: 0;
-  background: #f8f9fa;
-  border-right: 1px solid #e5e7eb;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
   padding: 24px;
   overflow-y: auto;
 }
@@ -35,16 +35,16 @@
 .dailyLabel {
   font-size: 13px;
   font-weight: 600;
-  color: #6b7280;
+  color: var(--text-secondary);
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
 
 .dailyCard {
-  background: #ffffff;
+  background: var(--bg);
   border-radius: 16px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   padding: 20px;
 }
@@ -59,7 +59,7 @@
 .dailyTitle {
   font-size: 16px;
   font-weight: 600;
-  color: #111827;
+  color: var(--text-primary);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -75,24 +75,24 @@
 }
 
 .dailyTagEasy {
-  background: #dcfce7;
-  color: #166534;
+  background: var(--success-bg);
+  color: var(--success-text);
 }
 
 .dailyTagMedium {
-  background: #fef9c3;
-  color: #854d0e;
+  background: var(--warning-bg);
+  color: var(--warning-text);
 }
 
 .dailyTagHard {
-  background: #fee2e2;
-  color: #991b1b;
+  background: var(--error-bg);
+  color: var(--error-text);
 }
 
 .dailyDesc {
   font-size: 14px;
   font-weight: 400;
-  color: #4b5563;
+  color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 16px;
 }
@@ -105,9 +105,9 @@
   width: 100%;
   height: 40px;
   border-radius: 10px;
-  border: 1.5px solid #2563eb;
+  border: 1.5px solid var(--accent);
   background: transparent;
-  color: #2563eb;
+  color: var(--accent);
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
@@ -115,9 +115,9 @@
   transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
 
   &:hover {
-    background: #2563eb;
+    background: var(--accent);
     color: #ffffff;
-    border-color: #2563eb;
+    border-color: var(--accent);
 
     .dailyBtnArrow {
       transform: translateX(2px);
@@ -129,6 +129,83 @@
   transition: transform 200ms ease;
 }
 
+// ---------- 题目库筛选 ----------
+
+.filterRow {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.filterSelect {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-primary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 150ms ease;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+}
+
+.problemList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.problemItem {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  cursor: pointer;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+
+  &:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.problemItemHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.problemItemTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.problemItemDesc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.problemItemEmpty {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  text-align: center;
+  padding: 16px;
+}
+
 // ═══════════════════════════════════════════════════════════════
 //                           右 侧 栏
 // ═══════════════════════════════════════════════════════════════
@@ -136,7 +213,7 @@
 .main {
   flex: 1;
   min-width: 0;
-  background: #ffffff;
+  background: var(--bg);
   overflow-y: auto;
 }
 
@@ -171,7 +248,7 @@
   font-size: 40px;
   font-weight: 700;
   letter-spacing: -0.04em;
-  color: #111827;
+  color: var(--text-primary);
   line-height: 1.2;
 
   @media (max-width: 640px) {
@@ -183,38 +260,68 @@
   margin-top: 12px;
   font-size: 16px;
   font-weight: 400;
-  color: #6b7280;
+  color: var(--text-secondary);
   line-height: 1.5;
 }
 
-// ---------- 主行动按钮 ----------
+// ---------- 统计卡片 ----------
 
-.actionArea {
-  margin-top: auto;
-  margin-bottom: 48px;
-  text-align: center;
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px auto 0;
+  max-width: 600px;
+  width: 100%;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 }
 
-.mainActionBtn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 160px;
-  height: 48px;
+.statCard {
+  background: var(--bg);
+  border: 1px solid var(--border);
   border-radius: 12px;
-  background: #2563eb;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 500;
-  text-decoration: none;
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
-  transition: background-color 200ms ease, transform 200ms ease,
-    box-shadow 200ms ease;
+  padding: 20px;
+  text-align: center;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
 
   &:hover {
-    background: #1d4ed8;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+    border-color: var(--border-hover);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.statValue {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+// ---------- 模式网格 ----------
+
+.modeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 40px auto 32px;
+  max-width: 960px;
+  width: 100%;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -230,21 +337,21 @@
   gap: 8px;
   font-size: 13px;
   font-weight: 400;
-  color: #6b7280;
+  color: var(--text-secondary);
 
   a {
-    color: #6b7280;
+    color: var(--text-secondary);
     text-decoration: none;
     transition: color 200ms ease;
 
     &:hover {
-      color: #2563eb;
+      color: var(--accent);
     }
   }
 }
 
 .footerDivider {
-  color: #d1d5db;
+  color: var(--border);
 }
 
 .sponsorWrap {

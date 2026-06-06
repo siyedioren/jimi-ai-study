@@ -16,7 +16,7 @@ const PERSONA = JSON.parse(readFileSync(PERSONA_PATH, "utf-8"));
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { messages, mode = "general" } = body;
+    const { messages, mode = "general", model: userModel } = body;
 
     const modeCfg = PERSONA.modes[mode] || PERSONA.modes.general;
     const apiKey = process.env.OPENAI_API_KEY;
@@ -40,10 +40,13 @@ export async function POST(req: NextRequest) {
           Authorization: `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
-          model: modeCfg.model || "moonshot-v1-8k",
+          model: userModel || modeCfg.model || "moonshot-v1-8k",
           messages: [
             { role: "system", content: systemPrompt },
-            ...messages,
+            ...messages.map((m: any) => ({
+              role: m.role,
+              content: m.content,
+            })),
           ],
           temperature: apiParams.temperature ?? 0.6,
           max_tokens: apiParams.max_tokens ?? 1024,
@@ -55,8 +58,11 @@ export async function POST(req: NextRequest) {
 
     if (!upstream.ok) {
       const errText = await upstream.text();
+      let errJson: any;
+      try { errJson = JSON.parse(errText); } catch { /* 非 JSON 错误 */ }
+      const detail = errJson?.error?.message || errJson?.message || errText || `HTTP ${upstream.status}`;
       return new Response(
-        JSON.stringify({ error: errText }),
+        JSON.stringify({ error: detail, status: upstream.status }),
         { status: upstream.status, headers: { "Content-Type": "application/json" } }
       );
     }

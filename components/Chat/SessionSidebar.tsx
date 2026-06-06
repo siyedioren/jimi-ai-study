@@ -6,9 +6,12 @@ import styles from "./ChatInterface.module.scss";
 interface SessionSidebarProps {
   historyGroups: { label: string; sessions: { id: string; title: string; updatedAt: number }[] }[];
   currentId: string | null;
+  favorites: { id: string; title: string; content: string; mode: string }[];
   onNewChat: () => void;
   onSwitchSession: (id: string) => void;
   onDeleteSession: (id: string) => void;
+  onLoadProblem: (problem: { title: string; content: string; mode: string }) => void;
+  onRemoveFavorite: (id: string) => void;
 }
 
 function formatTime(ts: number) {
@@ -21,9 +24,12 @@ function formatTime(ts: number) {
 export default function SessionSidebar({
   historyGroups,
   currentId,
+  favorites,
   onNewChat,
   onSwitchSession,
   onDeleteSession,
+  onLoadProblem,
+  onRemoveFavorite,
 }: SessionSidebarProps) {
   return (
     <aside className={styles.sidebar}>
@@ -96,6 +102,34 @@ export default function SessionSidebar({
           </div>
         ))}
       </div>
+
+      {/* 收藏题目 */}
+      {favorites.length > 0 && (
+        <div className={styles.historyScroll} style={{ maxHeight: 200, marginTop: 16 }}>
+          <div className={styles.historyGroup}>
+            <div className={styles.historyGroupTitle}>收藏题目</div>
+            {favorites.map((p) => (
+              <div
+                key={p.id}
+                className={styles.historyItem}
+                onClick={() => onLoadProblem(p)}
+              >
+                <div className={styles.historyItemTitle}>{p.title}</div>
+                <button
+                  className={styles.historyItemDelete}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onRemoveFavorite(p.id);
+                  }}
+                  title="取消收藏"
+                >
+                  ×
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* 今日知识点 */}
       <div className={styles.knowledgeCard}>

@@ -1,0 +1,36 @@
+ ⚠ Port 3000 is in use by process 19984, using available port 3001 instead.
+   ▲ Next.js 15.5.15
+   - Local:        http://localhost:3001
+   - Network:      http://26.101. ○ Compiling / ...
+ ✓ Compiled / in 4.7s (610 modules)
+ GET / 200 in 5142m ○ Compiling / ...
+ ✓ Compiled / in 3.8s (610 modules)
+ GET / 200 in 4134ms
+ ✓ Compiled /_not-found in 320ms (556 modules)
+ GET /data/probl ⨯ Error: Cannot find module './873.js'
+Require stack:
+- D:\111\jimi-ai-study-main\.next\server\webpack-runtime.js
+- D:\111\jimi-ai-study-main\.next\server\app\_not-found\page.js
+- D:\111\jimi-ai-study-main\node_modules\next\dist\server\requ ✓ Compiled in 1392ms (2110 modules)
+ ✓ Compiled in 357ms (2110 modules)
+ ✓ Compiled in 337ms (2110 modules)
+ ✓ Compiled in 385ms (2110 modules)
+ ✓ Compiled in 352ms (2120 modules)
+ ✓ Compiled in 1693ms (2108 modules)
+ ✓ Compiled in 192ms (1009 modules)
+ ✓ Compiled in 939ms (2118 modules)
+ ✓ Compiled in 1015ms (2108 modules)
+ ✓ Compiled in 280ms (2108 modules)
+
+- D:\111\jimi-ai-study-main\node_modules\next\dist\server\config.js
+- D:\111\jimi-ai-study-main\node_modules\next\dist\server\next.js
+- D:\111\jimi-ai-study-main\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (D:\111\jimi-ai-study-main\.next\server\app\page.js:7:7826)
+    at Object.<anonymous> (D:\111\jimi-ai-study-main\.next\server\app\page.js:7:7875) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1334ms (897 modules)
+ GET / 500 in 1781ms

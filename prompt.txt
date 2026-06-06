@@ -1,0 +1,15 @@
+请完成以下任务：
+
+1. 读取 /mnt/d/111/基米小站/ustl helper/src/components/error/index.tsx
+2. 修改该文件，当 hasError 为 true 时，展示一个友好的错误提示页面（包含错误图标、提示文字"页面出错了"、返回首页按钮），而不是继续渲染 children
+3. 保持 Report.error 上报逻辑不变
+4. 直接修改文件
+
+然后完成以下任务：
+
+5. 搜索项目中所有使用 ./utils/cs 或 @/utils/cs 的地方
+6. 将这些地方改为从 laser-utils 导入 cs
+7. 删除 /mnt/d/111/基米小站/ustl helper/src/utils/cs.ts 文件
+8. 保留 utils/stop.ts（laser-utils 没有替代功能）
+
+输出修改后的 components/error/index.tsx 完整内容，以及所有被修改的文件路径列表。

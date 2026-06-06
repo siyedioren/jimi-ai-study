@@ -1,5 +1,5 @@
 .panel {
-  background: #ffffff;
+  background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 10px;
   transition: border-color 350ms ease, box-shadow 350ms ease;
@@ -32,7 +32,7 @@
   transition: background-color 350ms ease;
 
   .expanded & {
-    background-color: #faf5ff;
+    background-color: var(--accent-light);
   }
 }
 
