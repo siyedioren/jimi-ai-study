@@ -179,15 +179,40 @@
   line-height: inherit;
 }
 
-// ---------- 输入区 ----------
+// ---------- 底部（模式选择 + 输入区） ----------
+.chatFooter {
+  border-top: 1px solid var(--border);
+  background: var(--bg-secondary);
+  flex-shrink: 0;
+}
+
+.modeSelect {
+  width: 100%;
+  padding: 6px 12px;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+
+  &:focus {
+    background: var(--bg-secondary);
+  }
+
+  option {
+    background: var(--bg);
+    color: var(--text-primary);
+  }
+}
+
 .chatInputWrap {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 10px 12px;
-  border-top: 1px solid var(--border);
-  background: var(--bg-secondary);
-  flex-shrink: 0;
 }
 
 .chatInput {

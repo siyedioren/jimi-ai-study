@@ -13,6 +13,11 @@ interface Props {
   problemId: string;
 }
 
+const MODES = [
+  { value: "cpp_basic", label: "C++ 基础" },
+  { value: "cpp_acm", label: "C++ ACM" },
+];
+
 function genId() {
   return Math.random().toString(36).slice(2) + Date.now().toString(36);
 }
@@ -22,9 +27,16 @@ export default function MiniChat({ problemId }: Props) {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [mode, setMode] = useState<string>("");
   const scrollRef = useRef<HTMLDivElement>(null);
   const streamBuf = useRef("");
   const flushTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // 恢复模式选择
+  useEffect(() => {
+    const saved = localStorage.getItem("jimi_minichat_mode");
+    if (saved) setMode(saved);
+  }, []);
 
   // 挂载时恢复对话
   useEffect(() => {
@@ -63,8 +75,9 @@ export default function MiniChat({ problemId }: Props) {
     [flush]
   );
 
-  const sendMessage = async (content: string, mode = "cpp_basic") => {
-    if (!content.trim() || loading) return;
+  const sendMessage = async (content: string, useMode?: string) => {
+    const activeMode = useMode || mode;
+    if (!content.trim() || loading || !activeMode) return;
 
     const userMsg: ChatMessage = { id: genId(), role: "user", content };
     setMessages(prev => [...prev, userMsg]);
@@ -84,7 +97,7 @@ export default function MiniChat({ problemId }: Props) {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ mode, model: "moonshot-v1-8k", messages: history }),
+        body: JSON.stringify({ mode: activeMode, model: "moonshot-v1-8k", messages: history }),
       });
 
       if (!res.ok) {
@@ -140,7 +153,14 @@ export default function MiniChat({ problemId }: Props) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!mode) return;
     sendMessage(input);
+  };
+
+  const handleModeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const val = e.target.value;
+    setMode(val);
+    localStorage.setItem("jimi_minichat_mode", val);
   };
 
   // 对外暴露：添加系统/分析消息
@@ -218,27 +238,40 @@ export default function MiniChat({ problemId }: Props) {
         )}
       </div>
 
-      {/* 输入区 */}
-      <form className={styles.chatInputWrap} onSubmit={handleSubmit}>
-        <input
-          type="text"
-          className={styles.chatInput}
-          placeholder="问基米…"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          disabled={loading}
-        />
-        <button
-          type="submit"
-          className={styles.chatSendBtn}
-          disabled={!input.trim() || loading}
+      {/* 模式选择 + 输入区 */}
+      <div className={styles.chatFooter}>
+        <select
+          className={styles.modeSelect}
+          value={mode}
+          onChange={handleModeChange}
         >
+          <option value="">选择模式</option>
+          {MODES.map((m) => (
+            <option key={m.value} value={m.value}>{m.label}</option>
+          ))}
+        </select>
+        <form className={styles.chatInputWrap} onSubmit={handleSubmit}>
+          <input
+            type="text"
+            className={styles.chatInput}
+            placeholder={mode ? "问基米…" : "请先选择模式…"}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            disabled={loading || !mode}
+          />
+          <button
+            type="submit"
+            className={styles.chatSendBtn}
+            disabled={!input.trim() || loading || !mode}
+            title={mode ? "发送" : "请先选择模式"}
+          >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <line x1="22" y1="2" x2="11" y2="13" />
             <polygon points="22 2 15 22 11 13 2 9 22 2" />
           </svg>
         </button>
       </form>
+      </div>
     </div>
   );
 }
