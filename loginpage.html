@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Login</title>  
+    
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="template/bs3/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="template/bs3/bootstrap-theme.min.css">
+<link rel="stylesheet" href="template/bs3/white.css?v=0.1">
+<link rel="stylesheet" href="template/bs3/katex.min.css">
+<link rel="stylesheet" href="template/bs3/mathjax.css">
+	    
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+        <!-- Static navbar -->
+    <nav class="navbar navbar-default" role="navigation" style="position:fixed;z-index:99;width:98%;margin-bottom:50px">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./"><i class="icon-home"></i>C++ OJ</a>
+                  </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                                  <li >
+                <a href="faqs.php">
+                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> 常见问答                </a>
+              </li>
+          
+          
+          
+                      
+              <li >
+                <a href="problemset.php" ><span class="glyphicon glyphicon-book" aria-hidden="true"></span> 问题</a>
+              </li>
+              <li >
+                <a href="category.php"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> 来源/分类</a>
+              </li>
+              <li >
+                <a href="status.php"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> 状态</a>
+              </li>
+              <li >
+                <a href="ranklist.php"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 排名</a>
+              </li>
+              <li >
+                <a href="contest.php"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 竞赛&作业</a>
+              </li>
+                     <li><a class="item" href="/viewnews.php?id=1004"><span class='glyphicon glyphicon-star' aria-hidden='true'>实验平台使用须知</a></li>          
+<!--<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="#">Action</a></li>
+<li><a href="#">Another action</a></li>
+<li><a href="#">Something else here</a></li>
+<li class="divider"></li>
+<li class="dropdown-header">Nav header</li>
+<li><a href="#">Separated link</a></li>
+<li><a href="#">One more separated link</a></li>
+</ul>
+</li>
+-->
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="profile">Login</span><span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <script src="template/bs3/profile.php?profile_csrf=512322534" ></script>
+                <!--<li><a href="../navbar-fixed-top/">Fixed top</a></li>-->
+              </ul>
+            </li>
+          </ul>
+
+<!-- select language -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="profile">Language</span><span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="setlang.php?lang=cn">中文</a></li>
+                <li><a href="setlang.php?lang=ug">ئۇيغۇرچە</a></li>
+                <li><a href="setlang.php?lang=en">English</a></li>
+                <li><a href="setlang.php?lang=fa">فارسی</a></li>
+                <li><a href="setlang.php?lang=th">ไทย</a></li>
+                <li><a href="setlang.php?lang=ko">한국어</a></li>
+              </ul>
+            </li>
+          </ul><!-- select language -->
+
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+	    
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+
+<form id="login" action="login.php" method="post" role="form" class="form-horizontal" onSubmit="return jsMd5();"  >
+	<div class="form-group">
+	<label class="col-sm-4 control-label">用户名（学号）</label><div class="col-sm-4"><input name="user_id" class="form-control" placeholder="用户名（学号）" type="text" required ></div>						</div>
+	<div class="form-group">
+	<label class="col-sm-4 control-label">密码</label><div class="col-sm-4"><input name="password" class="form-control" placeholder="密码" type="password"  autocomplete="off" required ></div>						</div>
+	<div class="form-group">
+	<div class="col-sm-offset-4 col-sm-2">
+	<button name="submit" type="submit" class="btn btn-default btn-block" >登录</button>
+	</div>
+	<div class="col-sm-2">
+	<a class="btn btn-default btn-block" href="lostpassword.php">忘记密码</a>
+	</div>
+	</div>
+</form>					
+      </div>
+	<script src="include/md5-min.js"></script>
+	<script>
+		function jsMd5(){
+			if($("input[name=password]").val()=="") return false;
+			$("input[name=password]").val(hex_md5($("input[name=password]").val()));
+			return true;
+		}
+	</script>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="include/jquery-latest.js"></script>
+
+<script src="template/bs3/marked.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="template/bs3/bootstrap.min.js"></script>
+
+
+<script>
+$(document).ready(function(){
+	  
+  $("form").append("<div id='csrf' />");
+  $("#csrf").load("csrf.php");
+  $("body").append("<div id=footer class=center >GPLv2 licensed by <a href='https://github.com/zhblue/hustoj' >HUSTOJ</a> "+(new Date()).getFullYear()+" </div>");
+  $("body").append("<center><sub><a target='_blank' href='https://github.com/zhblue/hustoj'><span class='glyphicon glyphicon-heart' aria-hidden='true'></span> 请到 HUSTOJ 来，给我们加个<span class='glyphicon glyphicon-star' aria-hidden='true'></span>Star!</a></sub></center>");  
+  $("body").append("<div class=center > <img src='http://cdn.hustoj.com/wx.jpg' width='120px'><img src='http://cdn.hustoj.com/alipay.png' width='120px'><br> 欢迎关注微信公众号onlinejudge</div>");
+  
+  
+	
+  });
+
+$(".hint pre").each(function(){
+        var plus="<span class='glyphicon glyphicon-plus'>点击查看剧透级题解</span>";
+        var content=$(this);
+        $(this).before(plus);
+        $(this).prev().click(function(){
+                content.toggle();
+        });
+        $(this).hide();
+});
+
+
+  console.log("If you want to change the appearance of the web pages, make a copy of bs3 under template directory.\nRename it to whatever you like, and change the $OJ_TEMPLATE value in db_info.inc.php\nAfter that modify files under your own directory .\n");
+  console.log("To enable mathjax in hustoj, set \n static  $OJ_MATHJAX=true;  // 激活mathjax \n in db_info.inc.php");
+function admin_mod(){
+	$("div[fd=source]").each(function(){
+		let pid=$(this).attr('pid');	
+		$(this).append("<span><span class='label label-success' pid='"+pid+"' onclick='problem_add_source(this,"+pid+");'>+</span></span>");
+
+	});
+	$("span[fd=time_limit]").each(function(){
+		let sp=$(this);
+		let pid=$(this).attr('pid');	
+		$(this).dblclick(function(){
+			let time=sp.text();
+			console.log("pid:"+pid+"  time_limit:"+time);	
+			sp.html("<form onsubmit='return false;'><input type=hidden name='m' value='problem_update_time'><input type='hidden' name='pid' value='"+pid+"'><input type='text' name='t' value='"+time+"' selected='true' class='input-mini' size=2 ></form>");
+			let ipt=sp.find("input[name=t]");
+			ipt.focus();
+			ipt[0].select();
+			sp.find("input").change(function(){
+				let newtime=sp.find("input[name=t]").val();
+				$.post("admin/ajax.php",sp.find("form").serialize()).done(function(){
+					console.log("new time_limit:"+time);
+					sp.html(newtime);
+				});
+			
+			});
+		});
+
+	});
+}
+function problem_add_source(sp,pid){
+	console.log("pid:"+pid);
+	let p=$(sp).parent();
+	p.html("<form onsubmit='return false;'><input type='hidden' name='m' value='problem_add_source'><input type='hidden' name='pid' value='"+pid+"'><input type='text' class='input input-large' name='ns'></form>");
+	p.find("input").focus();
+	p.find("input").change(function(){
+		console.log(p.find("form").serialize());
+		let ns=p.find("input[name=ns]").val();
+		console.log("new source:"+ns);
+		$.post("admin/ajax.php",p.find("form").serialize());
+		p.parent().append("<span class='label label-success'>"+ns+"</span>");
+		p.html("<span class='label label-success' pid='"+pid+"' onclick='problem_add_source(this,"+pid+");'>+</span>");
+	});
+}
+</script>
+
+	
+    
+  </body>
+</html>
+<!--not cached-->

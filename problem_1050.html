@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>
+		函数04：最大值 - 问题 - C++ OJ	</title>
+
+	
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="template/bs3/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="template/bs3/bootstrap-theme.min.css">
+<link rel="stylesheet" href="template/bs3/white.css?v=0.1">
+<link rel="stylesheet" href="template/bs3/katex.min.css">
+<link rel="stylesheet" href="template/bs3/mathjax.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <!--以下为了加载公式的使用而既加入-->
+<script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+  };
+</script> 
+
+<script id="MathJax-script" async src="template/bs3/tex-chtml.js"></script>
+<style>
+	.jumbotron1{ 
+  font-size: 18px; 
+}
+</style>
+
+
+<!--数学公式js加载完毕-->
+</head>
+
+
+<body>
+	<div id="main" class="container">
+		    <!-- Static navbar -->
+    <nav class="navbar navbar-default" role="navigation" style="position:fixed;z-index:99;width:98%;margin-bottom:50px">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./"><i class="icon-home"></i>C++ OJ</a>
+                  </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                                  <li >
+                <a href="faqs.php">
+                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> 常见问答                </a>
+              </li>
+          
+          
+          
+                      
+              <li >
+                <a href="problemset.php" ><span class="glyphicon glyphicon-book" aria-hidden="true"></span> 问题</a>
+              </li>
+              <li >
+                <a href="category.php"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> 来源/分类</a>
+              </li>
+              <li >
+                <a href="status.php"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> 状态</a>
+              </li>
+              <li >
+                <a href="ranklist.php"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 排名</a>
+              </li>
+              <li >
+                <a href="contest.php?my"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 竞赛&作业</a>
+              </li>
+                     <li><a class="item" href="/viewnews.php?id=1004"><span class='glyphicon glyphicon-star' aria-hidden='true'>实验平台使用须知</a></li>          
+<!--<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="#">Action</a></li>
+<li><a href="#">Another action</a></li>
+<li><a href="#">Something else here</a></li>
+<li class="divider"></li>
+<li class="dropdown-header">Nav header</li>
+<li><a href="#">Separated link</a></li>
+<li><a href="#">One more separated link</a></li>
+</ul>
+</li>
+-->
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="profile">Login</span><span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <script src="template/bs3/profile.php?profile_csrf=1108515044" ></script>
+                <!--<li><a href="../navbar-fixed-top/">Fixed top</a></li>-->
+              </ul>
+            </li>
+          </ul>
+
+<!-- select language -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="profile">Language</span><span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="setlang.php?lang=cn">中文</a></li>
+                <li><a href="setlang.php?lang=ug">ئۇيغۇرچە</a></li>
+                <li><a href="setlang.php?lang=en">English</a></li>
+                <li><a href="setlang.php?lang=fa">فارسی</a></li>
+                <li><a href="setlang.php?lang=th">ไทย</a></li>
+                <li><a href="setlang.php?lang=ko">한국어</a></li>
+              </ul>
+            </li>
+          </ul><!-- select language -->
+
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+
+		<!-- Main component for a primary marketing message or call to action -->
+    <!-- <div class="jumbotron"></div> -->
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<title>问题1050--函数04：最大值</title><center><h3>1050: 函数04：最大值</h3></center><div align=right><sub>[命题人 : <span id='creator'></span>]</sub></div><center><span class=green>时间限制 : </span><span><span fd='time_limit' pid='1050'  >1.000</span></span> sec&nbsp;&nbsp;<span class=green>内存限制 : </span>128 MiB<br><br><div class='btn-group' role='group'><a id='submit' class='btn btn-info btn-sm' href='submitpage.php?id=1050' role='button'>提交</a><a class='btn btn-primary btn-sm' role='button' href=status.php?problem_id=1050&jresult=4>解决: 537</a><a class='btn btn-primary btn-sm' role='button' href=status.php?problem_id=1050>提交量: 2836</a><a class='btn btn-primary btn-sm' role='button' href=problemstatus.php?id=1050>统计</a><a class='btn btn-danger btn-sm' href='#' onclick='transform()' role='button'>露一手!</a></div></center></div><!--StartMarkForVirtualJudge-->
+				<div class="panel panel-body">
+					<div class='panel panel-default'>
+						<div class='panel-heading'>
+							<h4>
+								题目描述							</h4>
+						</div>
+						<div class='panel-body content'>
+							<p><span style="font-size: medium"><br />
+从键盘输入n对整数，求这些对整数间所有奇数之和的最大值。要求计算一对整数min、max（含min和max）之间所有奇数的和用函数实现，若min&gt;max，函数返回值为0。输入格式：第一个整数为n，后续为n对整数。例如：输入数据为 3 10 20 17 31 40 45，表示输入3对整数，因为10~20间的奇数依次为11,13,15,17,19，奇数之和为75,17~31间的奇数依次为17,19,21,23,25,27,29,31，奇数之和为192，而40~45间的奇数依次为41,43,45，奇数之和为129，因此最大值为192，输出结果为192。</span><span style="font-size: medium"><br />
+</span><br />
+</p>						</div>
+					</div>
+
+										<div class='panel panel-default'>
+						<div class='panel-heading'>
+							<h4>
+								样例输入 
+								<a href="javascript:CopyToClipboard($('#sampleinput').text())">Copy</a>
+							</h4>
+						</div>
+						<div class='panel-body'><pre class=content><span id="sampleinput" class=sampledata>3 10 20 17 31 40 45</span></pre>
+						</div>
+					</div>
+										<div class='panel panel-default'>
+						<div class='panel-heading'>
+							<h4>
+								样例输出								<a href="javascript:CopyToClipboard($('#sampleoutput').text())">Copy</a>
+							</h4>
+						</div>
+						<div class='panel-body'><pre class=content><span id='sampleoutput' class=sampledata>192</span></pre>
+						</div>
+					</div>
+										<div class='panel panel-default'>
+						<div class='panel-heading'>
+							<h4>
+								来源/分类							</h4>
+						</div>
+
+						<div fd="source" style='word-wrap:break-word;' pid=1050 class='panel-body content'>
+							<a class='label label-primary' style='display: inline-block;' href='problemset.php?search='></a>&nbsp;	          </div>
+
+					</div>
+					
+				</div>
+			<center>
+				<!--EndMarkForVirtualJudge-->
+				<div class='panel-footer'>
+				<a class='btn btn-info btn-sm' href='submitpage.php?id=1050' role='button'>提交</a>				</div>
+			</center>
+		</div>
+	</div>
+	<!-- /container -->
+
+
+	<!-- Bootstrap core JavaScript
+  ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="include/jquery-latest.js"></script>
+
+<script src="template/bs3/marked.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="template/bs3/bootstrap.min.js"></script>
+
+
+<script>
+$(document).ready(function(){
+	  
+  $("form").append("<div id='csrf' />");
+  $("#csrf").load("csrf.php");
+  $("body").append("<div id=footer class=center >GPLv2 licensed by <a href='https://github.com/zhblue/hustoj' >HUSTOJ</a> "+(new Date()).getFullYear()+" </div>");
+  $("body").append("<center><sub><a target='_blank' href='https://github.com/zhblue/hustoj'><span class='glyphicon glyphicon-heart' aria-hidden='true'></span> 请到 HUSTOJ 来，给我们加个<span class='glyphicon glyphicon-star' aria-hidden='true'></span>Star!</a></sub></center>");  
+  $("body").append("<div class=center > <img src='http://cdn.hustoj.com/wx.jpg' width='120px'><img src='http://cdn.hustoj.com/alipay.png' width='120px'><br> 欢迎关注微信公众号onlinejudge</div>");
+  
+  
+	
+  });
+
+$(".hint pre").each(function(){
+        var plus="<span class='glyphicon glyphicon-plus'>点击查看剧透级题解</span>";
+        var content=$(this);
+        $(this).before(plus);
+        $(this).prev().click(function(){
+                content.toggle();
+        });
+        $(this).hide();
+});
+
+
+  console.log("If you want to change the appearance of the web pages, make a copy of bs3 under template directory.\nRename it to whatever you like, and change the $OJ_TEMPLATE value in db_info.inc.php\nAfter that modify files under your own directory .\n");
+  console.log("To enable mathjax in hustoj, set \n static  $OJ_MATHJAX=true;  // 激活mathjax \n in db_info.inc.php");
+function admin_mod(){
+	$("div[fd=source]").each(function(){
+		let pid=$(this).attr('pid');	
+		$(this).append("<span><span class='label label-success' pid='"+pid+"' onclick='problem_add_source(this,"+pid+");'>+</span></span>");
+
+	});
+	$("span[fd=time_limit]").each(function(){
+		let sp=$(this);
+		let pid=$(this).attr('pid');	
+		$(this).dblclick(function(){
+			let time=sp.text();
+			console.log("pid:"+pid+"  time_limit:"+time);	
+			sp.html("<form onsubmit='return false;'><input type=hidden name='m' value='problem_update_time'><input type='hidden' name='pid' value='"+pid+"'><input type='text' name='t' value='"+time+"' selected='true' class='input-mini' size=2 ></form>");
+			let ipt=sp.find("input[name=t]");
+			ipt.focus();
+			ipt[0].select();
+			sp.find("input").change(function(){
+				let newtime=sp.find("input[name=t]").val();
+				$.post("admin/ajax.php",sp.find("form").serialize()).done(function(){
+					console.log("new time_limit:"+time);
+					sp.html(newtime);
+				});
+			
+			});
+		});
+
+	});
+}
+function problem_add_source(sp,pid){
+	console.log("pid:"+pid);
+	let p=$(sp).parent();
+	p.html("<form onsubmit='return false;'><input type='hidden' name='m' value='problem_add_source'><input type='hidden' name='pid' value='"+pid+"'><input type='text' class='input input-large' name='ns'></form>");
+	p.find("input").focus();
+	p.find("input").change(function(){
+		console.log(p.find("form").serialize());
+		let ns=p.find("input[name=ns]").val();
+		console.log("new source:"+ns);
+		$.post("admin/ajax.php",p.find("form").serialize());
+		p.parent().append("<span class='label label-success'>"+ns+"</span>");
+		p.html("<span class='label label-success' pid='"+pid+"' onclick='problem_add_source(this,"+pid+");'>+</span>");
+	});
+}
+</script>
+
+	<script>
+		function phpfm( pid ) {
+			//alert(pid);
+			$.post( "admin/phpfm.php", {
+				'frame': 3,
+				'pid': pid,
+				'pass': ''
+			}, function ( data, status ) {
+				if ( status == "success" ) {
+					document.location.href = "admin/phpfm.php?frame=3&pid=" + pid;
+				}
+			} );
+		}
+               function selectOne( num, answer){
+		          let editor = $("iframe")[0].contentWindow.$("#source");
+		          let old=editor.text();
+		          let key= num+".*";
+		          console.log(key);
+		          let rep=old.replace(new RegExp(key),num+" "+answer);
+		          editor.text(rep);
+  		}
+		function selectMulti( num, answer){
+			  let editor = $("iframe")[0].contentWindow.$("#source");
+			  let old=editor.text();
+			  let key= num+".*";
+			  console.log(key);
+			  let rep=old.replace(new RegExp(key),num+" "+answer);
+			  editor.text(rep);
+		}
+		$( document ).ready( function () {
+			$( "#creator" ).load( "problem-ajax.php?pid=1050" );
+                        $("div.md").each(function(){
+                                $(this).html(marked.parse($(this).html()));
+                        });
+	//单纯文本1. A. B. C. D. 自动变控件
+	$('span[class=auto_select]').each(function(){
+                let i=1;
+                let start=0;
+                let raw=$(this).html();
+                let options=['A','B','C','D'];
+                while(start>=0){
+                        start=raw.indexOf(i+".",start);
+                        if(start<0) break;
+                        let end=start;
+                        let type="radio"
+                        for(let j=0;j<4;j++){
+                                let option=options[j];
+                                end=raw.indexOf(option+".",start);
+                                if(j==0&&raw.substring(start,end).indexOf("多选")>0) type="checkbox";
+                                if (end<0) break;
+                                let disp="<input type=\""+type+"\" name=\""+i+"\" value=\""+option+"\" />"+option+".";
+                                //console.log(disp);
+                                raw= raw.substring(0,end-1)+disp+raw.substring(end+2);
+                                start+=disp.length;
+                        }
+                        start=end+1;
+                        i++;
+                }
+                //console.log(raw);
+                $(this).html(raw);
+        });
+        $('input[type="radio"]').click(function(){
+                if ($(this).is(':checked'))
+                {
+                   selectOne($(this).attr("name"),$(this).val());
+                }
+        });
+	$('input[type="checkbox"]').click(function(){
+                let num=$(this).attr("name");
+                let answer="";
+                $("input[type=checkbox][name="+num+"]").each(function(){
+                        if ($(this).is(':checked'))
+                                answer+=$(this).val();
+                });
+                selectMulti(num,answer);
+        });
+
+
+		} );
+		function CopyToClipboard (input) {
+			var textToClipboard = input;
+			 
+			var success = true;
+			if (window.clipboardData) { // Internet Explorer
+			    window.clipboardData.setData ("Text", textToClipboard);
+			}
+			else {
+				// create a temporary element for the execCommand method
+			    var forExecElement = CreateElementForExecCommand (textToClipboard);
+			 
+				    /* Select the contents of the element 
+					(the execCommand for 'copy' method works on the selection) */
+			    SelectContent (forExecElement);
+			 
+			    var supported = true;
+			 
+				// UniversalXPConnect privilege is required for clipboard access in Firefox
+			    try {
+				if (window.netscape && netscape.security) {
+				    netscape.security.PrivilegeManager.enablePrivilege ("UniversalXPConnect");
+				}
+			 
+				    // Copy the selected content to the clipboard
+				    // Works in Firefox and in Safari before version 5
+				success = document.execCommand ("copy", false, null);
+			    }
+			    catch (e) {
+				success = false;
+			    }
+			 
+				// remove the temporary element
+			    document.body.removeChild (forExecElement);
+			}
+			 
+			if (success) {
+			    alert ("The text is on the clipboard, try to paste it!");
+			}
+			else {
+			    alert ("Your browser doesn't allow clipboard access!");
+			}
+			}
+			 
+			function CreateElementForExecCommand (textToClipboard) {
+			var forExecElement = document.createElement ("pre");
+			    // place outside the visible area
+			forExecElement.style.position = "absolute";
+			forExecElement.style.left = "-10000px";
+			forExecElement.style.top = "-10000px";
+			    // write the necessary text into the element and append to the document
+			forExecElement.textContent = textToClipboard;
+			document.body.appendChild (forExecElement);
+			    // the contentEditable mode is necessary for the  execCommand method in Firefox
+			forExecElement.contentEditable = true;
+			 
+			return forExecElement;
+			}
+			 
+			function SelectContent (element) {
+			    // first create a range
+			var rangeToSelect = document.createRange ();
+			rangeToSelect.selectNodeContents (element);
+			 
+			    // select the contents
+			var selection = window.getSelection ();
+			selection.removeAllRanges ();
+			selection.addRange (rangeToSelect);
+			}
+			function transform(){
+        let height=document.body.clientHeight;
+			let width=parseInt(document.body.clientWidth*0.6);
+			let width2=parseInt(document.body.clientWidth*0.4);
+        let submitURL=$("#submit")[0].href;
+        console.log(width);
+        let main=$("#main");
+        let problem=main.html();   
+        
+        if (window.screen.width < 500){
+        	main.parent().append("<div id='submitPage' class='container' style='opacity:0.8;z-index:1000;top:49px;'></div>");
+                $("#submitPage").html("<iframe id='ansFrame' src='"+submitURL+"&spa' width='100%' height='"+window.screen.height+"px' ></iframe>");
+                window.setTimeout('$("#ansFrame")[0].scrollIntoView()',1000);
+	}else{
+		main.css("width",width2);
+		main.css("margin-left","10px");
+       	 	main.parent().append("<div id='submitPage' class='container' style='opacity:0.8;position:fixed;z-index:1000;top:49px;right:-"+width2+"px'></div>");
+		$("#submitPage").html("<iframe src='"+submitURL+"&spa' width='"+width+"px' height='"+height+"px' ></iframe>");
+	}
+	$("#submit").remove();      
+        
+  }
+
+	</script>
+
+</body>
+</html>
+<!--not cached-->

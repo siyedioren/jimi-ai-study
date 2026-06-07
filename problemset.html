@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>
+		C++ OJ	</title>
+	
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="template/bs3/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="template/bs3/bootstrap-theme.min.css">
+<link rel="stylesheet" href="template/bs3/white.css?v=0.1">
+<link rel="stylesheet" href="template/bs3/katex.min.css">
+<link rel="stylesheet" href="template/bs3/mathjax.css">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+	<div class="container">
+		    <!-- Static navbar -->
+    <nav class="navbar navbar-default" role="navigation" style="position:fixed;z-index:99;width:98%;margin-bottom:50px">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./"><i class="icon-home"></i>C++ OJ</a>
+                  </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                                  <li >
+                <a href="faqs.php">
+                  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> 常见问答                </a>
+              </li>
+          
+          
+          
+                      
+              <li  class='active'>
+                <a href="problemset.php" ><span class="glyphicon glyphicon-book" aria-hidden="true"></span> 问题</a>
+              </li>
+              <li >
+                <a href="category.php"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> 来源/分类</a>
+              </li>
+              <li >
+                <a href="status.php"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> 状态</a>
+              </li>
+              <li >
+                <a href="ranklist.php"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 排名</a>
+              </li>
+              <li >
+                <a href="contest.php?my"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 竞赛&作业</a>
+              </li>
+                     <li><a class="item" href="/viewnews.php?id=1004"><span class='glyphicon glyphicon-star' aria-hidden='true'>实验平台使用须知</a></li>          
+<!--<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="#">Action</a></li>
+<li><a href="#">Another action</a></li>
+<li><a href="#">Something else here</a></li>
+<li class="divider"></li>
+<li class="dropdown-header">Nav header</li>
+<li><a href="#">Separated link</a></li>
+<li><a href="#">One more separated link</a></li>
+</ul>
+</li>
+-->
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="profile">Login</span><span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <script src="template/bs3/profile.php?profile_csrf=239489137" ></script>
+                <!--<li><a href="../navbar-fixed-top/">Fixed top</a></li>-->
+              </ul>
+            </li>
+          </ul>
+
+<!-- select language -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="profile">Language</span><span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="setlang.php?lang=cn">中文</a></li>
+                <li><a href="setlang.php?lang=ug">ئۇيغۇرچە</a></li>
+                <li><a href="setlang.php?lang=en">English</a></li>
+                <li><a href="setlang.php?lang=fa">فارسی</a></li>
+                <li><a href="setlang.php?lang=th">ไทย</a></li>
+                <li><a href="setlang.php?lang=ko">한국어</a></li>
+              </ul>
+            </li>
+          </ul><!-- select language -->
+
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+		<!-- Main component for a primary marketing message or call to action -->
+		<div class="jumbotron">
+			<center>
+				<nav id="page" class="center">
+					<small>
+					<ul class="pagination">
+						<li class="page-item"><a href="problemset.php?page=1">&lt;&lt;</a>
+						</li>
+						<li class='page-item'> <a href='problemset.php?page=1'>1</a></li><li class='active page-item'> <a href='problemset.php?page=2'>2</a></li><li class='page-item'> <a href='problemset.php?page=3'>3</a></li><li class='page-item'> <a href='problemset.php?page=4'>4</a></li><li class='page-item'> <a href='problemset.php?page=5'>5</a></li>						<li class="page-item"><a href="problemset.php?page=5">&gt;&gt;</a>
+						</li>
+					</ul>
+					</small>
+				</nav>
+
+				<table>
+					<tr align='center' class='evenrow'>
+						<td width='5'></td>
+						<td colspan='1'>
+							<form class=form-inline action=problem.php>
+								<input class="form-control search-query" type='text' name='id' placeholder="题目编号">
+								<button class="form-control" type='submit'>查找</button>&nbsp;&nbsp;
+							</form>
+						</td>
+						<td colspan='1'>
+							<form class="form-search form-inline">
+								<input type="text" name=search class="form-control search-query" placeholder="标题, 来源/分类">
+								<button type="submit" class="form-control">查找</button>
+							</form>
+						</td>
+					</tr>
+				</table>
+				<table id='problemset' width='90%' class='table table-striped'>
+					<thead>
+						<tr class='toprow'>
+							<td></td>
+							<td class='hidden-xs center'>
+								题目编号							</td>
+							<td class='center'>
+								标题							</td>
+							<td class='hidden-xs center'>
+								来源/分类							</td>
+							<td style="cursor:hand" class='center'>
+								解决							</td>
+							<td style="cursor:hand" class='center'>
+								提交							</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1050</div></td><td>	<div class='left'><a href='problem.php?id=1050'>函数04：最大值</a></div></td><td  class='hidden-xs'>	<div pid='1050' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1050&jresult=4'>537</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1050'>2836</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1051</div></td><td>	<div class='left'><a href='problem.php?id=1051'>函数05：阶乘</a></div></td><td  class='hidden-xs'>	<div pid='1051' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1051&jresult=4'>528</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1051'>3318</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1052</div></td><td>	<div class='left'><a href='problem.php?id=1052'>函数06：小牛问题</a></div></td><td  class='hidden-xs'>	<div pid='1052' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1052&jresult=4'>580</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1052'>2566</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1053</div></td><td>	<div class='left'><a href='problem.php?id=1053'>函数07：最大公约数</a></div></td><td  class='hidden-xs'>	<div pid='1053' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1053&jresult=4'>562</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1053'>2535</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1054</div></td><td>	<div class='left'><a href='problem.php?id=1054'>函数08：幂函数</a></div></td><td  class='hidden-xs'>	<div pid='1054' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1054&jresult=4'>463</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1054'>2700</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1055</div></td><td>	<div class='left'><a href='problem.php?id=1055'>函数09：指数幂求和</a></div></td><td  class='hidden-xs'>	<div pid='1055' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1055&jresult=4'>478</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1055'>2035</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1056</div></td><td>	<div class='left'><a href='problem.php?id=1056'>函数10：素数求和</a></div></td><td  class='hidden-xs'>	<div pid='1056' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1056&jresult=4'>455</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1056'>2705</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1057</div></td><td>	<div class='left'><a href='problem.php?id=1057'>函数11：最小公倍数之和</a></div></td><td  class='hidden-xs'>	<div pid='1057' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1057&jresult=4'>393</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1057'>1797</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1058</div></td><td>	<div class='left'><a href='problem.php?id=1058'>函数12：逆序求和</a></div></td><td  class='hidden-xs'>	<div pid='1058' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1058&jresult=4'>385</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1058'>2094</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1059</div></td><td>	<div class='left'><a href='problem.php?id=1059'>函数13：数位计算</a></div></td><td  class='hidden-xs'>	<div pid='1059' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1059&jresult=4'>506</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1059'>2681</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1060</div></td><td>	<div class='left'><a href='problem.php?id=1060'>函数14：数值计算</a></div></td><td  class='hidden-xs'>	<div pid='1060' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1060&jresult=4'>415</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1060'>1922</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1061</div></td><td>	<div class='left'><a href='problem.php?id=1061'>函数15：累加和</a></div></td><td  class='hidden-xs'>	<div pid='1061' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1061&jresult=4'>367</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1061'>1515</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1062</div></td><td>	<div class='left'><a href='problem.php?id=1062'>函数16：利用函数计算平均值</a></div></td><td  class='hidden-xs'>	<div pid='1062' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1062&jresult=4'>350</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1062'>2289</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1063</div></td><td>	<div class='left'><a href='problem.php?id=1063'>函数17：数根问题递归求解</a></div></td><td  class='hidden-xs'>	<div pid='1063' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1063&jresult=4'>365</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1063'>1954</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1064</div></td><td>	<div class='left'><a href='problem.php?id=1064'>函数18：奇数判断</a></div></td><td  class='hidden-xs'>	<div pid='1064' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1064&jresult=4'>397</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1064'>2224</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1065</div></td><td>	<div class='left'><a href='problem.php?id=1065'>函数19：利用一个自定义函数解决完数和素数问题</a></div></td><td  class='hidden-xs'>	<div pid='1065' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1065&jresult=4'>339</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1065'>2243</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1066</div></td><td>	<div class='left'><a href='problem.php?id=1066'>函数20：fibonacci数列倒数求和</a></div></td><td  class='hidden-xs'>	<div pid='1066' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1066&jresult=4'>353</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1066'>2830</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1067</div></td><td>	<div class='left'><a href='problem.php?id=1067'>数组指针01：逆序输出</a></div></td><td  class='hidden-xs'>	<div pid='1067' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1067&jresult=4'>580</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1067'>3505</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1068</div></td><td>	<div class='left'><a href='problem.php?id=1068'>数组指针02：逆序存储</a></div></td><td  class='hidden-xs'>	<div pid='1068' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1068&jresult=4'>450</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1068'>2455</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1069</div></td><td>	<div class='left'><a href='problem.php?id=1069'>数组指针03：平均值</a></div></td><td  class='hidden-xs'>	<div pid='1069' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1069&jresult=4'>544</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1069'>2790</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1070</div></td><td>	<div class='left'><a href='problem.php?id=1070'>数组指针04：最大值</a></div></td><td  class='hidden-xs'>	<div pid='1070' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1070&jresult=4'>486</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1070'>2368</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1071</div></td><td>	<div class='left'><a href='problem.php?id=1071'>数组指针05：最小值的位置</a></div></td><td  class='hidden-xs'>	<div pid='1071' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1071&jresult=4'>567</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1071'>3234</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1072</div></td><td>	<div class='left'><a href='problem.php?id=1072'>数组指针06：排序</a></div></td><td  class='hidden-xs'>	<div pid='1072' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1072&jresult=4'>544</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1072'>2687</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1073</div></td><td>	<div class='left'><a href='problem.php?id=1073'>数组指针07：中位数</a></div></td><td  class='hidden-xs'>	<div pid='1073' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1073&jresult=4'>511</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1073'>2785</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1074</div></td><td>	<div class='left'><a href='problem.php?id=1074'>数组指针08：奇偶排序</a></div></td><td  class='hidden-xs'>	<div pid='1074' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1074&jresult=4'>383</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1074'>2165</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1075</div></td><td>	<div class='left'><a href='problem.php?id=1075'>数组指针09：斐波那契数列</a></div></td><td  class='hidden-xs'>	<div pid='1075' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1075&jresult=4'>490</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1075'>2122</a></div></td></tr><tr class='evenrow'><td>	<div class=none> </div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1076</div></td><td>	<div class='left'><a href='problem.php?id=1076'>数组指针10：筛选法求素数</a></div></td><td  class='hidden-xs'>	<div pid='1076' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1076&jresult=4'>343</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1076'>1879</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1077</div></td><td>	<div class='left'><a href='problem.php?id=1077'>数组指针11：指定位置插入</a></div></td><td  class='hidden-xs'>	<div pid='1077' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1077&jresult=4'>535</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1077'>2393</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1078</div></td><td>	<div class='left'><a href='problem.php?id=1078'>数组指针12：有序插入</a></div></td><td  class='hidden-xs'>	<div pid='1078' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1078&jresult=4'>510</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1078'>2750</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1079</div></td><td>	<div class='left'><a href='problem.php?id=1079'>数组指针13：删除指定元素</a></div></td><td  class='hidden-xs'>	<div pid='1079' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1079&jresult=4'>400</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1079'>1828</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1080</div></td><td>	<div class='left'><a href='problem.php?id=1080'>数组指针14：删除所有的指定元素</a></div></td><td  class='hidden-xs'>	<div pid='1080' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1080&jresult=4'>436</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1080'>1950</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1081</div></td><td>	<div class='left'><a href='problem.php?id=1081'>数组指针15：矩阵各行、列求和</a></div></td><td  class='hidden-xs'>	<div pid='1081' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1081&jresult=4'>316</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1081'>2984</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1082</div></td><td>	<div class='left'><a href='problem.php?id=1082'>数组指针16：两条对角线元素之和</a></div></td><td  class='hidden-xs'>	<div pid='1082' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1082&jresult=4'>359</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1082'>2095</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1083</div></td><td>	<div class='left'><a href='problem.php?id=1083'>数组指针17：矩阵求鞍点</a></div></td><td  class='hidden-xs'>	<div pid='1083' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1083&jresult=4'>318</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1083'>1849</a></div></td></tr><tr class='evenrow'><td>	<div class=none> </div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1084</div></td><td>	<div class='left'><a href='problem.php?id=1084'>数组指针18：回文字符串</a></div></td><td  class='hidden-xs'>	<div pid='1084' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1084&jresult=4'>377</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1084'>1993</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1085</div></td><td>	<div class='left'><a href='problem.php?id=1085'>数组指针19：字符串转换</a></div></td><td  class='hidden-xs'>	<div pid='1085' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1085&jresult=4'>355</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1085'>1932</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1086</div></td><td>	<div class='left'><a href='problem.php?id=1086'>数组指针20：字符串长度</a></div></td><td  class='hidden-xs'>	<div pid='1086' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1086&jresult=4'>326</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1086'>1809</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1087</div></td><td>	<div class='left'><a href='problem.php?id=1087'>数组指针21：字符串连接</a></div></td><td  class='hidden-xs'>	<div pid='1087' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1087&jresult=4'>446</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1087'>1887</a></div></td></tr><tr class='evenrow'><td>	<div class=none> </div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1088</div></td><td>	<div class='left'><a href='problem.php?id=1088'>数组指针22：字符串比较</a></div></td><td  class='hidden-xs'>	<div pid='1088' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1088&jresult=4'>400</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1088'>1734</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1089</div></td><td>	<div class='left'><a href='problem.php?id=1089'>数组指针23：字符串处理</a></div></td><td  class='hidden-xs'>	<div pid='1089' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1089&jresult=4'>309</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1089'>1642</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1090</div></td><td>	<div class='left'><a href='problem.php?id=1090'>数组指针24：二进制转换 </a></div></td><td  class='hidden-xs'>	<div pid='1090' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1090&jresult=4'>310</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1090'>1345</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1091</div></td><td>	<div class='left'><a href='problem.php?id=1091'>数组指针25：数字移动</a></div></td><td  class='hidden-xs'>	<div pid='1091' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1091&jresult=4'>302</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1091'>1470</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1092</div></td><td>	<div class='left'><a href='problem.php?id=1092'>数组指针26：矩阵周边元素</a></div></td><td  class='hidden-xs'>	<div pid='1092' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1092&jresult=4'>298</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1092'>1452</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1093</div></td><td>	<div class='left'><a href='problem.php?id=1093'>数组指针27：查找元素</a></div></td><td  class='hidden-xs'>	<div pid='1093' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1093&jresult=4'>356</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1093'>1538</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1094</div></td><td>	<div class='left'><a href='problem.php?id=1094'>数组指针28：平均值</a></div></td><td  class='hidden-xs'>	<div pid='1094' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1094&jresult=4'>304</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1094'>1386</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1095</div></td><td>	<div class='left'><a href='problem.php?id=1095'>类与对象01：Point类数据显示</a></div></td><td  class='hidden-xs'>	<div pid='1095' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1095&jresult=4'>386</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1095'>2118</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1096</div></td><td>	<div class='left'><a href='problem.php?id=1096'>类与对象02：Point类2</a></div></td><td  class='hidden-xs'>	<div pid='1096' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1096&jresult=4'>419</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1096'>1981</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1097</div></td><td>	<div class='left'><a href='problem.php?id=1097'>类与对象03：Point类3</a></div></td><td  class='hidden-xs'>	<div pid='1097' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1097&jresult=4'>386</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1097'>2081</a></div></td></tr><tr class='evenrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1098</div></td><td>	<div class='left'><a href='problem.php?id=1098'>类与对象04：Rectangle类1</a></div></td><td  class='hidden-xs'>	<div pid='1098' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1098&jresult=4'>377</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1098'>1662</a></div></td></tr><tr class='oddrow'><td>	<div class='label label-success'>Y</div></td><td  class='hidden-xs'>	<div fd='problem_id' class='center'>1099</div></td><td>	<div class='left'><a href='problem.php?id=1099'>类与对象05：Rectangle类2</a></div></td><td  class='hidden-xs'>	<div pid='1099' fd='source' class='center'></div ></td><td>	<div class='center'><a href='status.php?problem_id=1099&jresult=4'>430</a></div></td><td>	<div class='center'><a href='status.php?problem_id=1099'>2023</a></div></td></tr>					</tbody>
+				</table>
+			</center>
+		</div>
+
+	</div>
+	<!-- /container -->
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="include/jquery-latest.js"></script>
+
+<script src="template/bs3/marked.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="template/bs3/bootstrap.min.js"></script>
+
+
+<script>
+$(document).ready(function(){
+	  
+  $("form").append("<div id='csrf' />");
+  $("#csrf").load("csrf.php");
+  $("body").append("<div id=footer class=center >GPLv2 licensed by <a href='https://github.com/zhblue/hustoj' >HUSTOJ</a> "+(new Date()).getFullYear()+" </div>");
+  $("body").append("<center><sub><a target='_blank' href='https://github.com/zhblue/hustoj'><span class='glyphicon glyphicon-heart' aria-hidden='true'></span> 请到 HUSTOJ 来，给我们加个<span class='glyphicon glyphicon-star' aria-hidden='true'></span>Star!</a></sub></center>");  
+  $("body").append("<div class=center > <img src='http://cdn.hustoj.com/wx.jpg' width='120px'><img src='http://cdn.hustoj.com/alipay.png' width='120px'><br> 欢迎关注微信公众号onlinejudge</div>");
+  
+  
+	
+  });
+
+$(".hint pre").each(function(){
+        var plus="<span class='glyphicon glyphicon-plus'>点击查看剧透级题解</span>";
+        var content=$(this);
+        $(this).before(plus);
+        $(this).prev().click(function(){
+                content.toggle();
+        });
+        $(this).hide();
+});
+
+
+  console.log("If you want to change the appearance of the web pages, make a copy of bs3 under template directory.\nRename it to whatever you like, and change the $OJ_TEMPLATE value in db_info.inc.php\nAfter that modify files under your own directory .\n");
+  console.log("To enable mathjax in hustoj, set \n static  $OJ_MATHJAX=true;  // 激活mathjax \n in db_info.inc.php");
+function admin_mod(){
+	$("div[fd=source]").each(function(){
+		let pid=$(this).attr('pid');	
+		$(this).append("<span><span class='label label-success' pid='"+pid+"' onclick='problem_add_source(this,"+pid+");'>+</span></span>");
+
+	});
+	$("span[fd=time_limit]").each(function(){
+		let sp=$(this);
+		let pid=$(this).attr('pid');	
+		$(this).dblclick(function(){
+			let time=sp.text();
+			console.log("pid:"+pid+"  time_limit:"+time);	
+			sp.html("<form onsubmit='return false;'><input type=hidden name='m' value='problem_update_time'><input type='hidden' name='pid' value='"+pid+"'><input type='text' name='t' value='"+time+"' selected='true' class='input-mini' size=2 ></form>");
+			let ipt=sp.find("input[name=t]");
+			ipt.focus();
+			ipt[0].select();
+			sp.find("input").change(function(){
+				let newtime=sp.find("input[name=t]").val();
+				$.post("admin/ajax.php",sp.find("form").serialize()).done(function(){
+					console.log("new time_limit:"+time);
+					sp.html(newtime);
+				});
+			
+			});
+		});
+
+	});
+}
+function problem_add_source(sp,pid){
+	console.log("pid:"+pid);
+	let p=$(sp).parent();
+	p.html("<form onsubmit='return false;'><input type='hidden' name='m' value='problem_add_source'><input type='hidden' name='pid' value='"+pid+"'><input type='text' class='input input-large' name='ns'></form>");
+	p.find("input").focus();
+	p.find("input").change(function(){
+		console.log(p.find("form").serialize());
+		let ns=p.find("input[name=ns]").val();
+		console.log("new source:"+ns);
+		$.post("admin/ajax.php",p.find("form").serialize());
+		p.parent().append("<span class='label label-success'>"+ns+"</span>");
+		p.html("<span class='label label-success' pid='"+pid+"' onclick='problem_add_source(this,"+pid+");'>+</span>");
+	});
+}
+</script>
+
+	<script type="text/javascript" src="include/jquery.tablesorter.js"></script>
+	<script type="text/javascript">
+		$( document ).ready( function () {
+			$( "#problemset" ).tablesorter();
+			$( "#problemset" ).after( $( "#page" ).prop( "outerHTML" ) );
+		} );
+	</script>
+</body>
+</html>
+<!--not cached-->
