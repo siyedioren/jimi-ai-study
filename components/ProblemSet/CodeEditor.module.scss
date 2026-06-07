@@ -1,0 +1,162 @@
+.editorWrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--bg);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+// ---------- 工具栏 ----------
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-secondary);
+  flex-shrink: 0;
+}
+
+.langSelect {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+}
+
+.toolbarSpacer {
+  flex: 1;
+}
+
+.secondaryBtn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 150ms ease;
+
+  &:hover {
+    background: var(--bg-tertiary);
+    border-color: var(--border-hover);
+  }
+}
+
+// ---------- 编辑器主体 ----------
+.editorBody {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.lineNumbers {
+  width: 48px;
+  flex-shrink: 0;
+  padding: 12px 0;
+  background: var(--bg-tertiary);
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+  text-align: right;
+  font-family: var(--font-mono), "SF Mono", Monaco, "Cascadia Code", monospace;
+  font-size: 13px;
+  line-height: 22px;
+  color: var(--text-tertiary);
+  user-select: none;
+}
+
+.lineNo {
+  padding: 0 10px 0 0;
+  height: 22px;
+}
+
+.codeArea {
+  flex: 1;
+  padding: 12px 14px;
+  border: none;
+  outline: none;
+  resize: none;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-mono), "SF Mono", Monaco, "Cascadia Code", monospace;
+  font-size: 13px;
+  line-height: 22px;
+  white-space: pre;
+  overflow: auto;
+  tab-size: 4;
+
+  &::placeholder {
+    color: var(--text-tertiary);
+  }
+
+  &:focus {
+    background: var(--bg);
+  }
+}
+
+// ---------- 底部按钮 ----------
+.editorFooter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-secondary);
+  flex-shrink: 0;
+}
+
+.primaryBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 150ms ease;
+
+  &:hover {
+    background: var(--accent-hover);
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.submitBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 150ms ease;
+
+  &:hover {
+    background: var(--accent-light);
+  }
+}

@@ -534,6 +534,8 @@
 }
 
 .drawerFooter {
+  display: flex;
+  gap: 10px;
   padding: 16px 24px;
   border-top: 1px solid var(--border);
   flex-shrink: 0;
@@ -544,7 +546,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  width: 100%;
+  flex: 1;
   height: 44px;
   border-radius: 10px;
   border: none;
@@ -561,6 +563,27 @@
 
   svg {
     flex-shrink: 0;
+  }
+}
+
+.submitLinkBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 150ms ease;
+
+  &:hover {
+    background: var(--accent-light);
   }
 }
 

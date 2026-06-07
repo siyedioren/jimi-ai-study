@@ -111,6 +111,11 @@ export default function ProblemSetPage() {
     setPage(1);
   }, [search, tagFilter, diffFilter]);
 
+  const goToSubmit = (p: Problem) => {
+    markViewed(p.id);
+    window.location.href = "/problemset/" + p.id;
+  };
+
   const openDetail = (p: Problem) => {
     setSelected(p);
     markViewed(p.id);
@@ -208,8 +213,8 @@ export default function ProblemSetPage() {
                     <td className={styles.colTitle}>
                       <button
                         className={styles.titleBtn}
-                        onClick={() => openDetail(p)}
-                        title="查看题目详情"
+                        onClick={() => goToSubmit(p)}
+                        title="进入交题页"
                       >
                         {p.title}
                       </button>
@@ -360,6 +365,12 @@ export default function ProblemSetPage() {
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                 </svg>
                 AI 讲解此题
+              </button>
+              <button
+                className={styles.submitLinkBtn}
+                onClick={() => goToSubmit(selected)}
+              >
+                进入交题页 →
               </button>
             </div>
           </aside>

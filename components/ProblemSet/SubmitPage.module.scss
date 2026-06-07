@@ -1,0 +1,328 @@
+// ═══════════════════════════════════════════════════════════════
+//                        交题页面样式
+// ═══════════════════════════════════════════════════════════════
+
+.page {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+// ---------- 顶部导航 ----------
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 24px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  flex-shrink: 0;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navBrand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navLogo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.navCenter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (max-width: 768px) {
+    position: static;
+    transform: none;
+    flex: 1;
+    justify-content: center;
+    min-width: 0;
+  }
+}
+
+.navProblemId {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.navProblemTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+
+  @media (max-width: 768px) {
+    max-width: 140px;
+  }
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navLink {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: background 150ms ease, color 150ms ease;
+
+  &:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+  }
+}
+
+.navLinkActive {
+  background: var(--accent-light);
+  color: var(--accent);
+
+  &:hover {
+    background: var(--accent-light);
+    color: var(--accent-hover);
+  }
+}
+
+// ---------- 主布局 ----------
+.layout {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    overflow: auto;
+  }
+}
+
+// ---------- 左侧面板 ----------
+.leftPanel {
+  width: 45%;
+  min-width: 360px;
+  max-width: 560px;
+  overflow-y: auto;
+  padding: 20px;
+  border-right: 1px solid var(--border);
+  background: var(--bg);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+.problemCard {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 24px;
+}
+
+.problemHeader {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.problemTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: 12px;
+  word-break: break-word;
+}
+
+.problemId {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.problemMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.diffBadge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.diffEasy {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+
+.diffMedium {
+  background: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+.diffHard {
+  background: var(--error-bg);
+  color: var(--error-text);
+}
+
+.tagBadge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid var(--border);
+}
+
+.limitBadge {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono), monospace;
+}
+
+// ---------- 题目内容区 ----------
+.problemSection {
+  margin-top: 20px;
+}
+
+.sectionTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.sectionContent {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.codeBlock {
+  background: var(--bg-code);
+  color: var(--text-code);
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+// ---------- 右侧面板 ----------
+.rightPanel {
+  flex: 1;
+  min-width: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    min-height: 500px;
+  }
+}
+
+// ---------- 加载/空状态 ----------
+.loading,
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 12px;
+  text-align: center;
+  padding: 48px;
+  color: var(--text-secondary);
+}
+
+.notFound h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.backLink {
+  margin-top: 8px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 150ms ease;
+
+  &:hover {
+    background: var(--accent-hover);
+  }
+}
